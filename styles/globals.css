@@ -6,6 +6,57 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root {
+  --primary: #331a3a;
+  --secondary: #1e132e;
+  --tertiary: #5e2648;
+  --quaternary: #551c41;
+  --quinary: #89374c;
+
+  --bg_color: #fff;
+  --text_color: #ffffff;
+  --text_color_secondary: #ffffff;
+}
+
+[data-theme='sunset'] {
+  --primary: #331a3a;
+  --secondary: #1e132e;
+  --tertiary: #5e2648;
+  --quaternary: #551c41;
+  --quinary: #89374c;
+
+  --bg_color: #fff;
+  --text_color: #ffffff;
+  --text_color_secondary: #ffffff;
+  
+}
+
+[data-theme='aurora'] {
+  --primary: #6b6d7f;
+  --secondary: #7fa689;
+  --tertiary: #557e6c;
+  --quaternary: #2b3843;
+  --quinary: #9f8789;
+
+  --bg_color: #fff;
+  --text_color: #ffffff;
+  --text_color_secondary: #ffffff;
+  
+}
+
+[data-theme='seashore'] {
+  --primary: #162523;
+  --secondary: #d1bfa8;
+  --tertiary: #b49679;
+  --quaternary: #475048;
+  --quinary: #8d8475;
+
+  --bg_color: #fff;
+  --text_color: #ffffff;
+  --text_color_secondary: #ffffff;
+  
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -2,11 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import useTranslation from 'next-translate/useTranslation'
+import { useTheme } from 'next-themes'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const router = useRouter()
   const { t } = useTranslation('home')
+  const { theme, setTheme } = useTheme()
 
   return (
     <div className={styles.container}>
@@ -30,6 +32,11 @@ export default function Home() {
             </li>
           ))}
         </ul>
+        <select value={theme} onChange={e => setTheme(e.target.value)}>
+          <option value="sunset">Sunset</option>
+          <option value="aurora">Aurora</option>
+          <option value="seashore">Seashore</option>
+        </select>
 
       </div>
     </div>

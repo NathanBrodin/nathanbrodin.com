@@ -1,6 +1,12 @@
+import Footer from "./Footer"
+import Nav from "./Nav"
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
-    <div>Layout</div>
+    <div>
+      <Nav />
+      {children}
+      <Footer />
+    </div>
   )
 }
