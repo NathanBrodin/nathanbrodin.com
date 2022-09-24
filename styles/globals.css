@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -55,6 +56,12 @@ body {
   --text_color: #ffffff;
   --text_color_secondary: #ffffff;
   
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
 }
 
 a {
