@@ -5,7 +5,7 @@ import ScrollToTop from "./ScrollToTop"
 export default function Layout({ children }) {
   return (
     <div>
-      <Nav />
+      <Nav/>
         {children}
       <ScrollToTop />
       <Footer />
