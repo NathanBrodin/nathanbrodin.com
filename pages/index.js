@@ -44,8 +44,6 @@ export default function LandingPage() {
         <h1>{t('home_name')}</h1>
         <h3>{t("home_subheading", {age: 20})}</h3>
         <h3>{t("home_opportunity")}</h3>
-
-        <a href="#ProjectsOverview" ></a>
         
 
         <ul>
