@@ -18,16 +18,32 @@ export default function Nav() {
 
   return (
     <div className={styles.glassContainer}>
+        <div className={styles.titleContainer}>
+          <h1 className={styles.title}>NATHAN BRODIN</h1>
+        </div>
+        <div className={styles.navContainer}>
         <nav className={styles.nav}>
-          <div>
-            <h1 className={styles.title}>NATHAN BRODIN</h1>
-          </div>
+          <p className={styles.p}>{locale_avaiable.toUpperCase()}</p>
 
-          <div>
-            {locale_avaiable.toUpperCase()}
-          </div>
-
-          <ul>
+          <ul className={styles.ul}>
+                <li className={styles.li}><Link href="/">
+                  <a className={styles.a}>{t("home")}</a>
+                </Link></li>
+                <li className={styles.li}><Link href="#projects" scroll={false} >
+                  <a className={styles.a}>{t("projects")}</a> 
+                </Link></li>
+                <li className={styles.li}><Link href="#about" scroll={false} >
+                  <a className={styles.a}>{t("about")}</a> 
+                </Link></li>
+                <li className={styles.li}><Link href="#contact" scroll={false} >
+                  <a className={styles.a}>{t("contact")}</a>  
+                </Link></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+  )
+  /* <ul>
           {router.locales.map((locale) => (
             <li key={locale}>
               <Link href={router.asPath} locale={locale}>
@@ -35,23 +51,5 @@ export default function Nav() {
               </Link>
             </li>
           ))}
-          </ul>
-
-          <ul>
-                <li><Link href="/" scroll={false} >
-                  <a className={styles.a}>{t("home")}</a>
-                </Link></li>
-                <li><Link href="#projects" scroll={false} >
-                  <a className={styles.a}>{t("projects")}</a> 
-                </Link></li>
-                <li><Link href="#about" scroll={false} >
-                  <a className={styles.a}>{t("about")}</a> 
-                </Link></li>
-                <li><Link href="#contact" scroll={false} >
-                  <a className={styles.a}>{t("contact")}</a>  
-                </Link></li>
-            </ul>
-        </nav>
-    </div>
-  )
+          </ul> */
 }
