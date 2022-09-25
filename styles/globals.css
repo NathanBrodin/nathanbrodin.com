@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
 html,
 body {
   padding: 0;
@@ -16,6 +21,8 @@ body {
   --bg_color: #fff;
   --text_color: #ffffff;
   --text_color_secondary: #ffffff;
+
+  --margin_left: 4rem;
 }
 
 [data-theme='sunset'] {
@@ -85,3 +92,5 @@ a {
   text-decoration: none;
   color: var(--text_color);
 }
+
+*/
