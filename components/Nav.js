@@ -19,15 +19,15 @@ export default function Nav() {
   }
 
   return (    
-<nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-gray-900">
+<nav class="border-gray-200 px-2 sm:px-4 py-2.5  bg-gray-900">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
   <div class="flex items-center">
     <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Nathan Brodin</span>
   </div>
   <div class="flex items-center md:order-2">
       <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex justify-center items-center p-2 text-sm text-gray-500 rounded cursor-pointer hover:bg-gray-700 hover:text-white">
-        <div class="mr-2 w-5 h-5 rounded-full">
-          <Image src={locale === "en" ? en : fr} alt="Change language" width={3900} height={3900} layout="fill"/>
+        <div class="mr-2 w-5 h-5 rounded-full bg-orange-600">
+          {/* <Image src={locale === "en" ? en : fr} alt="Change language" width={20} height={20} layout="fill"/> */}
         </div>
         { locale === "en" ? "English" : "Français" }
       </button>
@@ -36,8 +36,8 @@ export default function Nav() {
           <li>
             <a href="#" class="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
               <div class="inline-flex items-center">
-                <div class="h-3.5 w-3.5 rounded-full mr-2">
-                  <Image src={en} alt="English" width={512} height={512} layout="fill"/>
+                <div class="h-3.5 w-3.5 rounded-full mr-2 bg-blue-600">
+                  {/* <Image src={en} alt="English" width={512} height={512} layout="fill"/> */}
                 </div>
                 English
               </div>
@@ -46,8 +46,8 @@ export default function Nav() {
           <li>
             <a href="#" class="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
               <div class="inline-flex items-center">
-                <div class="h-3.5 w-3.5 rounded-full mr-2">
-                  <Image src={fr} alt="French" width={512} height={512} layout="fill"/>
+                <div class="h-3.5 w-3.5 rounded-full mr-2 bg-red">
+                  {/* <Image src={fr} alt="French" width={512} height={512} layout="fill"/> */}
                 </div>
                 Français
               </div>
@@ -57,8 +57,8 @@ export default function Nav() {
       </div>
       <button data-collapse-toggle="mobile-menu-language-select" type="button" class="inline-flex items-center p-2 ml-1 text-sm  rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="mobile-menu-language-select" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
-      <div class="w-6 h-6">
-        <Image src={hamburger} alt="menu" width={20} height={20} layout="fill"/>
+      <div class="w-6 h-6 bg-green-300">
+        {/* <Image src={hamburger} alt="menu" width={20} height={20} layout="fill"/> */}
       </div>
     </button>
   </div>
