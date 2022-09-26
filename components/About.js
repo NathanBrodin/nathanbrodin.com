@@ -1,6 +1,6 @@
 
 export default function About() {
   return (
-    <div className="container" id="about">About</div>
+    <div className="h-screen" id="about">About</div>
   )
 }

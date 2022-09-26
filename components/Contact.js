@@ -1,6 +1,6 @@
 
 export default function Contact() {
   return (
-    <section className="container" id="contact">Contact</section>
+    <section className="h-screen" id="contact">Contact</section>
   )
 }

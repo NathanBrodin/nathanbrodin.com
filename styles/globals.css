@@ -10,16 +10,7 @@
     transform: translate3d(0px, 10.4px, 0px);
   }
 }
-
-/*
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  scroll-behavior: smooth;
-}
-
+ /*
 :root {
   --primary: #331a3a;
   --secondary: #1e132e;
@@ -30,8 +21,6 @@ body {
   --bg_color: #fff;
   --text_color: #ffffff;
   --text_color_secondary: #ffffff;
-
-  --margin_left: 4rem;
 }
 
 [data-theme='sunset'] {
@@ -72,34 +61,4 @@ body {
   --text_color_secondary: #ffffff;
   
 }
-
-.container {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--primary);
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  color: var(--text_color);
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text_color);
-}
-
-p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--text_color);
-}
-
-a {
-  text-decoration: none;
-  color: var(--text_color);
-}
-
 */

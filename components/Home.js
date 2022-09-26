@@ -4,7 +4,7 @@ export default function Home() {
   const { t } = useTranslation('home')
 
   return (
-    <div id="home">
+    <div className="h-screen" id="home">
       <h1>{t("home_title")}</h1>
       <h1>{t('home_name')}</h1>
       <p>{t("home_subheading", {age: 20})}</p>
