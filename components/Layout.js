@@ -4,7 +4,7 @@ import ScrollToTop from "./ScrollToTop"
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-900 text-white">
       <Nav />
       {children}
       <ScrollToTop />
