@@ -31,7 +31,7 @@ export default function Nav() {
         </div>
         { locale === "en" ? "English" : "Français" }
       </button>
-      <div class="hidden z-50 my-4 text-base list-none rounded divide-y divide-gray-100 shadow bg-gray-700" id="language-dropdown-menu" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+      <div class="navbar hidden z-50 my-4 text-base list-none rounded divide-y divide-gray-100 shadow bg-gray-700" id="language-dropdown-menu" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
         <ul class="py-1" role="none">
           <li>
             <a href="#" class="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
@@ -46,7 +46,7 @@ export default function Nav() {
           <li>
             <a href="#" class="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
               <div class="inline-flex items-center">
-                <div class="h-3.5 w-3.5 rounded-full mr-2 bg-red">
+                <div class="h-3.5 w-3.5 rounded-full mr-2 bg-blue-600">
                   {/* <Image src={fr} alt="French" width={512} height={512} layout="fill"/> */}
                 </div>
                 Français
@@ -89,8 +89,6 @@ export default function Nav() {
   /* <div class="mr-3 h-6 sm:h-9">
       <Image src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite Logo" layout="fill" />
     </div>  C'est pour faire le logo a mettre juste avant Nathan Brodin */
-
-    /* style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 10.4px, 0px);" juste apres button*/
 
   return (
     <div>
