@@ -5,7 +5,7 @@ import Image from 'next/image'
 import En from '../public/flags/en.svg'
 import Fr from '../public/flags/fr.svg'
 import Hamburger from '../public/hamburger.svg'
-import logo from '../public/favicon.ico'
+import Logo from '../public/logo.svg'
 
 export default function Nav() {
   const { t } = useTranslation("common")
@@ -16,46 +16,40 @@ export default function Nav() {
 
   // TODO: Change color of current page in the navbar
 
-  function handleLocaleChange(e) {
-    new_locale = router.locales[1 - router.locales.indexOf(router.locale)]
-    console.log(new_locale)
-
-    //router.push(router.pathname, router.pathname, { locale: e.target.value })
-  }
-
   return (    
-    <nav className="bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-50 fixed w-screen">
+    <nav className="bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-40 fixed w-screen">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div className="flex items-center">
-          {/* <div className="mr-3 h-6 sm:h-9">
-            <Image src={logo} alt="Nathan Brodin Logo" layout="fill"  width={24} height={24}/>
-          </div> */}
+          <Logo className="mr-3 h-6 sm:h-9"/>
           <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Nathan Brodin</span>
         </div>
         <div className="flex items-center md:order-2">
-          <div className="flex items-center md:order-2 ml-12 mr-4">
+          <div className="flex items-center md:order-2 ml-14 mr-4">
              <button type="button" data-dropdown-toggle="language-dropdown-menu" className="inline-flex justify-center items-center p-2 text-sm text-gray-500 rounded cursor-pointer hover:bg-gray-700 hover:text-white">
                 { locale === "en" ? "English" : "Français" }
               </button>
-              <div className="navbar hidden z-50 my-4 text-base list-none rounded divide-y divide-gray-100 shadow bg-gray-700" id="language-dropdown-menu" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+              {/* Dropdown menu */}
+              <div className="hidden z-50 my-4 text-base list-none rounded divide-y divide-gray-100 shadow bg-gray-700" id="language-dropdown-menu">
                 <ul className="py-1" role="none">
                   <li>
-                    <a href="#" className="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
-                      <div className="inline-flex items-center">
-                        <div className="h-3.5 w-3.5 rounded-full mr-2 bg-primary-600">
-                        </div>
-                        English
-                      </div>
-                    </a>
+                    <Link href={router.asPath} locale={"en"}>
+                      <a href="#" className="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
+                          <div className="inline-flex items-center">
+                            <En className="h-3.5 w-3.5 rounded-full mr-2"/>
+                            English
+                          </div>
+                        </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
-                      <div className="inline-flex items-center">
-                        <div className="h-3.5 w-3.5 rounded-full mr-2 bg-primary-600">
+                    <Link href={router.asPath} locale={"fr"}>
+                      <a href="#" className="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
+                        <div className="inline-flex items-center">
+                          <Fr className="h-3.5 w-3.5 rounded-full mr-2"/>
+                          Français
                         </div>
-                        Français
-                      </div>
-                    </a>
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
