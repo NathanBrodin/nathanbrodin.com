@@ -19,7 +19,7 @@ export default function Nav() {
   }
 
   return (    
-<nav className="border-gray-200 px-2 sm:px-4 py-2.5  bg-gray-900">
+<nav className="bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-50 fixed w-screen">
   <div className="container flex flex-wrap justify-between items-center mx-auto">
   <div className="flex items-center">
     <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Nathan Brodin</span>
@@ -63,7 +63,7 @@ export default function Nav() {
     </button>
   </div>
   <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-language-select">
-    <ul className="flex flex-col p-4 mt-4  rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
+    <ul className="flex flex-col p-4 mt-4  rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  border-gray-700">
       <li>
         <Link href="/">
           <a className="block py-2 pr-4 pl-3 text-white bg-primary-700 rounded md:bg-transparent md:text-primary-700 md:p-0" aria-current="page">{t("home")}</a>
