@@ -13,6 +13,7 @@ export default function Nav() {
   const locale = router.locale
 
   // TODO: Change color of current page in the navbar
+  // TODO: Make hamburger menu work on mobile
 
   return (    
     <nav className="bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-40 fixed w-screen">

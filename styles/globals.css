@@ -6,15 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbarDropdown {
-  position: absolute;
-  inset: 0px auto auto 0px;
-  margin: 0px;
-  transform: translate3d(0px, 10.4px, 0px);
-  background-color: red;
-}
-
-
  /*
 
 --shiny-shamrock: #7FA689ff;
