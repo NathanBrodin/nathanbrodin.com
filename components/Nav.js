@@ -2,9 +2,10 @@ import Link from "next/link"
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from "next/router"
 import Image from 'next/image'
-import fr from '../public/flags/fr.svg'
-import en from '../public/flags/en.svg'
-import hamburger from '../public/hamburger.svg'
+import En from '../public/flags/en.svg'
+import Fr from '../public/flags/fr.svg'
+import Hamburger from '../public/hamburger.svg'
+import logo from '../public/favicon.ico'
 
 export default function Nav() {
   const { t } = useTranslation("common")
@@ -26,14 +27,14 @@ export default function Nav() {
     <nav className="bg-gray-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-50 fixed w-screen">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div className="flex items-center">
+          {/* <div className="mr-3 h-6 sm:h-9">
+            <Image src={logo} alt="Nathan Brodin Logo" layout="fill"  width={24} height={24}/>
+          </div> */}
           <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Nathan Brodin</span>
         </div>
         <div className="flex items-center md:order-2">
           <div className="flex items-center md:order-2 ml-12 mr-4">
              <button type="button" data-dropdown-toggle="language-dropdown-menu" className="inline-flex justify-center items-center p-2 text-sm text-gray-500 rounded cursor-pointer hover:bg-gray-700 hover:text-white">
-                <div className="mr-2 w-5 h-5 rounded-full bg-orange-600">
-                {/* <Image src={locale === "en" ? en : fr} alt="Change language" width={20} height={20} layout="fill"/> */}
-                </div>
                 { locale === "en" ? "English" : "Français" }
               </button>
               <div className="navbar hidden z-50 my-4 text-base list-none rounded divide-y divide-gray-100 shadow bg-gray-700" id="language-dropdown-menu" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
@@ -42,7 +43,6 @@ export default function Nav() {
                     <a href="#" className="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
                       <div className="inline-flex items-center">
                         <div className="h-3.5 w-3.5 rounded-full mr-2 bg-primary-600">
-                          {/* <Image src={en} alt="English" width={512} height={512} layout="fill"/> */}
                         </div>
                         English
                       </div>
@@ -52,7 +52,6 @@ export default function Nav() {
                     <a href="#" className="block py-2 px-4 text-sm text-gray-400 hover:bg-gray-600 hover:text-white" role="menuitem">
                       <div className="inline-flex items-center">
                         <div className="h-3.5 w-3.5 rounded-full mr-2 bg-primary-600">
-                          {/* <Image src={fr} alt="French" width={512} height={512} layout="fill"/> */}
                         </div>
                         Français
                       </div>
@@ -62,9 +61,7 @@ export default function Nav() {
               </div>
               <button data-collapse-toggle="mobile-menu-language-select" type="button" className="inline-flex items-center p-2 ml-1 text-sm  rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="mobile-menu-language-select" aria-expanded="false">
                 <span className="sr-only">Open main menu</span>
-                <div className="w-6 h-6 bg-primary-300">
-                  {/* <Image src={hamburger} alt="menu" width={20} height={20} layout="fill"/> */}
-                </div>
+                <Hamburger className="w-6 h-6"/>
               </button>
             </div>
             <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-language-select">
