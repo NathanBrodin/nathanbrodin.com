@@ -1,8 +1,6 @@
-import { useTheme } from "next-themes"
 import Link from "next/link"
 
 export default function Footer() {
-  const { theme, setTheme } = useTheme()
 
   return (
     <div className="p-4">
