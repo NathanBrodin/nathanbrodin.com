@@ -31,10 +31,7 @@ export default function Home() {
                 <Arrow className='w-5 h-5 ml-2 -mr-1'/>
               </a>
             </Link>
-        </div>
-        {/* <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
-        </div>                 */}
+        </div>            
       </div>
     </section>
   )

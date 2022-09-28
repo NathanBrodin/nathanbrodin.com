@@ -2,5 +2,8 @@
     "home": "Accueil",
     "projects": "Projets",
     "about": "À propos",
-    "contact": "Contact"
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "licence": "Licence MIT",
+    "github": "Voir ce repository sur GitHub"
 }

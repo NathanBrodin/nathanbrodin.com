@@ -6,6 +6,12 @@ html {
     scroll-behavior: smooth;
 }
 
+@layer components {
+    .nav-link[aria-current="page"] {
+        @apply text-primary-700;
+    }
+}
+
  /*
 
 --shiny-shamrock: #7FA689ff;
