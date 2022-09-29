@@ -18,7 +18,6 @@ export default function Nav() {
     contact: false,
   }
 
-  // TODO: Change color of current page in the navbar
   // TODO: Make hamburger menu work on mobile
 
   return (    
