@@ -1,0 +1,69 @@
+{
+    "title": "Mes projets",
+    "projectsList": [
+        {
+            "id": 0,
+            "name": "My Password Manager",
+            "description": "My Password Manager is a chrome extension to store, autofill and submit your informations to any website. Every data is encrypted using AES and stored into Firebase Firestore database.",
+            "tags": [
+                "React.js",
+                "Firebase",
+                "Javascript",
+                "HTML",
+                "CSS"
+            ],
+            "image": "../public/projects/MyPasswordManager.png",
+            "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
+            "github": "https://github.com/NathanBrodin/MyPasswordManager"
+        },
+        {
+            "id": 1,
+            "name": "Esieabot Mobile App", 
+            "description": "The Esieabot mobile application allows you to control the ESIEABOT robot remotely via Bluetooth.",
+            "tags": [
+                "Kotlin",
+                "Python",
+                "Raspberry Pi"
+            ],
+            "image": "../public/projects/esieabot.png",
+            "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
+            "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"
+        },
+        {
+            "id": 2,
+            "name": "Portfolio Website",
+            "description": "Developpement of my personal portfolio. Deployed on Vercel.",
+            "tags": [
+                "Next.js",
+                "Tailwind CSS",
+                "Flowbite"
+            ],
+            "image": "",
+            "url": "https://nathanbrodin.com/",
+            "github": "https://github.com/NathanBrodin/nathanbrodin.com"
+        },
+        {
+            "id": 3,
+            "name": "Python Management System",
+            "description": "Grocery store management system made for Python course at Centria University",
+            "tags": [
+                "Python",
+                "Tkinter"
+            ],
+            "image": "",
+            "url": "https://github.com/NathanBrodin/Management-System",
+            "github": "https://github.com/NathanBrodin/Management-System"
+        },
+        {
+            "id": 4,
+            "name": "AES",
+            "description": "Implementation of AES 128 in C",
+            "tags": [
+                "C Programming"
+            ],
+            "image": "",
+            "url": "https://github.com/NathanBrodin/AES",
+            "github": "https://github.com/NathanBrodin/AES"
+        }
+    ]
+}

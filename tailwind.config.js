@@ -30,6 +30,11 @@ module.exports = {
           800: "#262626",
           900: "#111827",
         },
+        gradient: {
+          start: "#00467F",
+          middle: "#7FA689",
+          end: "#A5CC82",
+        }
       },
     },
   },

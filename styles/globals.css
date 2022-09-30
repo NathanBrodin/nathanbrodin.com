@@ -6,10 +6,11 @@ html {
     scroll-behavior: smooth;
 }
 
-@layer components {
-    .nav-link[aria-current="page"] {
-        @apply text-primary-700;
-    }
+@layer utilities {
+    .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
 }
 
  /*
