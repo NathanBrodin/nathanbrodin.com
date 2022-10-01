@@ -23,9 +23,13 @@ export default function Nav() {
   return (    
     <nav className="bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-40 fixed w-screen">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <div className="flex items-center">
-          <Logo className="h-6 mr-3 sm:h-10"/>
-          <span className="self-center text-xl font-semibold text-white whitespace-nowrap">Nathan Brodin</span>
+        <div>
+          <Link href={"https://nathanbrodin.com"}>
+            <a className="flex items-center">
+            <Logo className="h-6 mr-3 sm:h-10"/>
+            <span className="self-center text-xl font-semibold text-white whitespace-nowrap">Nathan Brodin</span>
+            </a>
+          </Link>
         </div>
         <div className="flex items-center md:order-2">
           <div className="flex items-center mr-4 md:order-2 ml-14">
