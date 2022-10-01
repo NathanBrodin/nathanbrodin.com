@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Arrow from '../public/arrow.svg';
+import Arrow from '../public/icons/arrow.svg';
 
 export default function ScrollToTop() {
 

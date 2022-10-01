@@ -2,8 +2,8 @@ import Tag from './Tag'
 import Image from 'next/image'
 import Link from 'next/link'
 import MyPasswordManager from '../public/projects/MyPasswordManager.png'
-import GitHub from '../public/icons/github.svg'
-import Play from '../public/icons/play.svg'
+import TooltipGitHub from './TooltipGitHub'
+import TooltipLink from './TooltipLink'
 
 export default function Project(props) {
   const project = props.project
@@ -20,16 +20,8 @@ export default function Project(props) {
             <Tag tagName='Javascript'/>   
           </div>
           <div className='flex'>
-            <Link href={"https://github.com/NathanBrodin/nathanbrodin.com"}>
-              <a target="_blank" className='px-2'>
-                <GitHub className='w-8 h-8'/>
-              </a>
-            </Link>
-            <Link href={"https://github.com/NathanBrodin/nathanbrodin.com"} passHref={true}>
-              <a target="_blank" className='px-2'>
-                <Play className='w-8 h-8 text-white'/>
-              </a>
-            </Link>
+            <TooltipGitHub githubLink="https://google.com"/>
+            <TooltipLink text='View on Chrome web store' link='https://google.com'/>
           </div>
         </div>
       </div>
@@ -43,3 +35,5 @@ export default function Project(props) {
     </div>
   )
 }
+
+

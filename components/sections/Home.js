@@ -1,6 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link';
-import Arrow from '../public/arrow.svg';
+import Arrow from '../../public/icons/arrow.svg'
 
 export default function Home() {
   const { t } = useTranslation('home')

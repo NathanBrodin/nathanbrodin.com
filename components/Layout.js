@@ -1,5 +1,5 @@
-import Footer from "./Footer"
-import Nav from "./Nav"
+import Footer from "./sections/Footer"
+import Nav from "./sections/Nav"
 import ScrollToTop from "./ScrollToTop"
 
 export default function Layout({ children }) {

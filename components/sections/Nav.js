@@ -1,10 +1,10 @@
 import Link from "next/link"
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from "next/router"
-import En from '../public/flags/en.svg'
-import Fr from '../public/flags/fr.svg'
-import Hamburger from '../public/hamburger.svg'
-import Logo from '../public/logo.svg'
+import En from '../../public/flags/en.svg'
+import Fr from '../../public/flags/fr.svg'
+import Hamburger from '../../public/icons/hamburger.svg'
+import Logo from '../../public/logo.svg'
 
 export default function Nav() {
   const { t } = useTranslation("common")

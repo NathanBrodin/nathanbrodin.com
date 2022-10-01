@@ -1,5 +1,5 @@
 import useTranslation from "next-translate/useTranslation"
-import Project from "./Project"
+import Project from "../Project"
 
 export default function Projects() {
   const { t } = useTranslation('projects')
