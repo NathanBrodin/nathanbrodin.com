@@ -28,7 +28,7 @@ export default function Project(props) {
       <div>
       <Link href={project.url} passHref={true}>
         <a target="_blank" className='px-2'>
-          <Image src={project.image} alt={project.title} className='h-full md:rounded-none md:rounded-r-lg' layout='fill'/>
+          <Image src={project.image} alt={project.title} className='h-full md:rounded-none md:rounded-r-lg'/>
         </a>
       </Link>
       </div>
