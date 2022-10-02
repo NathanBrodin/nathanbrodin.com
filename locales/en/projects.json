@@ -13,7 +13,7 @@
                 "HTML",
                 "CSS"
             ],
-            "image": "",
+            "image": "/projects/my-password-manager.png",
             "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
             "linkText": "View on Chrome Web Store",
             "github": "https://github.com/NathanBrodin/MyPasswordManager"
@@ -27,7 +27,7 @@
                 "Python",
                 "Raspberry Pi"
             ],
-            "image": "",
+            "image": "/projects/esieabot.png",
             "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
             "linkText": "Go on realease page",
             "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"

@@ -9,7 +9,7 @@ export default function Project(props) {
   const tags = project.tags
 
   return (
-    <div className='flex flex-col my-4 bg-gray-800 border border-gray-700 rounded-lg md:flex-row'>
+    <div className='flex flex-col my-8 bg-gray-800 border border-gray-700 rounded-lg md:flex-row'>
       <div className='flex items-center w-3/4 mb-8'>
         <div className='flex flex-col justify-between p-4'>
           <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>{project.title}</h5>
@@ -25,10 +25,10 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-      <div>
+      <div className='relative w-3/5 h-auto'>
       <Link href={project.url} passHref={true}>
         <a target="_blank" className='px-2'>
-          <Image src={project.image} alt={project.title} className='h-full md:rounded-none md:rounded-r-lg'/>
+          <Image src={project.image} alt={project.title} className='md:rounded-none md:rounded-r-lg' layout='fill'/>
         </a>
       </Link>
       </div>
