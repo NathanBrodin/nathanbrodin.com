@@ -11,8 +11,8 @@ export default function Projects() {
       <div className="h-1.5 w-24 mb-8 rounded bg-gradient-to-r from-gradient-start to-gradient-end" />
       <h1 className="max-w-2xl px-4 mb-4 text-4xl font-bold text-white md:text-4xl xl:text-4xl">{title}</h1>
       <div className="flex flex-col justify-center">
-        {projectsList.map((project) => (
-          <Project project={project} />
+        {projectsList.map((project, index) => (
+          <Project key={index} project={project}/>
         ))}
       </div>
     </section>

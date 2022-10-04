@@ -18,8 +18,8 @@ export default function Project(props) {
           </div>
           <p className='mb-3 font-normal text-gray-400'>{project.description}</p>
           <div className='flex flex-wrap my-2'>
-            {tags.map((tag) => (
-              <Tag tagName={tag} />
+            {tags.map((tag, index) => (
+              <Tag key={index} tag={tag}/>
             ))}
           </div>
           <div className='flex'>
