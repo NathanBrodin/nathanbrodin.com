@@ -1,9 +1,10 @@
 {
-    "project_title": "Mes projects",
-    "view_on_github": "Voir sur GitHub",
+    "project_title": "My projects",
+    "view_on_github": "View on GitHub",
     "projectsList": [
         {
             "id": 0,
+            "icon": "/projects/icons/mypasswordmanager.svg",
             "title": "My Password Manager",
             "description": "My Password Manager is a chrome extension to store, autofill and submit your informations to any website. Every data is encrypted using AES and stored into Firebase Firestore database.",
             "tags": [
@@ -13,13 +14,14 @@
                 "HTML",
                 "CSS"
             ],
-            "image": "",
+            "image": "/projects/images/my-password-manager.png",
             "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
             "linkText": "View on Chrome Web Store",
             "github": "https://github.com/NathanBrodin/MyPasswordManager"
         },
         {
             "id": 1,
+            "icon": "/projects/icons/esieabot.svg",
             "title": "Esieabot Mobile App", 
             "description": "The Esieabot mobile application allows you to control the ESIEABOT robot remotely via Bluetooth.",
             "tags": [
@@ -27,13 +29,14 @@
                 "Python",
                 "Raspberry Pi"
             ],
-            "image": "",
+            "image": "/projects/images/esieabot.png",
             "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
             "linkText": "Go on realease page",
             "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"
         },
         {
             "id": 2,
+            "icon": "/projects/icons/portfolio.svg",
             "title": "Portfolio Website",
             "description": "Developpement of my personal portfolio. Deployed on Vercel.",
             "tags": [
@@ -41,32 +44,35 @@
                 "Tailwind CSS",
                 "Flowbite"
             ],
-            "image": "",
+            "image": "/projects.images/portfolio.png",
             "url": "https://nathanbrodin.com/",
             "linkText": "View my website",
             "github": "https://github.com/NathanBrodin/nathanbrodin.com"
         },
         {
             "id": 3,
+            "icon": "/projects/icons/python.svg",
             "title": "Python Management System",
             "description": "Grocery store management system made for Python course at Centria University",
             "tags": [
                 "Python",
                 "Tkinter"
             ],
-            "image": "",
+            "image": "/projects/images/management.png",
             "url": "https://github.com/NathanBrodin/Management-System",
             "linkText": "",
             "github": "https://github.com/NathanBrodin/Management-System"
         },
         {
             "id": 4,
+            "icon": "/projects/icons/aes.svg",
             "title": "AES",
             "description": "Implementation of AES 128 in C",
             "tags": [
-                "C Programming"
+                "C Programming",
+                "Cryptography"
             ],
-            "image": "",
+            "image": "/projects/images/AES.jpg",
             "url": "https://github.com/NathanBrodin/AES",
             "linkText": "",
             "github": "https://github.com/NathanBrodin/AES"

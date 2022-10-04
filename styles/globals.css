@@ -6,6 +6,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.dropdown {
+  position: absolute; 
+  inset: 0px auto auto 0px; 
+  margin: 0px; 
+  transform: translate3d(0px, 8847.2px, 0px);
+  }
+
 .tooltip1 {
   position: absolute; 
   inset: 0px auto auto 0px; 

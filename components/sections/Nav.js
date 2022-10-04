@@ -37,7 +37,7 @@ export default function Nav() {
                 { locale === "en" ? "English" : "Français" }
               </button>
               {/* Dropdown menu */}
-              <div className="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-md shadow bg-background-700" id="language-dropdown-menu" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+              <div className="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-md shadow dropdown bg-background-700" id="language-dropdown-menu" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
                 <ul className="py-1" role="none">
                   <li>
                     <Link href={router.asPath} locale={"en"}>
