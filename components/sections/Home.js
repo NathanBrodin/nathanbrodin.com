@@ -1,6 +1,5 @@
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link';
-import HomeBackground from '../HomeBackground';
 import Arrow from '../../public/icons/arrow.svg'
 
 export default function Home() {
@@ -41,8 +40,8 @@ export default function Home() {
             </Link>
         </div>            
       </div>
-      <div className='absolute max-w-lg'>
-        <HomeBackground />
+      <div className='absolute w-full h-full opacity-50 home-bg'>
+        
       </div>
     </section>
   )

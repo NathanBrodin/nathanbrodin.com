@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.home-bg {
+  background-image: linear-gradient(to right bottom, #749a81, #547f77, #416367, #354851, #292f36, #252930, #212329, #1d1e23, #242830, #29323d, #2d3d4b, #2f4858);
+}
+
 .dropdown {
   position: absolute; 
   inset: 0px auto auto 0px; 

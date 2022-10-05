@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <div className="p-4">
-      <footer className="p-4 bg-gray-800 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
+      <footer className="p-4 rounded-lg shadow bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 md:flex md:items-center md:justify-between md:p-6">
         <span className="text-sm text-gray-400 sm:text-center">© {year} <a href="https://nathanbrodin.com/" className="hover:underline">Nathan Brodin™</a>. {t('rights')}</span>
         <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-400 sm:mt-0">
           <li>
