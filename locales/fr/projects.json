@@ -1,12 +1,12 @@
 {
-    "project_title": "My projects",
-    "view_on_github": "View on GitHub",
+    "project_title": "Mes projets",
+    "view_on_github": "Voir sur GitHub",
     "projectsList": [
         {
             "id": 0,
             "icon": "/projects/icons/mypasswordmanager.svg",
             "title": "My Password Manager",
-            "description": "My Password Manager is a chrome extension to store, autofill and submit your informations to any website. Every data is encrypted using AES and stored into Firebase Firestore database.",
+            "description": "My Password Manager est une extension Chrome pour stocker, remplir automatiquement et soumettre vos informations à n'importe quel site Web. Chaque données est crypté à l'aide de l'AES et stocké dans une base de données Firebase Firestore. L'extension fournit une popup avec une page de connexion, d'inscription et une page de tableau de bord. Elle est déjà disponible sur le Chrome Web Store.",
             "tags": [
                 "React.js",
                 "Firebase",
@@ -16,14 +16,14 @@
             ],
             "image": "/projects/images/my-password-manager.png",
             "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
-            "linkText": "View on Chrome Web Store",
+            "linkText": "Voir sur le Chrome Web Store",
             "github": "https://github.com/NathanBrodin/MyPasswordManager"
         },
         {
             "id": 1,
             "icon": "/projects/icons/esieabot.svg",
-            "title": "Esieabot Mobile App", 
-            "description": "The Esieabot mobile application allows you to control the ESIEABOT robot remotely via Bluetooth.",
+            "title": "Application mobile Esieabot", 
+            "description": "L'application mobile Esieabot vous permet de contrôler le robot Esieabot à distance via Bluetooth. Il comprend des fonctionnalités telles que : -Contrôle du robot via quatre flèches directionnelles. -Visualisation en direct de la caméra du robot -Une fonction de retour à la maison -Activation du capteur à ultrasons -Fonction scan de la pièce -Un guide d'utilisation -Appairage automatique avec un nouveau robot -Configuration du wifi du robot via l'application.",
             "tags": [
                 "Kotlin",
                 "Python",
@@ -31,29 +31,29 @@
             ],
             "image": "/projects/images/esieabot.png",
             "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
-            "linkText": "Go on realease page",
+            "linkText": "Aller sur la realease page",
             "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"
         },
         {
             "id": 2,
             "icon": "/projects/icons/portfolio.svg",
-            "title": "Portfolio Website",
-            "description": "Developpement of my personal portfolio. Deployed on Vercel.",
+            "title": "Site Web Portfolio",
+            "description": "Développement de mon portfolio personnel pour présenter tous mes projets. Le site est déployé sur Vercel sous mon nom de domaine personnalisé. J'ai utilisé Next.js pour développer le site Web et Tailwind CSS pour le style. J'utilise également Flowbite pour créer les composants principaux. De nombreuses améliorations sont prévues pour l'avenir.",
             "tags": [
                 "Next.js",
                 "Tailwind CSS",
                 "Flowbite"
             ],
-            "image": "/projects.images/portfolio.png",
+            "image": "/projects/images/portfolio.png",
             "url": "https://nathanbrodin.com/",
-            "linkText": "View my website",
+            "linkText": "Voir mon site",
             "github": "https://github.com/NathanBrodin/nathanbrodin.com"
         },
         {
             "id": 3,
             "icon": "/projects/icons/python.svg",
-            "title": "Python Management System",
-            "description": "Grocery store management system made for Python course at Centria University",
+            "title": "Système de gestion Python",
+            "description": "Système de gestion d'épicerie réalisé pour mon cours Python à l'Université Centria. Le système est fait avec Python et Tkinter personnalisé. Il vous permet de gérer les produits et les commandes.",
             "tags": [
                 "Python",
                 "Tkinter"
@@ -67,10 +67,10 @@
             "id": 4,
             "icon": "/projects/icons/aes.svg",
             "title": "AES",
-            "description": "Implementation of AES 128 in C",
+            "description": "Implémentation d'AES 128 en C. Il permet de chiffrer et déchiffrer un message avec une clé personnalisée en utilisant la documentation officielle d'AES. réalisé pour mon cursus de cryptographie à l'ESIEA.",
             "tags": [
                 "C Programming",
-                "Cryptography"
+                "Cryptographie"
             ],
             "image": "/projects/images/AES.jpg",
             "url": "https://github.com/NathanBrodin/AES",
