@@ -6,7 +6,7 @@ export default function TooltipGitHub(props) {
     const { t } = useTranslation('projects')
 
   return (
-    <div className="px-2 py-2">
+    <div className="px-2 py-2 z-50">
         <button data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button">
             <Link href={props.githubLink}>
                 <a target="_blank">

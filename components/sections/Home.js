@@ -2,6 +2,10 @@ import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link';
 import Arrow from '../../public/icons/arrow.svg'
 
+import Blob1 from "../../public/blobs/blob1.svg";
+import Blob2 from "../../public/blobs/blob2.svg";
+import Blob3 from "../../public/blobs/blob3.svg";
+
 export default function Home() {
   const { t } = useTranslation('home')
   let age = getMyAge()
@@ -14,9 +18,9 @@ export default function Home() {
   }
 
   return (
-    <section className="relative flex items-center justify-center h-[110vh]" id='home'>
+    <section className="relative flex items-center justify-center h-[110vh] bg-background-900 home-clip" id='home'>
       <div className="relative z-10 grid max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 ">
-        <div className="mr-auto place-self-center lg:col-span-7 ">
+        <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-4xl mb-2 text-sm font-bold text-gray-400 md:text-sm xl:text-lg">
               {t('home_title')}</h1>
             <h1 className="max-w-4xl mb-2 text-5xl font-black text-white md:text-6xl xl:text-7xl">
@@ -40,9 +44,13 @@ export default function Home() {
             </Link>
         </div>            
       </div>
-      <div className='absolute w-full h-full opacity-50 home-bg'>
-        
+      <div className='absolute w-full h-full opacity-50 home-bg'>   
       </div>
+      <div className="absolute w-96 h-96 right-0 mr-28">
+        <Blob1 className="absolute text-gradient-start fill-current top-0 -left-10 filter blur-xl opacity-70 animate-blob"/>
+        <Blob2 className="absolute text-gradient-middle fill-current self-center filter blur-xl opacity-70 animate-blob animation-delay-2000"/>
+        <Blob3 className="absolute text-gradient-end fill-current -bottom-8 left-20 filter blur-xl opacity-70 animate-blob animation-delay-4000"/>
+    </div>
     </section>
   )
 }
