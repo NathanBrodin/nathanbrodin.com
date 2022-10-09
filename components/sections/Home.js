@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mr-auto place-self-center lg:col-span-7 ">
             <h1 className="max-w-4xl mb-2 text-sm font-bold text-gray-400 md:text-sm xl:text-lg">
               {t('home_title')}</h1>
-            <h1 className="max-w-4xl mb-2 text-5xl font-extrabold text-white md:text-6xl xl:text-7xl">
+            <h1 className="max-w-4xl mb-2 text-5xl font-black text-white md:text-6xl xl:text-7xl">
               {t('home_name')}</h1>
             <h1 className="max-w-4xl mb-8 text-4xl font-extrabold text-gradient bg-gradient-to-r from-gradient-start to-gradient-end md:text-5xl xl:text-6xl ">
               {t('home_subtitle')}</h1>

@@ -2,102 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "satoshi.css";
+
 html {
     scroll-behavior: smooth;
 }
 
-.home-bg {
-  background-image: linear-gradient(to right bottom, #749a81, #547f77, #416367, #354851, #292f36, #252930, #212329, #1d1e23, #242830, #29323d, #2d3d4b, #2f4858);
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
-}
-
-.dropdown {
-  position: absolute; 
-  inset: 0px auto auto 0px; 
-  margin: 0px; 
-  transform: translate3d(0px, 8847.2px, 0px);
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 
-.tooltip1 {
-  position: absolute; 
-  inset: 0px auto auto 0px; 
-  margin: 0px; 
-  transform: translate3d(0px, 8px, 0px);
-}
-
-.tooltip2 {
-  position: absolute; 
-  left: 0px; 
-  transform: translate3d(0px, 0px, 0px);
-}
-
-@layer utilities {
-    .text-gradient {
+  .text-gradient {
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    } 
+    }
+
+  .home-bg {
+    background-image: linear-gradient(to right bottom, #749a81, #547f77, #416367, #354851, #292f36, #252930, #212329, #1d1e23, #242830, #29323d, #2d3d4b, #2f4858);
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  }
+    
+  .dropdown {
+    position: absolute; 
+    inset: 0px auto auto 0px; 
+    margin: 0px; 
+    transform: translate3d(0px, 8847.2px, 0px);
+  }
+    
+  .tooltip1 {
+    position: absolute; 
+    inset: 0px auto auto 0px; 
+    margin: 0px; 
+    transform: translate3d(0px, 8px, 0px);
+  }
+    
+  .tooltip2 {
+    position: absolute; 
+    left: 0px; 
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
-
- /*
-
---shiny-shamrock: #7FA689ff;
---russian-green: #749A81ff;
---wintergreen-dream: #6A8E7Aff;
---wintergreen-dream-2: #5F8272ff;
---hookers-green: #55766Aff;
---feldgrau: #4A6962ff;
---dark-slate-gray: #3F5D5Bff;
---dark-slate-gray-2: #355153ff;
---dark-slate-gray-3: #2A454Bff;
-
-:root {
-  --primary: #331a3a;
-  --secondary: #1e132e;
-  --tertiary: #5e2648;
-  --quaternary: #551c41;
-  --quinary: #89374c;
-
-  --bg_color: #fff;
-  --text_color: #ffffff;
-  --text_color_secondary: #ffffff;
-}
-
-[data-theme='sunset'] {
-  --primary: #331a3a;
-  --secondary: #1e132e;
-  --tertiary: #5e2648;
-  --quaternary: #551c41;
-  --quinary: #89374c;
-
-  --bg_color: #fff;
-  --text_color: #ffffff;
-  --text_color_secondary: #ffffff;
-  
-}
-
-[data-theme='aurora'] {
-  --primary: #6b6d7f;
-  --secondary: #7fa689;
-  --tertiary: #557e6c;
-  --quaternary: #2b3843;
-  --quinary: #9f8789;
-
-  --bg_color: #fff;
-  --text_color: #ffffff;
-  --text_color_secondary: #ffffff;
-  
-}
-
-[data-theme='seashore'] {
-  --primary: #162523;
-  --secondary: #d1bfa8;
-  --tertiary: #b49679;
-  --quaternary: #475048;
-  --quinary: #8d8475;
-
-  --bg_color: #fff;
-  --text_color: #ffffff;
-  --text_color_secondary: #ffffff;
-  
-}
-*/
