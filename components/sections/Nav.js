@@ -14,7 +14,7 @@ export default function Nav() {
           <Link href={"https://nathanbrodin.com"}>
             <a className="flex items-center">
             <Logo className="h-6 mr-3 sm:h-10"/>
-            <span className="self-center text-xl font-semibold text-white whitespace-nowrap">Nathan Brodin</span>
+            <span className="self-center text-xl font-black text-white whitespace-nowrap">Nathan Brodin</span>
             </a>
           </Link>
         </div>
