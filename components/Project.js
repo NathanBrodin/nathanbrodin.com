@@ -8,15 +8,19 @@ export default function Project(props) {
   const project = props.project
 
   return (
-    <div className='bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 h-96 p-8 rounded-lg z-10'>
+    <div className='bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-8 rounded-lg z-10 pb-20'>
       <div className='flex w-full justify-between'>
         <Image src={project.icon} alt={project.title} width={44} height={44}/>
         <div className='flex'>
           <TooltipGitHub link={project.github}/>
-          <TooltipLink link={project.url}/>
+          <TooltipLink link={project.url} text={project.linkText}/>
         </div>
       </div>
-      <h1 className='font-bold text-white text-2xl my-6'>{project.title}</h1>
+      <Link href={project.url} passHref={true}>
+        <a target="_blank">
+        <h1 className='font-bold text-white text-2xl my-6'>{project.title}</h1>
+        </a>
+      </Link>
       <p className='text-gray-400 text-base mt-2'>{project.description}</p>
       <div className='flex flex-wrap absolute bottom-4'>
         {project.tags.map((tag, index) => (
