@@ -1,5 +1,6 @@
 {
     "project_title": "Mes projets",
+    "project_description": "Voici une liste de quelques-uns des projets sur lesquels j'ai travaillé.",
     "view_on_github": "Voir sur GitHub",
     "projectsList": [
         {
@@ -14,7 +15,6 @@
                 "HTML",
                 "CSS"
             ],
-            "image": "/projects/images/my-password-manager.png",
             "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
             "linkText": "Voir sur le Chrome Web Store",
             "github": "https://github.com/NathanBrodin/MyPasswordManager"
@@ -29,7 +29,6 @@
                 "Python",
                 "Raspberry Pi"
             ],
-            "image": "/projects/images/esieabot.png",
             "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
             "linkText": "Aller sur la realease page",
             "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"
@@ -44,7 +43,6 @@
                 "Tailwind CSS",
                 "Flowbite"
             ],
-            "image": "/projects/images/portfolio.png",
             "url": "https://nathanbrodin.com/",
             "linkText": "Voir mon site",
             "github": "https://github.com/NathanBrodin/nathanbrodin.com"
@@ -58,7 +56,6 @@
                 "Python",
                 "Tkinter"
             ],
-            "image": "/projects/images/management.png",
             "url": "https://github.com/NathanBrodin/Management-System",
             "linkText": "",
             "github": "https://github.com/NathanBrodin/Management-System"
@@ -72,7 +69,6 @@
                 "C Programming",
                 "Cryptographie"
             ],
-            "image": "/projects/images/AES.jpg",
             "url": "https://github.com/NathanBrodin/AES",
             "linkText": "",
             "github": "https://github.com/NathanBrodin/AES"

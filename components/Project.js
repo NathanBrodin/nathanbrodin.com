@@ -6,10 +6,29 @@ import TooltipLink from './TooltipLink'
 
 export default function Project(props) {
   const project = props.project
-  const tags = project.tags
 
   return (
-    <div className='flex flex-col my-8 rounded-lg bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 md:flex-row'>
+    <div className='bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 h-96 p-8 rounded-lg z-10'>
+      <div className='flex w-full justify-between'>
+        <Image src={project.icon} alt={project.title} width={44} height={44}/>
+        <div className='flex'>
+          <TooltipGitHub link={project.github}/>
+          <TooltipLink link={project.url}/>
+        </div>
+      </div>
+      <h1 className='font-bold text-white text-2xl my-6'>{project.title}</h1>
+      <p className='text-gray-400 text-base mt-2'>{project.description}</p>
+      <div className='flex flex-wrap absolute bottom-4'>
+        {project.tags.map((tag, index) => (
+          <Tag key={index} tag={tag}/>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+/*
+<div className='flex flex-col my-8 rounded-lg bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 md:flex-row'>
       <div className='flex items-center w-3/4 mb-8'>
         <div className='flex flex-col justify-between p-4'>
           <div className='flex items-center mx-4 my-4'>
@@ -36,7 +55,6 @@ export default function Project(props) {
       </Link>
       </div>
     </div>
-  )
-}
+*/
 
 

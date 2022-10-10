@@ -8,7 +8,7 @@ export default function TooltipGitHub(props) {
   return (
     <div className="px-2 py-2 z-50">
         <button data-tooltip-target="tooltip-bottom" data-tooltip-placement="bottom" type="button">
-            <Link href={props.githubLink}>
+            <Link href={props.link}>
                 <a target="_blank">
                     <GitHub className='w-6 h-6 stroke-2 fill-transparent stroke-gray-300'/>
                 </a>
