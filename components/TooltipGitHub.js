@@ -14,7 +14,7 @@ export default function TooltipGitHub(props) {
                 </a>
             </Link> 
         </button>
-        <div id="tooltip-bottom" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg shadow-sm opacity-0 tooltip1 tooltip" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+        <div id="tooltip-bottom" role="tooltip" className="absolute  invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg shadow-sm opacity-0 tooltip1 tooltip" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
             {t('view_on_github')}
             <div className="tooltip-arrow tooltip2" data-popper-arrow=""></div>
         </div>

@@ -11,7 +11,7 @@ export default function TooltipLink(props) {
                 </a>
             </Link> 
             </button>
-                <div id="tooltip-bottom2" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white rounded-lg shadow-sm opacity-0 tooltip1 tooltip bg-primary-200" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+                <div id="tooltip-bottom2" role="tooltip" className="absolute invisible inline-block px-3 py-2 text-sm font-medium text-white rounded-lg shadow-sm opacity-0 tooltip1 tooltip bg-primary-200" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
                     {props.text}
                     <div className="tooltip-arrow tooltip2" data-popper-arrow=""></div>
                 </div>

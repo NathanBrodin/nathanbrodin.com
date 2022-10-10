@@ -7,7 +7,7 @@
             "id": 0,
             "icon": "/projects/icons/mypasswordmanager.svg",
             "title": "My Password Manager",
-            "description": "My Password Manager is a Chrome extension to store, autofill, and submit your information to any website. Every bit of data is encrypted using AES and stored in the Firebase Firestore database. The extension provides a popup with a login, a signup, and a dashboard page. It is already available on the Chrome Web Store.",
+            "description": "My Password Manager is a Chrome extension to store, autofill, and submit your information to any website. Every bit of data is encrypted using AES and stored in the Firebase Firestore database. The extension provides a popup with a login, a signup, and a dashboard page. Rated 5/5 on the Chrome Web Store.",
             "tags": [
                 "React.js",
                 "Firebase",
