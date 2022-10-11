@@ -27,7 +27,7 @@ export default function ScrollToTop() {
     }
 
     return (
-        <div className="fixed bottom-0 right-0 z-50 hidden mb-6 mr-4 " id="scroll-to-top">
+        <div className="fixed bottom-0 right-0 z-50 hidden mb-4 mr-2 sm:mb-6 sm:mr-4" id="scroll-to-top">
             <button type="button" onClick={handleClick} className="text-white  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">
                 <Arrow className="w-5 h-5 -rotate-90"/>
             </button>

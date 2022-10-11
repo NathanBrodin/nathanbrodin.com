@@ -21,7 +21,7 @@ export default function Project(props) {
         <h1 className='font-bold text-white text-2xl my-6 group-hover:text-primary-200'>{project.title}</h1>
         </a>
       </Link>
-      <p className='text-gray-400 text-base mt-2'>{project.description}</p>
+      <p className='text-gray-400 text-sm sm:text-base mt-2'>{project.description}</p>
       <div className='flex flex-wrap absolute bottom-4'>
         {project.tags.map((tag, index) => (
           <Tag key={index} tag={tag}/>
