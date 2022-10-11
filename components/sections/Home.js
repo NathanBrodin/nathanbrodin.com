@@ -18,16 +18,16 @@ export default function Home() {
   }
 
   return (
-    <section className="relative flex items-center justify-center h-[110vh] bg-background-900 home-clip" id='home'>
-      <div className="relative z-10 grid max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 ">
+    <section className="relative flex items-center justify-between h-[110vh] bg-background-900 home-clip-phone sm:home-clip" id='home'>
+      <div className="relative z-10 mx-8 sm:mx-32">
         <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-4xl mb-2 text-sm font-bold text-gray-400 md:text-sm xl:text-lg">
+            <h1 className="mb-2 text-xs sm:text-lg font-bold text-gray-400">
               {t('home_title')}</h1>
-            <h1 className="max-w-4xl mb-2 text-5xl font-black text-white md:text-6xl xl:text-7xl">
+            <h1 className="mb-2 text-4xl sm:text-7xl font-black text-white">
               {t('home_name')}</h1>
-            <h1 className="max-w-4xl mb-8 text-4xl font-extrabold text-gradient bg-gradient-to-r from-gradient-start to-gradient-end md:text-5xl xl:text-6xl ">
+            <h1 className="mb-8 text-3xl sm:text-6xl font-extrabold text-gradient bg-gradient-to-r from-gradient-start to-gradient-end">
               {t('home_subtitle')}</h1>
-            <p className="max-w-4xl mb-6 font-light text-gray-400 lg:mb-8 md:text-lg lg:text-xl">
+            <p className="mb-6 text-lg sm:text-xl font-light text-gray-400">
               {t("home_subheading", {age: age})} <Link href={"https://www.esiea.fr"} passHref={true}><a target="_blank" className='text-primary-200 hover:underline'>ESIEA</a></Link>.<br></br> {t("home_opportunity")}</p>
             <Link href="#projects" scroll={false} >
               <a  className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium rounded-lg shadow-2xl group">
@@ -44,9 +44,8 @@ export default function Home() {
             </Link>
         </div>            
       </div>
-      <div className='absolute w-full h-full opacity-50 home-bg'>   
-      </div>
-      <div className="absolute w-96 h-96 right-0 mr-28">
+      <div className='absolute w-full h-full opacity-50 home-bg' />
+      <div className="absolute w-32 h-32 right-0 mr-12 sm:w-96 sm:h-96 sm:mr-28">
         <Blob1 className="absolute text-gradient-start fill-current top-0 -left-10 filter blur-xl opacity-70 animate-blob"/>
         <Blob2 className="absolute text-gradient-middle fill-current self-center filter blur-xl opacity-70 animate-blob animation-delay-2000"/>
         <Blob3 className="absolute text-gradient-end fill-current -bottom-8 left-20 filter blur-xl opacity-70 animate-blob animation-delay-4000"/>

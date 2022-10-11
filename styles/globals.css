@@ -29,6 +29,10 @@ html {
   .home-clip {
     clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
   }
+
+  .home-clip-phone {
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+  }
     
   .dropdown {
     position: absolute; 
