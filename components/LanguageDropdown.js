@@ -10,11 +10,14 @@ export default function LanguageDropdown() {
     const locale = router.locale
 
   return (
-    <div className="flex justify-end p-2 mr-2">
+    <div className="flex justify-end p-2 mr-4">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-gray-300 text-sm bg-black bg-opacity-0 rounded-md hover:bg-opacity-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-          { locale === "en" ? "English" : "Français" }
+          <Menu.Button className="sm:hidden inline-flex justify-center w-ful py-2 text-gray-300 text-xs bg-black bg-opacity-0 rounded-md hover:bg-opacity-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            { locale === "en" ? "En" : "Fr" }
+          </Menu.Button>
+          <Menu.Button className="hidden sm:inline-flex justify-center w-full px-4 py-2 text-gray-300 text-sm bg-black bg-opacity-0 rounded-md hover:bg-opacity-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            { locale === "en" ? "English" : "Français" }
           </Menu.Button>
         </div>
         <Transition

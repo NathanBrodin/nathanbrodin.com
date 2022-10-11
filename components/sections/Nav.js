@@ -8,13 +8,13 @@ export default function Nav() {
   const { t } = useTranslation("common")
 
   return (    
-    <nav className="bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 py-2.5 z-40 fixed w-screen">
+    <nav className="bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 sm:py-2.5 z-40 fixed w-screen">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <div>
           <Link href={"https://nathanbrodin.com"}>
             <a className="flex items-center">
             <Logo className="h-6 mr-3 sm:h-10"/>
-            <span className="self-center text-xl font-black text-white whitespace-nowrap">Nathan Brodin</span>
+            <span className="self-center text-base sm:text-xl font-black text-white whitespace-nowrap">Nathan Brodin</span>
             </a>
           </Link>
         </div>

@@ -8,10 +8,10 @@ export default function MobileDropdown() {
     const { t } = useTranslation("common")
 
   return (
-    <div className="flex justify-end p-2 mr-2 md:hidden">
+    <div className="flex justify-end py-2 md:hidden">
         <Menu as="div" className="relative inline-block text-left">
         <div>
-            <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-gray-300 text-sm bg-black bg-opacity-0 rounded-md hover:bg-opacity-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <Menu.Button className="inline-flex justify-center w-full py-2 text-gray-300 text-sm bg-black bg-opacity-0 rounded-md hover:bg-opacity-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                 <Hamburger className="w-5 h-5" aria-hidden="true"/>
             </Menu.Button>
         </div>
@@ -31,7 +31,7 @@ export default function MobileDropdown() {
                     <button
                     className={`${
                         active ? 'bg-primary-500' : 'text-white'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    } group flex w-full items-center rounded-md px-2 text-sm`}
                     >
                         <Link href="/">
                             <a className="block py-2 pl-3 pr-4 text-white border-gray-700 rounded nav-link md:p-0 md:hover:text-primary-200 hover:bg-background-700 hover:text-primary-200 md:hover:bg-transparent">{t("home")}</a>
@@ -44,7 +44,7 @@ export default function MobileDropdown() {
                     <button
                     className={`${
                         active ? 'bg-primary-500' : 'text-white'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    } group flex w-full items-center rounded-md px-2 text-sm`}
                     >
                         <Link href="#projects" scroll={false} >
                             <a className="block py-2 pl-3 pr-4 text-white border-gray-700 rounded nav-link md:p-0 md:hover:text-primary-200 hover:bg-background-700 hover:text-primary-200 md:hover:bg-transparent">{t("projects")}</a> 
@@ -57,7 +57,7 @@ export default function MobileDropdown() {
                     <button
                     className={`${
                         active ? 'bg-primary-500' : 'text-white'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    } group flex w-full items-center rounded-md px-2 text-sm`}
                     >
                         <Link href="#about" scroll={false} >
                             <a className="block py-2 pl-3 pr-4 text-white border-gray-700 rounded nav-link md:p-0 md:hover:text-primary-200 hover:bg-background-700 hover:text-primary-200 md:hover:bg-transparent">{t("about")}</a> 
@@ -70,7 +70,7 @@ export default function MobileDropdown() {
                     <button
                     className={`${
                         active ? 'bg-primary-500' : 'text-white'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    } group flex w-full items-center rounded-md px-2 text-sm`}
                     >
                         <Link href="#contact" scroll={false} >
                             <a className="block py-2 pl-3 pr-4 text-white border-gray-700 rounded nav-link md:p-0 md:hover:text-primary-200 hover:bg-background-700 hover:text-primary-200 md:hover:bg-transparent">{t("contact")}</a> 
