@@ -1,14 +1,15 @@
+import useTranslation from "next-translate/useTranslation"
 
 export default function Contact() {
-  return (
-    <section className="px-24 py-24" id="contact">
-      <div className="h-1.5 w-24 mb-8 rounded bg-gradient-to-r from-gradient-start to-gradient-end">
-        
-      </div>
-      <h1 className="max-w-2xl px-4 mb-4 text-4xl font-bold text-white md:text-4xl xl:text-4xl">Contact</h1>
+  const { t } = useTranslation('contact')
 
-      <p className="max-w-4xl mb-6 font-light text-gray-400 lg:mb-8 md:text-lg lg:text-xl">
-        This section is not developed yet.
+  return (
+    <section className="px-6 py-12 sm:px-24 sm:py-24" id="about">
+      <div className="h-1 sm:h-1.5 w-16 sm:w-24 mb-4 sm:mb-8 rounded bg-gradient-to-r from-gradient-start to-gradient-end" />
+      <h1 className="px-4 mb-2 sm:mb-4 text-2xl sm:text-4xl font-black text-white">{t("contact_title")}</h1>
+
+      <p className="mb-6 text-sm sm:text-base font-light text-gray-400">
+        {t("contact_description")}
       </p>
     </section>
   )

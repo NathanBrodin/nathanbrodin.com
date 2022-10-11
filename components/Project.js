@@ -8,7 +8,7 @@ export default function Project(props) {
   const project = props.project
 
   return (
-    <div className='bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-8 rounded-lg z-10 pb-20 hover:-translate-y-4 hover:shadow-lg transition ease-in-out duration-300 group'>
+    <div className='bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-8 rounded-lg z-10 pb-20 hover:-translate-y-2 sm:hover:-translate-y-4 hover:shadow-lg transition ease-in-out duration-300 group'>
       <div className='flex w-full justify-between'>
         <Image src={project.icon} alt={project.title} width={44} height={44}/>
         <div className='flex'>
