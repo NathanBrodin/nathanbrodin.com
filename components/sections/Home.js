@@ -1,8 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link';
 import Arrow from '../../public/icons/arrow.svg'
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 import Blob1 from "../../public/blobs/blob1.svg";
 import Blob2 from "../../public/blobs/blob2.svg";

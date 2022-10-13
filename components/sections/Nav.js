@@ -52,8 +52,3 @@ export default function Nav() {
     </nav>
   )
 }
-
-{/* <button data-collapse-toggle="mobile-menu-language-select" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-400 rounded-lg md:hidden focus:outline-none focus:ring-2 hover:bg-background-700 focus:ring-gray-600" aria-controls="mobile-menu-language-select" aria-expanded="false">
-                <span className="sr-only">Open main menu</span>
-                <Hamburger className="w-6 h-6" aria-hidden="true"/>
-              </button> */}

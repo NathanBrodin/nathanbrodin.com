@@ -8,7 +8,7 @@ export default function Project(props) {
   const project = props.project
 
   return (
-    <div data-aos="fade-up"  data-aos-duration="800" data-aos-delay={(project.id % 2) === 0 ? "0" : "200"} className='grid gap-8 content-between bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-8 rounded-lg z-10 hover:-translate-y-2 sm:hover:-translate-y-4 hover:shadow-lg transition ease-in-out duration-300 group'>
+    <div className='grid gap-8 content-between bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-8 rounded-lg z-10 hover:-translate-y-2 sm:hover:-translate-y-4 hover:shadow-lg transition ease-in-out duration-300 group'>
       <div>
         <div className='flex w-full justify-between'>
           <Image src={project.icon} alt={project.title} width={44} height={44}/>

@@ -10,9 +10,6 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
-    "aos": "^3.0.0-beta.6",
-    "flowbite": "^1.5.3",
-    "flowbite-react": "^0.1.11",
     "next": "12.3.1",
     "next-translate": "^1.6.0",
     "react": "18.2.0",
