@@ -12,7 +12,7 @@ export default function Education() {
               </a>
             </Link>
             <div className="flex justify-between">
-              <p className="text-base font-light text-gray-400">Master's degree in software engineering</p>
+              <p className="text-base font-light text-gray-400">Master&apos;s degree in software engineering</p>
               <p className="text-base font-light text-gray-400">2020 - 2025</p>
             </div>
             <p className="text-base font-light text-gray-400">Laval, France</p>
