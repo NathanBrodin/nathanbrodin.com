@@ -19,7 +19,7 @@ export default function Project(props) {
         </div>
         <Link href={project.url} passHref={true}>
           <a target="_blank">
-          <h1 className='font-bold text-white text-2xl my-6 group-hover:text-primary-200'>{project.title}</h1>
+            <h1 className='font-bold text-white text-2xl my-6 group-hover:text-primary-200'>{project.title}</h1>
           </a>
         </Link>
         <p className='text-gray-400 text-sm sm:text-base mt-2'>{project.description}</p>

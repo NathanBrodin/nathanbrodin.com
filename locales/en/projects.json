@@ -37,7 +37,7 @@
             "id": 2,
             "icon": "/projects/icons/portfolio.svg",
             "title": "Portfolio Website",
-            "description": "Development of my personal portfolio to showcase all my projects. The website is deployed on Vercel under my custom domain name. I used Next.js to develop the website and Tailwind CSS for the styling. I also use Flowbite to create the main components. Many improvements are planned for the future.",
+            "description": "Development of my personal portfolio to showcase all my projects. The website is deployed on Vercel under my custom domain name. I used Next.js to develop the website and Tailwind CSS for the styling. Many improvements are planned for the future.",
             "tags": [
                 "Next.js",
                 "Tailwind CSS",
