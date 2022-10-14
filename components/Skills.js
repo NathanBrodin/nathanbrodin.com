@@ -83,8 +83,8 @@ export default function Skills() {
                   <ReactJS className="w-24 h-24"/>
                   <p className='font-medium'>React.js</p>
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                  <NextJS className="w-24 h-24"/>
+                <div className='flex flex-col justify-between items-center'>
+                  <NextJS className="w-20 h-20 mt-2"/>
                   <p className='font-medium'>Next.js</p>
                 </div>
                 <div className='flex flex-col justify-center items-center'>
@@ -127,8 +127,8 @@ export default function Skills() {
                   <Indesign className="w-24 h-24"/>
                   <p className='font-medium'>Indesign</p>
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                  <Illustrator className="w-24 h-24"/>
+                <div className='flex flex-col justify-between items-center'>
+                  <Illustrator className="w-20 h-20 mt-2"/>
                   <p className='font-medium'>Illustrator</p>
                 </div>
               </div>
