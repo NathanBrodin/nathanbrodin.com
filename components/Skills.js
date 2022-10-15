@@ -1,5 +1,6 @@
 import { Tab } from '@headlessui/react'
 import { Fragment } from 'react'
+import useTranslation from "next-translate/useTranslation"
 
 import Android from "../public/skills/android.svg";
 import C from "../public/skills/c.svg";
@@ -19,6 +20,8 @@ import Sql from "../public/skills/sql.svg";
 import Tailwindcss from "../public/skills/tailwindcss.svg";
 
 export default function Skills() {
+  const { t } = useTranslation('about')
+
   return (
     <div className='w-full sm:mx-16 bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-2xl sm:rounded-3xl'>
       <Tab.Group>
@@ -26,28 +29,28 @@ export default function Skills() {
           <Tab as={Fragment}>
             {({ selected }) => (
               <button className={`${selected ? 'bg-primary-500 outline-0' : 'text-white'} font-medium px-2 sm:px-4 py-2 rounded-xl sm:rounded-2xl text-xs sm:text-base w-full h-full`}>
-                Software Development
+                {t("skills_section_1_title")}
               </button>
             )}
           </Tab>
           <Tab as={Fragment}>
             {({ selected }) => (
               <button className={`${selected ? 'bg-primary-500 outline-0' : 'text-white'} font-medium px-2 sm:px-4 py-2 rounded-xl sm:rounded-2xl text-xs sm:text-base w-full h-full`}>
-                Frontend Development
+                {t("skills_section_2_title")}
               </button>
             )}
           </Tab>
           <Tab as={Fragment}>
             {({ selected }) => (
               <button className={`${selected ? 'bg-primary-500 outline-0' : 'text-white'} font-medium px-2 sm:px-4 py-2 rounded-xl sm:rounded-2xl text-xs sm:text-base w-full h-full`}>
-                Backend Development
+                {t("skills_section_3_title")}
               </button>
             )}
           </Tab>
           <Tab as={Fragment}>
             {({ selected }) => (
               <button className={`${selected ? 'bg-primary-500 outline-0' : 'text-white'} font-medium px-2 sm:px-4 py-2 rounded-xl sm:rounded-2xl text-xs sm:text-base w-full h-full`}>
-                Design
+                {t("skills_section_4_title")}
               </button>
             )}
           </Tab>
