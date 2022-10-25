@@ -20,6 +20,20 @@
             "github": "https://github.com/NathanBrodin/MyPasswordManager"
         },
         {
+            "id": 0.5,
+            "icon": "/projects/icons/grammarchecker.svg",
+            "title": "Grammar Checker",
+            "description": "Ce site Web est une reproduction de Quillbot Grammar Checker, un site Web de vérification de la grammaire. Il utilise l'API OpenAI GPT-3 pour vérifier la grammaire et l'orthographe.",
+            "tags": [
+                "Next.js",
+                "Tailwind CSS",
+                "GPT-3"
+            ],
+            "url": "https://grammar-checker.vercel.app/",
+            "linkText": "Voir mon site",
+            "github": "https://github.com/NathanBrodin/grammar-checker"
+        },
+        {
             "id": 1,
             "icon": "/projects/icons/esieabot.svg",
             "title": "Application mobile Esieabot", 
@@ -40,8 +54,7 @@
             "description": "Développement de mon portfolio personnel pour présenter tous mes projets. Le site est déployé sur Vercel sous mon nom de domaine personnalisé. J'ai utilisé Next.js pour développer le site Web et Tailwind CSS pour le style. De nombreuses améliorations sont prévues pour l'avenir.",
             "tags": [
                 "Next.js",
-                "Tailwind CSS",
-                "Flowbite"
+                "Tailwind CSS"
             ],
             "url": "https://nathanbrodin.com/",
             "linkText": "Voir mon site",
