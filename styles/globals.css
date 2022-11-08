@@ -17,11 +17,6 @@ html {
     animation-delay: 4s;
   }
 
-  .text-gradient {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-
   .home-bg {
     background-image: linear-gradient(to right bottom, #749a81, #547f77, #416367, #354851, #292f36, #252930, #212329, #1d1e23, #242830, #29323d, #2d3d4b, #2f4858);
   }
@@ -32,25 +27,5 @@ html {
 
   .home-clip-phone {
     clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
-  }
-    
-  .dropdown {
-    position: absolute; 
-    inset: 0px auto auto 0px; 
-    margin: 0px; 
-    transform: translate3d(0px, 8847.2px, 0px);
-  }
-    
-  .tooltip1 {
-    position: absolute; 
-    inset: 0px auto auto 0px; 
-    margin: 0px; 
-    transform: translate3d(0px, 8px, 0px);
-  }
-    
-  .tooltip2 {
-    position: absolute; 
-    left: 0px; 
-    transform: translate3d(0px, 0px, 0px);
   }
 }

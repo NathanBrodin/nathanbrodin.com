@@ -8,6 +8,8 @@ import Blob3 from "../../public/blobs/blob3.svg";
 
 export default function Home() {
   const { t } = useTranslation('home')
+  const name = t('home_name')
+  const nameLetters = name.split('')
   let age = getMyAge()
   
   function getMyAge() {
@@ -24,8 +26,13 @@ export default function Home() {
             <h1 className="mb-2 text-xs sm:text-lg font-bold text-gray-400">
               {t('home_title')}</h1>
             <h1 className="mb-2 text-4xl sm:text-7xl font-black text-white">
-              {t('home_name')}</h1>
-            <h1 className="mb-8 text-3xl sm:text-6xl font-extrabold text-gradient bg-gradient-to-r from-gradient-start to-gradient-end">
+              {nameLetters.map((letter, index) => (
+                <span key={index} className={`${letter === ' ' ? 'ml-1' : 'ml-0'} hover:text-primary-200`}>
+                  {letter}
+                  </span>
+              ))} 
+            </h1>
+            <h1 className="mb-8 text-3xl sm:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gradient-start to-gradient-end">
               {t('home_subtitle')}</h1>
             <p className="mb-6 text-lg sm:text-xl font-light text-gray-400">
               {t("home_subheading", {age: age})} <Link href={"https://www.esiea.fr"} passHref={true}><a target="_blank" className='text-primary-200 hover:underline'>ESIEA</a></Link>.<br></br> {t("home_opportunity")}</p>
