@@ -8,7 +8,7 @@ export default function Nav() {
   const { t } = useTranslation("common")
 
   return (    
-    <nav className="bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 px-2 sm:px-4 sm:py-2.5 z-40 fixed w-screen">
+    <nav className="bg-neutral-600 glass-bg px-2 sm:px-4 sm:py-2.5 z-40 fixed w-screen">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <div>
           <Link href={"https://nathanbrodin.com"}>

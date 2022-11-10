@@ -17,7 +17,7 @@ export default function TooltipGitHub(props) {
         <Popover.Button className="px-2 py-2 focus:outline-none" onMouseEnter={() => setIsShowing(true)} onMouseLeave={() => setIsShowing(false)} onClick={handleClick}>
             <Link href={props.link}>
                 <a target="_blank">
-                    <GitHub className='w-6 h-6 stroke-2 fill-transparent stroke-gray-300'/>
+                    <GitHub className='w-6 h-6 stroke-2 fill-transparent stroke-gray-300 hover:stroke-yellow-300'/>
                 </a>
             </Link>
         </Popover.Button>
@@ -32,7 +32,7 @@ export default function TooltipGitHub(props) {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0">    
             <Popover.Panel className="absolute left-1/2 z-10 -translate-x-1/2 transform">
-                <div className="px-3 py-2 bg-gray-700 rounded-lg shadow-sm">
+                <div className="px-3 py-2 bg-neutral-100 glass-bg rounded-lg shadow-lg">
                     <p className="text-sm font-medium text-white whitespace-nowrap">{t('view_on_github')}</p>
                 </div>
             </Popover.Panel>

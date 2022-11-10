@@ -23,9 +23,9 @@ export default function Skills() {
   const { t } = useTranslation('about')
 
   return (
-    <div className='w-full sm:mx-16 bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-2xl sm:rounded-3xl'>
+    <div className='w-full sm:mx-16  bg-white/[0.1] rounded-2xl sm:rounded-xl border border-neutral-600'>
       <Tab.Group>
-        <Tab.List className="flex px-2 py-2 w-full justify-around items-center">
+        <Tab.List className="flex px-2 py-2 w-full justify-around items-center bg-neutral-900/95 rounded-t-2xl sm:rounded-t-xl">
           <Tab as={Fragment}>
             {({ selected }) => (
               <button className={`${selected ? 'bg-primary-500 outline-0' : 'text-white'} font-medium px-2 sm:px-4 py-2 rounded-xl sm:rounded-2xl text-xs sm:text-base w-full h-full`}>
@@ -55,12 +55,12 @@ export default function Skills() {
             )}
           </Tab>
         </Tab.List>
-        <Tab.Panels className="w-full  bg-background-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-6">
+        <Tab.Panels className="w-full p-6 bg-neutral-900/95 rounded-b-2xl sm:rounded-b-xl">
           <Tab.Panel>
             <div className='grid grid-cols-4 sm:grid-cols-8 gap-4'>
               <div className='flex flex-col justify-center items-center'>
-                <C className="w-12 h-12 sm:w-24 sm:h-24"/>
-                <p className='font-medium text-xs sm:text-base'>C</p>
+                <C className="w-12 h-12 sm:w-20 sm:h-20 z-10"/>
+                <p className='font-semibold text-xs sm:text-base z-10'>C</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
                 <Csharp className="w-12 h-12 sm:w-24 sm:h-24"/>

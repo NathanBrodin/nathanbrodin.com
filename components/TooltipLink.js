@@ -19,7 +19,7 @@ export default function TooltipLink(props) {
         <Popover.Button className="px-2 py-2 focus:outline-none" onMouseEnter={() => setIsShowing(true)} onMouseLeave={() => setIsShowing(false)} onClick={handleClick}>
             <Link href={props.link} passHref={true}>
                 <a target="_blank">
-                    <Play className='w-6 h-6 stroke-2 fill-transparent stroke-primary-200'/>
+                    <Play className='w-6 h-6 stroke-2 fill-transparent stroke-primary-200 hover:stroke-yellow-300'/>
                 </a>
             </Link> 
         </Popover.Button>
@@ -33,8 +33,8 @@ export default function TooltipLink(props) {
             leave="transition duration-75 ease-out"
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0">    
-            <Popover.Panel className="absolute left-1/2 z-10 -translate-x-1/2 transform">
-                <div className="px-3 py-2 bg-primary-200 rounded-lg shadow-sm">
+            <Popover.Panel className="absolute left-100 z-10 -translate-x-2/3 transform">
+                <div className="px-3 py-2 bg-primary-300/70 rounded-lg shadow-lg">
                     <p className="text-sm font-medium text-white whitespace-nowrap">{props.text}</p>
                 </div>
             </Popover.Panel>

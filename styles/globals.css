@@ -9,6 +9,10 @@ html {
 }
 
 @layer utilities {
+  .glass-bg {
+    @apply bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10;
+  }
+
   .animation-delay-2000 {
     animation-delay: 2s;
   }
@@ -27,5 +31,13 @@ html {
 
   .home-clip-phone {
     clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+  }
+
+  .gradient-radial {
+    background: radial-gradient(
+      800px circle at var(--mouse-pos-x) var(--mouse-pos-y),
+      rgba(255, 255, 255, 0.7),
+      transparent 40%
+    );
   }
 }
