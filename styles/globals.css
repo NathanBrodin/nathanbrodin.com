@@ -5,24 +5,38 @@
 @import "satoshi.css";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .glass-bg {
-    @apply bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10;
+    @apply bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter;
   }
 
   .animation-delay-2000 {
     animation-delay: 2s;
   }
-  
+
   .animation-delay-4000 {
     animation-delay: 4s;
   }
 
   .home-bg {
-    background-image: linear-gradient(to right bottom, #749a81, #547f77, #416367, #354851, #292f36, #252930, #212329, #1d1e23, #242830, #29323d, #2d3d4b, #2f4858);
+    background-image: linear-gradient(
+      to right bottom,
+      #749a81,
+      #547f77,
+      #416367,
+      #354851,
+      #292f36,
+      #252930,
+      #212329,
+      #1d1e23,
+      #242830,
+      #29323d,
+      #2d3d4b,
+      #2f4858
+    );
   }
 
   .home-clip {

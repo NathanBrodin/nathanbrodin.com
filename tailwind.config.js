@@ -34,11 +34,11 @@ module.exports = {
           start: "#749A81",
           middle: "#3C6970",
           end: "#2F4858",
-        }
+        },
       },
       fontFamily: {
-        "sans": ["Satoshi", "sans-serif"],
-        "italic": ["Satoshi-Italic", "sans-serif"],
+        sans: ["Satoshi", "sans-serif"],
+        italic: ["Satoshi-Italic", "sans-serif"],
       },
       animation: {
         blob: "blob 7s infinite",
@@ -61,4 +61,4 @@ module.exports = {
       },
     },
   },
-}
+};

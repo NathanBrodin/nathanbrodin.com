@@ -1,9 +1,9 @@
 {
-    "home": "Home",
-    "projects": "Projects",
-    "about": "About   ",
-    "contact": "Contact",
-    "rights": "All rights reserved.",
-    "licence": "MIT Licence",
-    "github": "See this repository on GitHub"
+  "home": "Home",
+  "projects": "Projects",
+  "about": "About   ",
+  "contact": "Contact",
+  "rights": "All rights reserved.",
+  "licence": "MIT Licence",
+  "github": "See this repository on GitHub"
 }

@@ -1,8 +1,8 @@
 {
-    "home_title": "Salut, je suis",
-    "home_name": "Nathan Brodin.",
-    "home_subtitle": "Je suis développeur.",
-    "home_subheading": "Je suis un étudiant français de {{age}} ans à l'école d'ingénieur ",
-    "home_opportunity": "Je recherche un stage d'été en 2023.",
-    "home_get_started": "Découvrir"
+  "home_title": "Salut, je suis",
+  "home_name": "Nathan Brodin.",
+  "home_subtitle": "Je suis développeur.",
+  "home_subheading": "Je suis un étudiant français de {{age}} ans à l'école d'ingénieur ",
+  "home_opportunity": "Je recherche un stage d'été en 2023.",
+  "home_get_started": "Découvrir"
 }
