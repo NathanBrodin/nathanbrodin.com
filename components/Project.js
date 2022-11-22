@@ -34,7 +34,7 @@ export default function Project(props) {
                   </h1>
                 </a>
               </Link>
-              <p className="text-sm font-medium text-gray-400 lg:text-base">
+              <p className="text-sm font-medium text-gray-400 lg:text-base text">
                 {project.description}
               </p>
             </div>

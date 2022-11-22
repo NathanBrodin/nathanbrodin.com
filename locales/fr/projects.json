@@ -7,34 +7,34 @@
       "id": 0,
       "icon": "/projects/icons/mypasswordmanager.svg",
       "title": "My Password Manager",
-      "description": "My Password Manager est une extension Chrome pour stocker, remplir automatiquement et soumettre vos informations à n'importe quel site Web. Chaque données est crypté à l'aide de l'AES et stocké dans une base de données Firebase Firestore. L'extension fournit une popup avec une page de connexion, d'inscription et une page de tableau de bord. Noté 5/5 sur le Chrome Web Store.",
+      "description": "My Password Manager est une extension Chrome pour stocker, remplir automatiquement et soumettre vos informations à n'importe quel site Web. Chaque bit de données est crypté à l'aide d'AES et stocké dans la base de données Firebase Firestore. Noté 5/5 sur le Chrome Web Store.",
       "tags": ["React.js", "Firebase", "Javascript", "HTML", "CSS"],
       "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
       "linkText": "Voir sur le Chrome Web Store",
       "github": "https://github.com/NathanBrodin/MyPasswordManager"
     },
     {
-      "id": 0.5,
+      "id": 1,
       "icon": "/projects/icons/grammarchecker.svg",
       "title": "Grammar Checker",
-      "description": "Ce site Web est une reproduction de Quillbot Grammar Checker, un site Web de vérification de la grammaire. Il utilise l'API OpenAI GPT-3 pour vérifier la grammaire et l'orthographe.",
+      "description": "Ce site Web est une reproduction de Quillbot Grammar Checker, un site Web de vérification de la grammaire. Il utilise l'API OpenAI GPT-3 pour vérifier la grammaire et l'orthographe. Inclut le mode jour/nuit, la fonction de copie et d'annulation et la conception réactive.",
       "tags": ["Next.js", "Tailwind CSS", "GPT-3"],
       "url": "https://grammar-checker.vercel.app/",
       "linkText": "Voir mon site",
       "github": "https://github.com/NathanBrodin/grammar-checker"
     },
     {
-      "id": 1,
+      "id": 2,
       "icon": "/projects/icons/esieabot.svg",
       "title": "Application mobile Esieabot",
-      "description": "L'application mobile Esieabot vous permet de contrôler le robot Esieabot à distance via Bluetooth. Il comprend des fonctionnalités telles que : -Contrôle du robot via quatre flèches directionnelles. -Visualisation en direct de la caméra du robot -Une fonction de retour à la maison -Activation du capteur à ultrasons -Fonction scan de la pièce -Un guide d'utilisation -Appairage automatique avec un nouveau robot -Configuration du wifi du robot via l'application.",
+      "description": "L'application mobile Esieabot permet de contrôler le robot Esieabot à distance via Bluetooth. Il intègre des fonctionnalités telles que : La visualisation en direct de la caméra du robot, Une fonction de retour à la maison, Une fonction de scan de la pièce, Un appairage automatique avec un nouveau robot, La configuration du wifi du robot via l'application...",
       "tags": ["Kotlin", "Python", "Raspberry Pi"],
       "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
       "linkText": "Aller sur la realease page",
       "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"
     },
     {
-      "id": 2,
+      "id": 3,
       "icon": "/projects/icons/portfolio.svg",
       "title": "Site Web Portfolio",
       "description": "Développement de mon portfolio personnel pour présenter tous mes projets. Le site est déployé sur Vercel sous mon nom de domaine personnalisé. J'ai utilisé Next.js pour développer le site Web et Tailwind CSS pour le style. De nombreuses améliorations sont prévues pour l'avenir.",
@@ -44,7 +44,7 @@
       "github": "https://github.com/NathanBrodin/nathanbrodin.com"
     },
     {
-      "id": 3,
+      "id": 4,
       "icon": "/projects/icons/python.svg",
       "title": "Système de gestion Python",
       "description": "Système de gestion d'épicerie réalisé pour mon cours Python à l'Université Centria. Le système est fait avec Python et Tkinter personnalisé. Il vous permet de gérer les produits et les commandes.",
@@ -54,7 +54,7 @@
       "github": "https://github.com/NathanBrodin/Management-System"
     },
     {
-      "id": 4,
+      "id": 5,
       "icon": "/projects/icons/aes.svg",
       "title": "AES",
       "description": "Implémentation d'AES 128 en C. Il permet de chiffrer et déchiffrer un message avec une clé personnalisée en utilisant la documentation officielle d'AES. réalisé pour mon cursus de cryptographie à l'ESIEA.",

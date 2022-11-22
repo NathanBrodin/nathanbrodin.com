@@ -7,34 +7,34 @@
       "id": 0,
       "icon": "/projects/icons/mypasswordmanager.svg",
       "title": "My Password Manager",
-      "description": "My Password Manager is a Chrome extension to store, autofill, and submit your information to any website. Every bit of data is encrypted using AES and stored in the Firebase Firestore database. The extension provides a popup with a login, a signup, and a dashboard page. Rated 5/5 on the Chrome Web Store.",
+      "description": "My Password Manager is a Chrome extension to store, autofill, and submit your information to any website. Every bit of data is encrypted using AES and stored in the Firebase Firestore database. Rated 5/5 on the Chrome Web Store.",
       "tags": ["React.js", "Firebase", "Javascript", "HTML", "CSS"],
       "url": "https://chrome.google.com/webstore/detail/my-password-manager/cbdpjheokbekagaiopnocpkccjjjofbn",
       "linkText": "View on Chrome Web Store",
       "github": "https://github.com/NathanBrodin/MyPasswordManager"
     },
     {
-      "id": 0.5,
+      "id": 1,
       "icon": "/projects/icons/grammarchecker.svg",
       "title": "Grammar Checker",
-      "description": "This website is a reproduction of Quillbot Grammar Checker, a grammar checking website. It uses the OpenAI GPT-3 API to check grammar and spelling.",
+      "description": "This website is a reproduction of Quillbot Grammar Checker, a grammar checking website. It uses the OpenAI GPT-3 API to check grammar and spelling. Includes day/night mode, copy and undo function and responsive design.",
       "tags": ["Next.js", "Tailwind CSS", "GPT-3"],
       "url": "https://grammar-checker.vercel.app/",
       "linkText": "View my website",
       "github": "https://github.com/NathanBrodin/grammar-checker"
     },
     {
-      "id": 1,
+      "id": 2,
       "icon": "/projects/icons/esieabot.svg",
       "title": "Esieabot Mobile App",
-      "description": "The Esieabot mobile application allows you to control the robot Esieabot remotely via Bluetooth. It includes features such as: -Robot control via four directional arrows. -Live viewing of the robot camera -A return to home function -Activation of the ultrasonic sensor  -Room scan function  -A user guide -Automatic pairing with a new robot  -Configuration of the robot's wifi via the app.",
+      "description": "The Esieabot mobile application allows to control the robot Esieabot remotely via Bluetooth. It includes features such as: Live viewing of the robot camera, A return to home function, Room scan function, Automatic pairing with a new robot, Configuration of the robot's wifi via the app...",
       "tags": ["Kotlin", "Python", "Raspberry Pi"],
       "url": "https://github.com/PST-Esieabot/Esieabot-Mobile-App/releases/tag/v1.4",
       "linkText": "Go on realease page",
       "github": "https://github.com/PST-Esieabot/Esieabot-Mobile-App"
     },
     {
-      "id": 2,
+      "id": 3,
       "icon": "/projects/icons/portfolio.svg",
       "title": "Portfolio Website",
       "description": "Development of my personal portfolio to showcase all my projects. The website is deployed on Vercel under my custom domain name. I used Next.js to develop the website and Tailwind CSS for the styling. Many improvements are planned for the future.",
@@ -44,7 +44,7 @@
       "github": "https://github.com/NathanBrodin/nathanbrodin.com"
     },
     {
-      "id": 3,
+      "id": 4,
       "icon": "/projects/icons/python.svg",
       "title": "Python Management System",
       "description": "Grocery store management system made for my Python course at Centria University. The system is made with Python and custom Tkinter. It allows you to manage products and orders.",
@@ -54,7 +54,7 @@
       "github": "https://github.com/NathanBrodin/Management-System"
     },
     {
-      "id": 4,
+      "id": 5,
       "icon": "/projects/icons/aes.svg",
       "title": "AES",
       "description": "Implementation of AES 128 in C. It allows you to encrypt and decrypt a message with a custom key using the official documentation of AES. made for my cryptography course at ESIEA.",
