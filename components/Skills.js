@@ -75,8 +75,8 @@ export default function Skills() {
           <Tab.Panel>
             <div className="grid grid-cols-4 gap-4 sm:grid-cols-8">
               <div className="flex flex-col items-center justify-center">
-                <C className="z-10 h-12 w-12 sm:h-20 sm:w-20" />
-                <p className="z-10 text-xs font-semibold sm:text-base">C</p>
+                <C className="h-12 w-12 sm:h-24 sm:w-24" />
+                <p className="text-xs font-medium sm:text-base">C</p>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <Csharp className="h-12 w-12 sm:h-24 sm:w-24" />
