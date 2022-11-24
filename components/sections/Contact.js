@@ -2,6 +2,7 @@ import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import GitHub from "../../public/icons/github-full.svg";
 import Linkedin from "../../public/icons/linkedin.svg";
+import Leetcode from "../../public/icons/leetcode.svg";
 
 export default function Contact() {
   const { t } = useTranslation("contact");
@@ -18,7 +19,7 @@ export default function Contact() {
         <p className="font-base text-sm text-gray-300 lg:text-base">
           {t("contact_description")}
         </p>
-        <div className="flex justify-center gap-4 pt-8">
+        <div className="flex flex-col lg:flex-row justify-center gap-4 pt-8">
           <Link href={"https://github.com/NathanBrodin"} passHref={true}>
             <a
               target={"_blank"}
@@ -41,6 +42,17 @@ export default function Contact() {
               <Linkedin className="h-6 w-6 sm:h-12 sm:w-12" />
               <p className="from-gradient-start to-gradient-end text-xs font-semibold transition duration-300 ease-in-out group-hover:bg-gradient-to-t group-hover:bg-clip-text group-hover:text-transparent sm:text-lg">
                 in/nathan-brodin
+              </p>
+            </a>
+          </Link>
+          <Link href={"https://leetcode.com/NathanBrodin/"} passHref={true}>
+            <a
+              target={"_blank"}
+              className="glass-bg group flex items-center gap-2 rounded-2xl border border-gray-300 bg-white px-2 py-1 shadow-xl transition duration-300 ease-in-out hover:scale-105 hover:border-primary-500 sm:gap-4 sm:px-4 sm:py-3"
+            >
+              <Leetcode className="h-6 w-6 sm:h-12 sm:w-12" />
+              <p className="from-gradient-start to-gradient-end text-xs font-semibold transition duration-300 ease-in-out group-hover:bg-gradient-to-t group-hover:bg-clip-text group-hover:text-transparent sm:text-lg">
+                leetcode.com/NathanBrodin
               </p>
             </a>
           </Link>
