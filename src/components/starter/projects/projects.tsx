@@ -2,8 +2,8 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <div class="text-xl">
-        Nathan Brodin
-    </div>
+    <section id="projects" class="text-xl h-[100vh]">
+        Projects
+    </section>
   );
 });

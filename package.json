@@ -24,8 +24,15 @@
   "devDependencies": {
     "@builder.io/qwik": "^1.2.6",
     "@builder.io/qwik-city": "^1.2.6",
+    "@builder.io/qwik-react": "0.5.0",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@mui/material": "5.13.0",
+    "@mui/x-data-grid": "6.4.0",
     "@types/eslint": "8.40.2",
     "@types/node": "^20.4.0",
+    "@types/react": "18.2.13",
+    "@types/react-dom": "18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "autoprefixer": "^10.4.14",
@@ -33,6 +40,8 @@
     "eslint-plugin-qwik": "^1.2.6",
     "postcss": "^8.4.23",
     "prettier": "2.8.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "tailwindcss": "^3.3.1",
     "typescript": "5.1.6",
     "undici": "5.22.1",
@@ -42,6 +51,7 @@
   },
   "dependencies": {
     "@qwikest/icons": "^0.0.8",
-    "@unpic/qwik": "^0.0.23"
+    "@unpic/qwik": "^0.0.23",
+    "framer-motion": "^10.12.18"
   }
 }
