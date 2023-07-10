@@ -5,7 +5,7 @@ import Projects from "./components/section/projects/projects";
 
 export default function Page() {
   return (
-    <main className="min-h-screen p-8">
+    <main className="min-h-screen p-4 md:p-8">
       <Home />
       <Projects />
       <About />

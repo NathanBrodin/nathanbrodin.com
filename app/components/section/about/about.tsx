@@ -1,7 +1,7 @@
 export default function About() {
     return (
-      <main className="h-screen">
+      <section id="about" className="h-screen">
         About
-      </main>
+      </section >
     )
   }

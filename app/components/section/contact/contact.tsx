@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
-      <main className="h-screen">
+      <section id="contact" className="h-screen">
         Contact
-      </main>
+      </section>
     )
   }

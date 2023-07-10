@@ -1,7 +1,7 @@
 export default function Home() {
     return (
-      <main className="h-screen">
+      <section id="home" className="h-screen">
         Home
-      </main>
+      </section>
     )
   }
