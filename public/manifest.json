@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "nathanbrodin.com",
-  "short_name": "Nathan's portfolio",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#F1F1EA",
-  "description": "This is my portfolio showcasing projects I made."
-}
