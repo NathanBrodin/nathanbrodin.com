@@ -1,3 +1,37 @@
 @tailwind base;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F1F1EA;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #749781;
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #314C59;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+.home-gradient {
+    background: linear-gradient(156deg, #749A81 0%, #547F77 8.65%, #416367 16.98%, #354851 25.31%, #292F36 33.65%, #252930 43.54%, #212329 51.88%, #1D1E23 63.33%, #242830 73.23%, #29323D 82.60%, #2D3D4B 89.38%, #2F4858 98.22%, #2D3D4B 98.23%, #2D3D4B 100%);
+}
+
+.home-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+
+.sm-home-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }  
+  

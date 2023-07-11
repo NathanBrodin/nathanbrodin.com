@@ -40,7 +40,7 @@ export default function Header() {
       const homeSection = document.getElementById("home");
       const homeSectionBottomY = homeSection?.getBoundingClientRect().bottom;
       const isBottom =
-        window.innerHeight + window.scrollY >= homeSectionBottomY!;
+        window.innerHeight + window.scrollY >= homeSectionBottomY! * 1.8;
       setShow(isBottom);
     }
 
@@ -60,7 +60,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-full top-0 left-0 p-4 md:p-8 flex text-white justify-between items-center backdrop-blur bg-gray-500 bg-opacity-20">
+    <header className="fixed w-full z-10 top-0 left-0 p-4 md:p-8 flex text-white justify-between items-center">
       <Link href="/" className="flex items-center gap-4">
         <Logo />
         <motion.div
@@ -72,7 +72,7 @@ export default function Header() {
           Nathan Brodin
         </motion.div>
       </Link>
-      <div className="hidden md:block">
+      <div className="hidden sm:block">
         {pages.map((page: Page) => (
           <Link
             href={page.link}
@@ -88,7 +88,7 @@ export default function Header() {
           </Link>
         ))}
       </div>
-      <div className="block md:hidden">
+      <div className="block sm:hidden">
         <Menu>
           <Menu.Button className="hover:bg-gray-500 hover:bg-opacity-50 hover:rounded">
             <Bars3Icon className="w-8" />
