@@ -40,7 +40,7 @@ export default function Header() {
       const homeSection = document.getElementById("home");
       const homeSectionBottomY = homeSection?.getBoundingClientRect().bottom;
       const isBottom =
-        window.innerHeight + window.scrollY >= homeSectionBottomY! * 1.8;
+        window.innerHeight + window.scrollY >= homeSectionBottomY! * 2;
       setShow(isBottom);
     }
 
@@ -60,7 +60,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-full z-10 top-0 left-0 p-4 md:p-8 flex text-white justify-between items-center">
+    <header className="fixed w-full z-20 top-0 left-0 p-4 md:p-8 flex text-white justify-between items-center">
       <Link href="/" className="flex items-center gap-4">
         <Logo />
         <motion.div
