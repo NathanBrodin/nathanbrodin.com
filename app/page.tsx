@@ -7,9 +7,11 @@ export default function Page() {
   return (
     <main className="min-h-screen">
       <Home />
-      <Projects />
-      <About />
-      <Contact />
+      <div className="p-4 md:p-8">
+        <Projects />
+        <About />
+        <Contact />
+      </div>
     </main>
-  )
+  );
 }

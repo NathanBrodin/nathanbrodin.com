@@ -1,8 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
+import HackedTexts from "../../ui/texts/hackedTexts";
 
 export default function Home() {
   const [backgroundIsSticky, setBackgroundIsSticky] = useState<boolean>(false);
+
+  const data = [
+    "software engineer",
+    "front-end engineer",
+    "react developer",
+    "software engineer",
+  ];
 
   useEffect(() => {
     function handleScroll() {
@@ -31,11 +39,7 @@ export default function Home() {
           Nathan Brodin
         </div>
         <div className="text-2xl md:text-3xl lg:text-4xl">
-          A 21 years old{" "}
-          <span className="font-bold text-3xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-            software engineer
-          </span>{" "}
-          from France.
+          A 21 years old <HackedTexts>{data}</HackedTexts> from France.
         </div>
       </div>
     </section>

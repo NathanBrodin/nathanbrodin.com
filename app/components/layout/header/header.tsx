@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, Fragment } from "react";
+import { useEffect, useState, Fragment, useRef } from "react";
 import Link from "next/link";
 import { Logo } from "@/app/media/Logo";
 import { motion } from "framer-motion";
@@ -19,8 +19,9 @@ const pages: Page[] = [
 ];
 
 export default function Header() {
-  const [currentSection, setCurrentSection] = useState<string>("home");
-  const [show, setShow] = useState<boolean>(false);
+  const currentSectionRef = useRef("home");
+  const showRef = useRef(false);
+  const [, setRender] = useState({});
 
   useEffect(() => {
     function handleScroll() {
@@ -35,13 +36,15 @@ export default function Header() {
         }
       });
 
-      setCurrentSection(currentSection);
+      currentSectionRef.current = currentSection;
 
       const homeSection = document.getElementById("home");
       const homeSectionBottomY = homeSection?.getBoundingClientRect().bottom;
       const isBottom =
         window.innerHeight + window.scrollY >= homeSectionBottomY! * 2;
-      setShow(isBottom);
+      showRef.current = isBottom;
+
+      setRender({});
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -65,7 +68,7 @@ export default function Header() {
         <Logo />
         <motion.div
           initial="hidden"
-          animate={show ? "visible" : "hidden"}
+          animate={showRef.current ? "visible" : "hidden"}
           variants={nameVariants}
           className="text-white font-[900] text-2xl"
         >
@@ -79,7 +82,7 @@ export default function Header() {
             key={page.name}
             data-section={page.name.toLowerCase()}
             className={`font-bold m-4 transition-all duration-500 ${
-              currentSection === page.name.toLowerCase()
+              currentSectionRef.current === page.name.toLowerCase()
                 ? "text-primary"
                 : "text-white"
             }`}
@@ -94,14 +97,14 @@ export default function Header() {
             <Bars3Icon className="w-8" />
           </Menu.Button>
           <Transition
-          as={Fragment}
-          enter="transition ease-out duration-100"
-          enterFrom="transform opacity-0 scale-95"
-          enterTo="transform opacity-100 scale-100"
-          leave="transition ease-in duration-75"
-          leaveFrom="transform opacity-100 scale-100"
-          leaveTo="transform opacity-0 scale-95"
-        >
+            as={Fragment}
+            enter="transition ease-out duration-100"
+            enterFrom="transform opacity-0 scale-95"
+            enterTo="transform opacity-100 scale-100"
+            leave="transition ease-in duration-75"
+            leaveFrom="transform opacity-100 scale-100"
+            leaveTo="transform opacity-0 scale-95"
+          >
             <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-left  focus:outline-none flex flex-col">
               {pages.map((page: Page) => {
                 return (
@@ -110,7 +113,7 @@ export default function Header() {
                       <Link
                         href={page.link}
                         className={`font-bold transition-all duration-500 ${
-                          currentSection === page.name.toLowerCase()
+                          currentSectionRef.current === page.name.toLowerCase()
                             ? "text-primary"
                             : "text-white"
                         }
