@@ -1,30 +1,30 @@
-"use client";
+import React, { useEffect, useState, ReactElement } from 'react';
+import HackedText from './hackedText';
 
-import { useEffect, useState } from "react";
-import HackedText from "./hackedText";
-
-interface hackedTextsProps {
-  children: string[];
+interface HackedTextsProps {
+  children: ReactElement[];
 }
 
-export default function HackedTexts({ children }: hackedTextsProps) {
+export default function HackedTexts({ children }: HackedTextsProps) {
   const [isAnimating, setIsAnimating] = useState(false);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
+  const texts = children.map(child => child.props.children);
+
   useEffect(() => {
     let timeoutId: NodeJS.Timeout;
-    if (!isAnimating && currentTextIndex < children.length - 1) {
+    if (!isAnimating) {
       timeoutId = setTimeout(() => {
-        setCurrentTextIndex(currentTextIndex + 1);
-      }, 1000); // delay of 1 second
+        setCurrentTextIndex((currentTextIndex + 1) % texts.length);
+      }, 1000);
     }
 
-    return () => clearTimeout(timeoutId); // clear the timeout if the component is unmounted
-  }, [children.length, currentTextIndex, isAnimating]);
+    return () => clearTimeout(timeoutId);
+  }, [texts.length, currentTextIndex, isAnimating]);
 
   return (
     <HackedText key={currentTextIndex} setIsAnimating={setIsAnimating}>
-      {children[currentTextIndex]}
+      {texts[currentTextIndex]}
     </HackedText>
   );
 }

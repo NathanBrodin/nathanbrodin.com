@@ -1,4 +1,6 @@
 export default function Projects() {
+  // TODO: ADD PARALAX TO BG: https://www.youtube.com/watch?v=gxWSju6jxEA&t=174s
+
     return (
       <section id="projects" className="flex justify-center w-full">
         <div className="flex flex-col items-center">
