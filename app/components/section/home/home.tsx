@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="p-4 md:p-8 h-[110vh] sticky top-[-96vh] sm:top-[-96vh] md:top-[-92vh] sm-home-clip sm:home-clip home-gradient flex items-center text-white"
+      className="p-4 md:p-8 h-[110vh] sticky top-[-96vh] z-20 sm:top-[-96vh] md:top-[-92vh] sm-home-clip sm:home-clip home-gradient flex items-center text-white"
     >
       <div className="sm:ml-8 lg:ml-24 flex flex-col items-start">
         <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-300">{`Hi, I'm`}</div>

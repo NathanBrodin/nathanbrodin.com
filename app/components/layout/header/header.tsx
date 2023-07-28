@@ -63,7 +63,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-full z-20 top-0 left-0 p-4 md:p-8 flex text-white justify-between items-center">
+    <header className="fixed w-full z-30 top-0 left-0 p-4 md:p-8 flex text-white justify-between items-center">
       <Link href="/" className="flex items-center gap-4">
         <Logo />
         <motion.div
