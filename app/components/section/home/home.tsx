@@ -1,9 +1,24 @@
 "use client";
+import { useEffect, useState } from "react";
 import HackedTexts from "../../ui/texts/hackedTexts";
 
 export default function Home() {
 
   const age = getMyAge();
+
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, [])
+
+  let initialClip = 98;
+  if (width > 640) {
+    initialClip = 97
+  } else if (width > 768) {
+    initialClip = 90
+  }
+
 
   function getMyAge() {
     const birthDate = new Date("2002-07-07");
@@ -19,7 +34,8 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="p-4 md:p-8 h-[110vh] sticky top-[-96vh] z-20 sm:top-[-96vh] md:top-[-92vh] sm-home-clip sm:home-clip home-gradient flex items-center text-white"
+      style={{clipPath: `polygon(0 0, 100% 0, 100% ${initialClip}%, 0% 100%)`}}
+      className="p-4 md:p-8 h-[110vh] sticky top-[-100vh] z-20 sm:top-[-98vh] lg:top-[-95vh] home-gradient flex items-center text-white"
     >
       <div className="sm:ml-8 lg:ml-24 flex flex-col items-start">
         <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-300">{`Hi, I'm`}</div>
