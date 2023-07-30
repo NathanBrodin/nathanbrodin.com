@@ -3,12 +3,12 @@ import SelectPage from "./selectPage";
 
 export default function PlantWatering() {
   return (
-    <div className="flex px-40 ">
-      <div className="w-1/2 flex justify-center">
-        <SelectPage />
-        <HomePage />
+    <div className="flex justify-between flex-col sm:flex-row lg:px-40 h-[870px] sm:h-[530px] lg:h-[600px]">
+      <div className="w-1/2 self-center sm:self-auto sm:translate-x-12 sm:translate-y-10 lg:translate-x-32 lg:justify-self-end lg:translate-y-10">
+        <SelectPage className="transform -translate-x-12 -translate-y-8 md:-translate-x-16 md:-translate-y-10" />
+        <HomePage className="transform translate-x-12 translate-y-8 md:translate-x-16 md:translate-y-10" />
       </div>
-      <div className="space-y-6 rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 w-1/2">
+      <div className="space-y-6 rounded-2xl place-self-center h-fit bg-white p-6 shadow-lg ring-1 ring-gray-900/5 w-full sm:w-1/2 lg:w-1/2">
         <div className="flex justify-between items-center">
           <div className="font-bold text-xl">Plant Watering mobile app</div>
           <div className="w-4">
@@ -29,7 +29,7 @@ export default function PlantWatering() {
             </svg>
           </div>
         </div>
-        <div className="text-slate-600">
+        <div className="text-slate-600 text-sm lg:text-base">
           This project entails a hardware-based plant watering system
           accompanied by a mobile application designed for plant status
           monitoring. <br /> <br />

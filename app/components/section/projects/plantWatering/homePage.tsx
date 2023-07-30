@@ -1,11 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import PhoneOverlay from "./phoneOverlay";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import { useEffect } from "react";
 
-export default function HomePage() {
+interface HomePageProps {
+  className?: string
+}
+
+export default function HomePage({className}: HomePageProps) {
   const moisture = 0;
   const temperature = 0;
   const water = 40;
@@ -25,7 +26,7 @@ export default function HomePage() {
   };
 
   return (
-    <PhoneOverlay className="transform translate-x-24 translate-y-16 md:translate-x-32 md:translate-y-20">
+    <PhoneOverlay className={`${className}`}>
       <div className="flex flex-col gap-2 w-full h-full p-4 sm:p-6">
         <div className="mt-4 text-[#1B4139]">
           <div className="font-bold text-xs lg:text-sm">Welcome !</div>

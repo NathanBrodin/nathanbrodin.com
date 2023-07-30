@@ -1,9 +1,11 @@
-import Image from "next/image";
 import PhoneOverlay from "./phoneOverlay";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import PlantItem, { PlantItemProps } from "./plantItem";
 
-export default function SelectPage() {
+interface SelectPageProps {
+  className?: string
+}
+
+export default function SelectPage({className}: SelectPageProps) {
   const PlantList: PlantItemProps[] = [
     {
       iconPath: "/lune.png",
@@ -33,7 +35,7 @@ export default function SelectPage() {
   ];
 
   return (
-    <PhoneOverlay>
+    <PhoneOverlay className={`${className}`}>
       <div className="flex flex-col gap-2 w-full h-full p-4 sm:p-6">
         <div className="my-4 text-[#1B4139]">
           <div className="font-bold text-xs lg:text-sm">Need some changes ?</div>
