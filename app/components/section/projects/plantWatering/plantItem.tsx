@@ -9,8 +9,8 @@ export interface PlantItemProps {
 
 export default function PlantItem({iconPath, name, values}: PlantItemProps) {
     return (
-        <div className="rounded-xl bg-[#1B4139] flex justify-between items-center p-2 mb-2 first:bg-[#FBB242]">
-            <div className="rounded-xl w-14 p-1 h-14  border-[3px] overflow-hidden flex justify-center items-center">
+        <div className="rounded-xl bg-[#1B4139] flex justify-between items-center p-2 mb-2 first:bg-[#FBB242] ">
+            <div className="rounded-xl w-10 h-10 lg:w-14 lg:h-14  border-[3px] overflow-hidden flex justify-center items-center">
               <Image
                 src={iconPath}
                 width={60}
@@ -19,7 +19,7 @@ export default function PlantItem({iconPath, name, values}: PlantItemProps) {
                 layout="responsive"
               />
             </div>
-            <div className="text-xs flex flex-col text-white">
+            <div className="text-[8px] flex flex-col text-white">
               <div className="font-bold">{name}</div>
               <div>{values}</div>
             </div>

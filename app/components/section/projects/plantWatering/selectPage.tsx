@@ -33,11 +33,11 @@ export default function SelectPage() {
   ];
 
   return (
-    <PhoneOverlay className="hover:z-10">
+    <PhoneOverlay>
       <div className="flex flex-col gap-2 w-full h-full p-4 sm:p-6">
         <div className="my-4 text-[#1B4139]">
-          <div className="font-bold text-sm">Need some changes ?</div>
-          <div className="text-xs">Select a plant, or create one !</div>
+          <div className="font-bold text-xs lg:text-sm">Need some changes ?</div>
+          <div className="text-[8px] lg:text-xs">Select a plant, or create one !</div>
         </div>
         <div className="overflow-hidden">
           {PlantList.map((plant, index) => {

@@ -9,10 +9,10 @@ interface Props {
 export default function PhoneOverlay({ children, className }: Props) {
   return (
     <div
-      className={`absolute bg-[#EEEBE5] rounded-[4rem] hover:z-10 ${className} transition-all duration-500`}
+      className={`absolute bg-[#EEEBE5] rounded-[3.5rem] sm:rounded-[4rem] hover:z-10 ${className} transition-all duration-500 `}
     >
       <div className="flex flex-col relative items-center justify-center h-full overflow-hidden">
-        <div className="absolute w-full h-full">{children}</div>
+        <div className="absolute w-full h-full ">{children}</div>
         <div className="w-48 sm:w-56 md:w-56 lg:w-56 xl:w-64">
           <Image
             src="/phoneOverlay.png"
