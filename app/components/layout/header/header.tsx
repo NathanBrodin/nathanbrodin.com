@@ -3,7 +3,7 @@ import { useEffect, useState, Fragment, useRef } from "react";
 import Link from "next/link";
 import { Logo } from "@/app/media/Logo";
 import { motion } from "framer-motion";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Menu as MenuIcon } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
 
 interface Page {
@@ -94,7 +94,7 @@ export default function Header() {
       <div className="block sm:hidden">
         <Menu>
           <Menu.Button className="hover:bg-gray-500 hover:bg-opacity-50 hover:rounded">
-            <Bars3Icon className="w-8" />
+            <MenuIcon className="w-8" />
           </Menu.Button>
           <Transition
             as={Fragment}

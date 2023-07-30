@@ -38,7 +38,7 @@ export default function Home() {
       className="p-4 md:p-8 h-[110vh] sticky top-[-100vh] z-20 sm:top-[-98vh] lg:top-[-95vh] home-gradient flex items-center text-white"
     >
       <div className="sm:ml-8 lg:ml-24 flex flex-col items-start">
-        <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-300">{`Hi, I'm`}</div>
+        <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-300">{`Hi, I'm`}</div>
         <div className="text-6xl md:text-7xl lg:text-8xl font-black">
           Nathan Brodin
         </div>

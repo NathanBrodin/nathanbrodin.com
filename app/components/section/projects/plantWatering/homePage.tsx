@@ -1,12 +1,12 @@
 import Image from "next/image";
 import PhoneOverlay from "./phoneOverlay";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRight } from "lucide-react";
 
 interface HomePageProps {
-  className?: string
+  className?: string;
 }
 
-export default function HomePage({className}: HomePageProps) {
+export default function HomePage({ className }: HomePageProps) {
   const moisture = 0;
   const temperature = 0;
   const water = 40;
@@ -30,7 +30,9 @@ export default function HomePage({className}: HomePageProps) {
       <div className="flex flex-col gap-2 w-full h-full p-4 sm:p-6">
         <div className="mt-4 text-[#1B4139]">
           <div className="font-bold text-xs lg:text-sm">Welcome !</div>
-          <div className="text-[8px] lg:text-xs">Your watering system is on point</div>
+          <div className="text-[8px] lg:text-xs">
+            Your watering system is on point
+          </div>
         </div>
         <div className="flex-1 w-full flex gap-2">
           <div className="bg-[#1B4139] w-full rounded-xl flex flex-col justify-between mt-2">
@@ -91,8 +93,11 @@ export default function HomePage({className}: HomePageProps) {
                 layout="responsive"
               />
             </div>
-            <div className="bg-white rounded-full w-8 h-8 flex justify-center content-center">
-              <ArrowRightIcon className="w-4 sm:w-4 lg:w-4" />
+            <div className="bg-white rounded-full w-8 h-8 flex justify-center items-center">
+              <ArrowRight
+                strokeWidth={2}
+                className="w-4 sm:w-4 lg:w-6 text-[#1B4139]"
+              />
             </div>
           </div>
         </div>

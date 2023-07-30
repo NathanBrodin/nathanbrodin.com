@@ -10,7 +10,7 @@ export default function PlantWatering() {
       </div>
       <div className="space-y-6 rounded-2xl place-self-center h-fit bg-white p-6 shadow-lg ring-1 ring-gray-900/5 w-full sm:w-1/2 lg:w-1/2">
         <div className="flex justify-between items-center">
-          <div className="font-bold text-xl">Plant Watering mobile app</div>
+          <div className="font-bold text-xl">Smart Plant Watering System</div>
           <div className="w-4">
             <svg
               stroke-width="3"
@@ -29,15 +29,15 @@ export default function PlantWatering() {
             </svg>
           </div>
         </div>
-        <div className="text-slate-600 text-sm lg:text-base">
-          This project entails a hardware-based plant watering system
-          accompanied by a mobile application designed for plant status
+        <div className="text-gray-500 text-sm lg:text-base">          
+          I developed a smart plant watering system,
+          featuring a hardware setup with automatic watering, moisture, temperature, and light
+          sensors, paired with a mobile application for remote plant status
           monitoring. <br /> <br />
-          The hardware setup includes sensors for detecting moisture levels,
-          temperature, and light exposure, while the mobile app allows users to
-          remotely receive real-time updates on plant conditions. <br /> <br />
-          The system aims to provide an efficient and convenient method for
-          plant care management.
+          This system presents a practical and efficient solution
+          for plant care management by offering real-time updates on plant
+          conditions.<br /> <br />
+          The intuitive and aesthetically pleasing UI, crafted by me, elevates the user experience.
         </div>
         <div>
           <div className="font-bold">Tech Stack</div>

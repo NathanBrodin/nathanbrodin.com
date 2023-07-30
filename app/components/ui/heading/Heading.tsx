@@ -9,7 +9,7 @@ export default function Heading({ title, subtitle }: Props) {
       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-transparent bg-gradient-to-t from-secondary to-primary bg-clip-text ">
         {title}
       </h1>
-      <h2 className="text-sm sm:text-base lg:text-lg font-medium text-slate-600">
+      <h2 className="text-sm sm:text-base lg:text-lg font-medium text-gray-500">
         {subtitle}
       </h2>
     </div>

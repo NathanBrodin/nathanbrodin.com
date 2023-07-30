@@ -1,3 +1,4 @@
+import RadialGradientCard from "../../ui/cards/RadialGradientCard";
 import Heading from "../../ui/heading/Heading";
 import PlantWatering from "./plantWatering/plantWatering";
 
@@ -9,6 +10,7 @@ export default function Projects() {
       <Heading title="My projects" subtitle="Here&apos;s an overview of some of the projects I&apos;ve worked on."/>
 
       <PlantWatering />
+      <RadialGradientCard />
     </section>
   );
 }
