@@ -3,22 +3,20 @@ import { useEffect, useState } from "react";
 import HackedTexts from "../../ui/texts/hackedTexts";
 
 export default function Home() {
-
   const age = getMyAge();
 
-  const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    setWidth(window.innerWidth)
-  }, [])
+    setWidth(window.innerWidth);
+  }, []);
 
-  let initialClip = 98;
+  let initialClip = 95;
   if (width > 640) {
-    initialClip = 97
+    initialClip = 95;
   } else if (width > 768) {
-    initialClip = 90
+    initialClip = 95;
   }
-
 
   function getMyAge() {
     const birthDate = new Date("2002-07-07");
@@ -34,15 +32,14 @@ export default function Home() {
   return (
     <section
       id="home"
-      style={{clipPath: `polygon(0 0, 100% 0, 100% ${initialClip}%, 0% 100%)`}}
-      className="p-4 md:p-8 h-[110vh] sticky top-[-100vh] z-20 sm:top-[-98vh] lg:top-[-95vh] home-gradient flex items-center text-white"
+      className="sticky h-[105vh] top-[calc(-105vh+4em)] lg:top-[calc(-105vh+5rem)] z-20 home-gradient flex items-center"
     >
-      <div className="sm:ml-8 lg:ml-24 flex flex-col items-start">
-        <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-300">{`Hi, I'm`}</div>
-        <div className="text-6xl md:text-7xl lg:text-8xl font-black">
+      <div className="mx-auto w-full max-w-7xl px-4 md:px-6">
+        <p className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-300">{`Hi, I'm`}</p>
+        <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-6xl md:leading-[1.1] lg:col-span-2 lg:text-8xl lg:leading-[1.125em]">
           Nathan Brodin
-        </div>
-        <div className="text-2xl md:text-3xl lg:text-4xl">
+        </h1>
+        <div className="text-lg leading-[1.4] text-gray-300 lg:text-xl font-medium">
           A {age} years old{" "}
           <HackedTexts>
             <li>software engineer</li>
@@ -51,7 +48,6 @@ export default function Home() {
           </HackedTexts>{" "}
           from France.
         </div>
-        <button>Get started</button>
       </div>
     </section>
   );

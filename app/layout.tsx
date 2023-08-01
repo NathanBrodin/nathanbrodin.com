@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/icon.svg" sizes="any" />
       <body
-        className={`${satoshi.variable} ${satoshiItalic.variable} font-sans bg-background`}
+        className={`${satoshi.variable} ${satoshiItalic.variable} font-sans bg-background flex min-h-full flex-col`}
       >
         <Header />
         {children}

@@ -43,7 +43,7 @@ export default function HackedText({ children, setIsAnimating }: HackedTextProps
 
   return (
     <span
-      className="font-bold text-3xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
+      className="font-bold text-2xl leading-[1.4] lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
       style={{ fontFamily: "monospace" }}
     >
       {text}
