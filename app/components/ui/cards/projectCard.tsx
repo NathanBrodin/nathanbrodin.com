@@ -31,7 +31,7 @@ export default function ProjectCard({
           {year} | {projectType}
         </h3>
         <div className="mt-2 flex items-center gap-x-2">
-          <span className="text-5xl font-bold tracking-tight text-black">
+          <span className="text-4xl sm:text-5xl font-bold tracking-tight text-black">
             {projectName}
           </span>
         </div>
@@ -40,7 +40,7 @@ export default function ProjectCard({
         </p>
         <div className="flex justify-between items-start">
           <div className="flex flex-col">
-            <div className="flex gap-2 items-center mb-2">
+            <div className="flex gap-2 items-center mb-2 ">
               <Layers className="text-secondary" />
               <h3 className="text-base font-semibold leading-7 text-primary">
                 Teck stack
@@ -50,7 +50,7 @@ export default function ProjectCard({
               {stack?.map((item, index) => {
                 return (
                   <div
-                    className="flex gap-2 items-center hover:translate-x-2 transition-all"
+                    className="flex gap-2 items-center hover:translate-x-2 transition-all "
                     key={index}
                   >
                     <div className="w-0.5 h-4 bg-primary rounded-sm"></div>
@@ -61,7 +61,7 @@ export default function ProjectCard({
             </div>
           </div>
           {repoLink && (
-            <Link href={repoLink} className="flex flex-col items-end">
+            <Link href={repoLink} className="flex flex-col items-end mr-8">
               <div className="flex gap-2 items-center mb-2">
                 {repoType === "GitHub" ? (
                   <Github className="text-secondary" />

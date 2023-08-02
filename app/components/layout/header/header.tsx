@@ -31,7 +31,7 @@ export default function Header() {
         const element = document.getElementById(page.name.toLowerCase());
         const rect = element?.getBoundingClientRect();
 
-        if (rect!.top <= window.innerHeight * 0.8) {
+        if (rect!.top <= window.innerHeight * 0.5) {
           currentSection = page.name.toLowerCase();
         }
       });
@@ -41,7 +41,7 @@ export default function Header() {
       const homeSection = document.getElementById("home");
       const homeSectionBottomY = homeSection?.getBoundingClientRect().bottom;
       const isBottom =
-        window.innerHeight + window.scrollY >= homeSectionBottomY! * 2;
+        window.innerHeight + window.scrollY >= homeSectionBottomY! * 4;
       showRef.current = isBottom;
 
       setRender({});
