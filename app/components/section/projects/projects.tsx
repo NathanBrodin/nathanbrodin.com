@@ -11,7 +11,7 @@ export default function Projects() {
         title="My projects"
         subtitle="Here's an overview of some of the projects I've worked on."
       />
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-16 mx-auto w-full max-w-7xl px-4 md:px-6 items-center">
         <PlantWatering />
         <GrammarChecker />
       </div>
