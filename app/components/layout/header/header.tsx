@@ -83,7 +83,7 @@ export default function Header() {
                 href={page.link}
                 key={page.name}
                 data-section={page.name.toLowerCase()}
-                className={`text-sm font-semibold transition-all duration-500 ${
+                className={`text-sm font-semibold transition-all duration-500 hover:text-primary ${
                   currentSectionRef.current === page.name.toLowerCase()
                     ? "text-primary"
                     : "text-white"
@@ -114,7 +114,7 @@ export default function Header() {
                         {({ active }) => (
                           <Link
                             href={page.link}
-                            className={`font-bold transition-all first:border-none border-l border-white/10 px-4 py-0.5 duration-500 ${
+                            className={`font-bold transition-all first:border-none border-l border-white/10 px-4 py-0.5 duration-500  ${
                               currentSectionRef.current ===
                               page.name.toLowerCase()
                                 ? "text-primary"

@@ -35,6 +35,16 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <div className="fixed left-0 top-0 right-0 bottom-0 background -z-10">
+          <div className="grid gap-8 grid-cols-12 m-auto max-w-7xl">
+            {Array.from({ length: 12 }, (_, index) => (
+              <div
+                key={index}
+                className="border-l border-r border-gray-700/5 min-h-screen"
+              ></div>
+            ))}
+          </div>
+        </div>
       </body>
     </html>
   );

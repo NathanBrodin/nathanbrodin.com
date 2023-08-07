@@ -1,3 +1,4 @@
+import IphoneFrame from "../../ui/frame/iphone";
 import Heading from "../../ui/heading/Heading";
 import GrammarChecker from "./grammarChecker";
 import PlantWatering from "./plantWatering";
@@ -14,6 +15,9 @@ export default function Projects() {
       <div className="flex flex-col gap-16 lg:gap-44 mx-auto w-full max-w-7xl items-center">
         <PlantWatering />
         <GrammarChecker />
+        <IphoneFrame>
+          <h1>Hey, I am an Iphone app</h1>
+        </IphoneFrame>
       </div>
     </section>
   );

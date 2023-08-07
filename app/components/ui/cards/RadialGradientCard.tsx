@@ -20,7 +20,7 @@ export default function RadialGradientCard({ children }: Props) {
 
   return (
     <div
-      className="group relative max-w-xl h-fit rounded-xl border border-white/10 bg-white px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5"
+      className="group relative max-w-xl h-fit rounded-xl border border-white/10 bg-white/60 px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5"
       onMouseMove={handleMouseMove}
     >
       <motion.div
@@ -29,7 +29,7 @@ export default function RadialGradientCard({ children }: Props) {
           background: useMotionTemplate`
             radial-gradient(
               650px circle at ${mouseX}px ${mouseY}px,
-              rgba(49, 76, 89, 0.20),
+              rgb(110, 154, 175, 0.3),
               transparent 80%
             )
           `,
