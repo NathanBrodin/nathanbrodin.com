@@ -4,6 +4,7 @@ import ProjectCard from "@/app/components/ui/cards/projectCard";
 import HomePage from "./homePage";
 import SelectPage from "./selectPage";
 import { useState } from "react";
+import IphoneFrame from "@/app/components/ui/frame/iphone";
 
 export interface PlantItemProps {
   iconPath: string;
@@ -51,17 +52,21 @@ export default function PlantWatering() {
   ]);
 
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between xl:justify-around xl:gap-x-40 lg:w-full">
-      <div className="h-[480px] sm:h-[540px] self-center lg:self-start -translate-x-32 lg:translate-x-0 lg:h-0">
-        <SelectPage
-          plantList={availablePlants}
-          setCurrentPlant={setAvailablePlants}
-          className=""
-        />
-        <HomePage
-          currentPlant={availablePlants[0]}
-          className="transform translate-x-24 translate-y-16 xl:translate-x-32 xl:translate-y-20"
-        />
+    <div className="flex flex-col lg:flex-row w-full items-center justify-center gap-5">
+      <div className="relative w-72 lg:w-96 h-[452px] lg:h-[598px] grid">
+        <div>
+          <IphoneFrame className=" hover:z-10 z-0">
+            <SelectPage
+              plantList={availablePlants}
+              setCurrentPlant={setAvailablePlants}
+            />
+          </IphoneFrame>
+        </div>
+        <div className="absolute transform translate-x-24 translate-y-16 xl:translate-x-32 xl:translate-y-20 hover:z-10 ">
+          <IphoneFrame>
+            <HomePage currentPlant={availablePlants[0]} />
+          </IphoneFrame>
+        </div>
       </div>
       <ProjectCard
         year="2023"

@@ -8,15 +8,20 @@ interface IphoneFrameProps {
 
 export default function IphoneFrame({ children, className }: IphoneFrameProps) {
   return (
-    <div>
+    <div className={`relative ${className} w-48 lg:w-64`}>
       <Image
-      className="h-1/2 w-fit"
         src="/iphoneFrame.svg"
         width={447}
         height={906}
         layout="responsive"
         alt="Iphone"
+        className="max-w-full h-auto "
       />
+      <div className="shadow-xl shadow-black absolute rounded-3xl inset-y-3 left-3 right-3 overflow-hidden bg-[#EEEBE5]  pt-5 lg:pt-8 -z-10">
+        <div className="w-full h-full">
+        {children}
+        </div>
+      </div>
     </div>
   );
 }
