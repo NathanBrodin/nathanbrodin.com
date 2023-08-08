@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
+import Frame from "./iPhoneFrame.svg"
 
 interface IphoneFrameProps {
   children?: ReactNode;
@@ -10,7 +11,7 @@ export default function IphoneFrame({ children, className }: IphoneFrameProps) {
   return (
     <div className={`relative ${className} w-48 lg:w-64`}>
       <Image
-        src="/iphoneFrame.svg"
+        src={Frame}
         width={447}
         height={906}
         layout="responsive"

@@ -12,10 +12,10 @@ interface Page {
 }
 
 const pages: Page[] = [
-  { name: "Home", link: "/home" },
-  { name: "Projects", link: "/projects" },
-  { name: "About", link: "/about" },
-  { name: "Contact", link: "/contact" },
+  { name: "Home", link: "/#home" },
+  { name: "Projects", link: "/#projects" },
+  { name: "About", link: "/#about" },
+  { name: "Contact", link: "/#contact" },
 ];
 
 export default function Header() {
