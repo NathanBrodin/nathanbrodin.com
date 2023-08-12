@@ -83,7 +83,7 @@ export default function Main() {
       <div className="w-full h-full bg-white dark:bg-neutral-800 rounded-lg shadow-lg p-2 sm:p-4">
         <form className="flex flex-col  h-full gap-4">
           <textarea
-            className="resize-none w-full h-full bg-white dark:bg-neutral-800 placeholder-neutral-400"
+            className="resize-none w-full h-full bg-white dark:bg-neutral-800 focus:outline-none focus:border-0 focus:ring-0 placeholder-neutral-400"
             placeholder="Enter your text"
             onChange={handleTextChange}
             value={text}

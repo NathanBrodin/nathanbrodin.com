@@ -9,7 +9,7 @@ interface IphoneFrameProps {
 
 export default function IphoneFrame({ children, className }: IphoneFrameProps) {
   return (
-    <div className={`relative ${className} w-48 lg:w-64`}>
+    <div className={`relative ${className} w-48 lg:w-64 z-0`}>
       <Image
         src={Frame}
         width={447}
