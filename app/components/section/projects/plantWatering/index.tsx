@@ -15,37 +15,37 @@ export interface PlantItemProps {
 export default function PlantWatering() {
   const [availablePlants, setAvailablePlants] = useState<PlantItemProps[]>([
     {
-      iconPath: "/lune.png",
+      iconPath: "/plantWatering/lune.png",
       name: "Genus of plants",
       values: "13-35° 40-60%",
     },
     {
-      iconPath: "/tomatoes.png",
+      iconPath: "/plantWatering/tomatoes.png",
       name: "Tomatoes",
       values: "18-32° 10-30%",
     },
     {
-      iconPath: "/salads.png",
+      iconPath: "/plantWatering/salads.png",
       name: "Salads",
       values: "10-25° 40-70%",
     },
     {
-      iconPath: "/basilic.png",
+      iconPath: "/plantWatering/basilic.png",
       name: "Basilic",
       values: "18-28° 30-50%",
     },
     {
-      iconPath: "/cactus.png",
+      iconPath: "/plantWatering/cactus.png",
       name: "Cactus",
       values: "25-45° 40-60%",
     },
     {
-      iconPath: "/cabbage.png",
+      iconPath: "/plantWatering/cabbage.png",
       name: "Cabbage",
       values: "18-28° 30-70%",
     },
     {
-      iconPath: "/lavender.png",
+      iconPath: "/plantWatering/lavender.png",
       name: "Lavender",
       values: "25-45° 10-60%",
     },
@@ -62,8 +62,8 @@ export default function PlantWatering() {
             />
           </IphoneFrame>
         </div>
-        <div className="absolute transform translate-x-24 translate-y-16 xl:translate-x-32 xl:translate-y-20 hover:z-10 ">
-          <IphoneFrame>
+        <div className="absolute transform translate-x-24 translate-y-16 xl:translate-x-32 xl:translate-y-20 ">
+          <IphoneFrame className=" hover:z-10 z-0">
             <HomePage currentPlant={availablePlants[0]} />
           </IphoneFrame>
         </div>
