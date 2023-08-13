@@ -1,18 +1,5 @@
 import ProjectCard from "@/app/components/ui/cards/projectCard";
 import GamePlay from "./gamePlay";
-import { GameState } from "./sokoban";
-
-const initialGameState: GameState = {
-  tiles: [
-    ["ground", "ground", "ground", "ground", "ground"],
-    ["ground", "box", "ground", "target", "ground"],
-    ["ground", "ground", "ground", "ground", "ground"],
-    ["ground", "box", "ground", "target", "ground"],
-    ["ground", "ground", "ground", "ground", "ground"],
-  ],
-  playerX: 2,
-  playerY: 2,
-};
 
 export default function Sokoban() {
   return (
@@ -25,7 +12,7 @@ export default function Sokoban() {
         stack={["Flutter", "Dart"]}
         repoLink="https://gitlab.esiea.fr/brodin/sokoban"
       />
-      <GamePlay initialGameState={initialGameState} />
+      <GamePlay/>
     </div>
   );
 }
