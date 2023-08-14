@@ -17,7 +17,7 @@ export default function DirectionPad({onMove}: DirectionPadProps) {
         <Play className="fill-white w-6 h-6 rotate-180" />
       </button>
       <div className="bg-[#627678] hover:opacity-75 flex content-center justify-center">
-        <Image src={"/sokoban/bas_0.png"} alt="icon" width={32} height={24} />
+        <Image src={"/sokoban/player.png"} alt="icon" width={32} height={24} />
       </div>
       <button onClick={() => onMove('right')} className="bg-[#627678] hover:opacity-75 flex content-center justify-center p-1 rounded-r-lg">
         <Play className="fill-white w-6 h-6 " />
