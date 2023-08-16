@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <main className="relative flex grow flex-col">
       <Home />
-      <div className="px-4 md:px-6">
+      <div className="px-4 md:px-6 flex flex-col justify-center items-center content-center">
         <Projects />
         <About />
         <Contact />

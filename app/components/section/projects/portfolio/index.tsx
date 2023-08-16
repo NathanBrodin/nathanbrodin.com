@@ -1,12 +1,20 @@
+import ProjectCard from "@/app/components/ui/cards/projectCard";
+import WebPage from "@/app/components/ui/frame/webPage";
+
 export default function Portfolio() {
   return (
-    <div>
-      <div className="w-[400px] h-[600px] md:w-[700px] md:h-[500px] rounded-3xl border-8 overflow-hidden border-white/30">
-        <iframe
-          src="/"
-          className="w-full h-full"
-        ></iframe>
-      </div>
-    </div>
+    <ProjectCard
+      projectName="Portfolio"
+      projectType="Personnal project"
+      description="I developed a grammar correction tool using the GPT-3 API, inspired by Quillbot's UI. Built with Next.js and TailwindCSS, my application is fully responsive, features light/dark modes, and puts a personal twist on the traditional design, demonstrating my front-end engineering and AI integration skills."
+      year="2023"
+      stack={["Next.js", "Tailwindcss", "Framer motion"]}
+    >
+      <WebPage>
+        <div className="lg:w-[800px] h-full ">
+        <iframe src="/" className="h-full w-full"></iframe>
+        </div>
+      </WebPage>
+    </ProjectCard>
   );
 }

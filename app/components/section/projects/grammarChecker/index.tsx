@@ -2,12 +2,8 @@
 import ProjectCard from "@/app/components/ui/cards/projectCard";
 import HomePage from "./homePage";
 
-import React, {
-  createContext,
-  useContext,
-  useState,
-  ReactNode,
-} from "react";
+import React, { createContext, useContext, useState, ReactNode } from "react";
+import WebPage from "@/app/components/ui/frame/webPage";
 
 type ThemeContextType = {
   theme: string;
@@ -44,24 +40,23 @@ export const useTheme = () => {
 
 export default function GrammarChecker() {
   return (
-    <div className="flex flex-col lg:flex-row w-full items-center justify-center gap-5">
-      <ProjectCard
-        year="2021"
-        projectType="Personal project"
-        projectName="Grammar Checker"
-        description="I developed a grammar correction tool using the GPT-3 API, inspired by
+    <ProjectCard
+      year="2021"
+      projectType="Personal project"
+      projectName="Grammar Checker"
+      description="I developed a grammar correction tool using the GPT-3 API, inspired by
           Quillbot's UI. Built with Next.js and TailwindCSS, my application
           is fully responsive, features light/dark modes, and puts a personal
           twist on the traditional design, demonstrating my front-end
           engineering and AI integration skills."
-        stack={["Next.js", "Tailwind CSS"]}
-        repoLink="https://github.com/NathanBrodin/grammar-checker"
-      />
-      <div className="w-[400px] h-[600px] md:w-[700px] md:h-[500px] rounded-3xl border-8 overflow-hidden border-white/30">
+      stack={["Next.js", "Tailwind CSS"]}
+      repoLink="https://github.com/NathanBrodin/grammar-checker"
+    >
+      <WebPage>
         <ThemeProvider>
           <HomePage />
         </ThemeProvider>
-      </div>
-    </div>
+      </WebPage>
+    </ProjectCard>
   );
 }

@@ -52,7 +52,21 @@ export default function PlantWatering() {
   ]);
 
   return (
-    <div className="flex flex-col lg:flex-row w-full items-center justify-center gap-5">
+    <ProjectCard
+      year="2023"
+      projectType="School project"
+      projectName="Smart Plant Watering System"
+      description="I developed a smart plant watering system,
+      featuring a hardware setup with automatic watering, moisture, temperature, and light
+      sensors, paired with a mobile application for remote plant status
+      monitoring.
+      This system presents a practical and efficient solution
+      for plant care management by offering real-time updates on plant
+      conditions.
+      The intuitive and aesthetically pleasing UI, crafted by me, elevates the user experience."
+      repoLink="https://gitlab.esiea.fr/brodin/arrosage-eco"
+      stack={["Flutter", "STM32", "Arduino"]}
+    >
       <div className="relative w-72 lg:w-96 h-[452px] lg:h-[598px] grid">
         <div>
           <IphoneFrame className=" hover:z-10">
@@ -68,21 +82,6 @@ export default function PlantWatering() {
           </IphoneFrame>
         </div>
       </div>
-      <ProjectCard
-        year="2023"
-        projectType="School project"
-        projectName="Smart Plant Watering System"
-        description="I developed a smart plant watering system,
-      featuring a hardware setup with automatic watering, moisture, temperature, and light
-      sensors, paired with a mobile application for remote plant status
-      monitoring.
-      This system presents a practical and efficient solution
-      for plant care management by offering real-time updates on plant
-      conditions.
-      The intuitive and aesthetically pleasing UI, crafted by me, elevates the user experience."
-        repoLink="https://gitlab.esiea.fr/brodin/arrosage-eco"
-        stack={["Flutter", "STM32", "Arduino"]}
-      />
-    </div>
+    </ProjectCard>
   );
 }

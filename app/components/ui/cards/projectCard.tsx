@@ -54,11 +54,11 @@ export default function ProjectCard({
     <div
       className={
         children
-          ? "col-span-2 w-full flex flex-col sm:flex-row sm:odd:flex-row-reverse justify-center items-center gap-8 mb-24"
+          ? "lg:col-span-2 w-full flex flex-col lg:flex-row lg:odd:flex-row-reverse justify-center items-center content-center gap-8 my-12"
           : ""
       }
     >
-      <div className="min-w-md max-w-xl h-fit rounded-xl border border-white/10 bg-white/60 px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5">
+      <div className="w-full max-w-xl h-full rounded-xl border border-white/10 bg-white/60 px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5">
         <h3 className="text-base font-semibold leading-7 text-primary">
           {year} | {projectType}
         </h3>
@@ -78,7 +78,7 @@ export default function ProjectCard({
                 Teck stack
               </h3>
             </div>
-            <div className="grid grid-flow-col grid-rows-3 gap-y-1 gap-x-8">
+            <div className="gap-y-1 gap-x-8">
               {stack?.map((item, index) => {
                 return (
                   <div
