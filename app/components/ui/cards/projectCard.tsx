@@ -67,7 +67,7 @@ export default function ProjectCard({
             {projectName}
           </span>
         </div>
-        <p className="mt-6 mb-10 text-base leading-7 text-gray-500">
+        <p className="mt-6 mb-10 text-base leading-7 text-gray-500 whitespace-pre-line">
           {description}
         </p>
         <div className="flex justify-between items-start">
