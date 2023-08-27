@@ -1,9 +1,10 @@
 "use client";
 
-import RadialGradientCard from "./RadialGradientCard";
+import { useScroll, useTransform } from "framer-motion";
 import { Layers, Github, Gitlab } from "lucide-react";
 import Link from "next/link";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   children?: ReactNode;
@@ -41,6 +42,13 @@ export default function ProjectCard({
   repoLink,
   stack,
 }: ProjectCardProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+
   const repoType = repoLink?.includes("github") ? "GitHub" : "GitLab";
   const [repoInfos, setRepoInfos] = useState<RepoInfos>();
 
@@ -51,7 +59,11 @@ export default function ProjectCard({
   }, [repoLink]);
 
   return (
-    <div
+    <motion.div
+      ref={ref}
+      style={{
+        scale: scaleProgess,
+      }}
       className={
         children
           ? "lg:col-span-2 w-full flex flex-col lg:flex-row lg:odd:flex-row-reverse justify-center items-center content-center gap-8 my-12"
@@ -125,6 +137,6 @@ export default function ProjectCard({
         </div>
       </div>
       <div className="h-full">{children}</div>
-    </div>
+    </motion.div>
   );
 }

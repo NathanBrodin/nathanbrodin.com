@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <link rel="icon" href="/icon.svg" sizes="any" />
       <body
         className={`${satoshi.variable} ${satoshiItalic.variable} font-sans bg-background flex min-h-full flex-col`}

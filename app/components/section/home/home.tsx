@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import HackedTexts from "../../ui/texts/hackedTexts";
+import { Download, Github, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   const age = getMyAge();
@@ -35,11 +38,32 @@ export default function Home() {
       className="sticky h-[105vh] top-[calc(-105vh+4em)] lg:top-[calc(-105vh+5rem)] z-20 home-gradient flex items-center"
     >
       <div className="mx-auto w-full max-w-7xl px-4 md:px-6">
-        <p className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-300">{`Hi, I'm`}</p>
-        <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-6xl md:leading-[1.1] lg:col-span-2 lg:text-8xl lg:leading-[1.125em]">
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0,
+          }}
+          className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-300"
+        >{`Hi, I'm`}</motion.p>
+        <motion.h1
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="text-4xl font-extrabold tracking-tight text-white md:text-6xl md:leading-[1.1] lg:col-span-2 lg:text-8xl lg:leading-[1.125em]"
+        >
           Nathan Brodin
-        </h1>
-        <div className="text-lg leading-[1.4] text-gray-300 lg:text-xl font-medium">
+        </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.2,
+          }}
+          className="text-lg leading-[1.4] text-gray-300 lg:text-xl font-medium"
+        >
           A {age} years old{" "}
           <HackedTexts>
             <li>software engineer</li>
@@ -47,6 +71,62 @@ export default function Home() {
             <li>react developer</li>
           </HackedTexts>{" "}
           from France.
+        </motion.div>
+        <div className="flex gap-2 text-white mt-4">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+            }}
+            className="flex"
+          >
+            <Link
+              href={"/CV.pdf"}
+              target="_blank"
+              className="bg-primary px-4 py-2 rounded-full font-medium overflow-hidden relative group"
+            >
+              <span className="absolute inset-0 h-full w-full transition duration-700 group-hover:rotate-90">
+                <span className="absolute bottom-0 left-0 -ml-10 h-24 w-24 rounded-full bg-secondary blur-lg"></span>
+                <span className="absolute top-0 right-0 -mr-10 h-24 w-24 rounded-full bg-secondary blur-lg"></span>
+              </span>
+              <div className="relative flex gap-2">
+                <span>Download my CV</span>
+                <Download className="w-5" />
+              </div>
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.4,
+            }}
+            className="relative"
+          >
+            <Link
+              href={"https://github.com/NathanBrodin"}
+              target="_blank"
+              className="bg-white group text-gray-500 hover:text-primary transition-colors rounded-full p-2 flex justify-center items-center"
+            >
+              <Github />
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.5,
+            }}
+          >
+            <Link
+              href={"https://www.linkedin.com/in/nathan-brodin/"}
+              target="_blank"
+              className="bg-white text-gray-500 hover:text-primary transition-colors rounded-full p-2 flex justify-center items-center"
+            >
+              <Linkedin />
+            </Link>
+          </motion.div>
         </div>
       </div>
       <div className="absolute right-0 mr-12 h-32 w-32 lg:mr-28 lg:h-96 lg:w-96">

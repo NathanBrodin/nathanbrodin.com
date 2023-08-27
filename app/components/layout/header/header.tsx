@@ -67,7 +67,16 @@ export default function Header() {
       <div className="mx-auto w-full max-w-7xl px-4 md:px-6 ">
         <div className="flex h-16  items-center justify-between lg:h-20">
           <Link href="/" className="inline-flex items-center gap-4">
-            <Logo />
+            <motion.div
+              initial={{ opacity: 0, scale: 0, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{
+                type: "tween",
+                duration: 0.2,
+              }}
+            >
+              <Logo />
+            </motion.div>
             <motion.div
               initial="hidden"
               animate={showRef.current ? "visible" : "hidden"}
@@ -77,20 +86,29 @@ export default function Header() {
               Nathan Brodin
             </motion.div>
           </Link>
-          <div className="items-center hidden space-x-10 py-0.5 sm:block">
-            {pages.map((page: Page) => (
-              <Link
-                href={page.link}
+          <div className="items-center hidden space-x-10 py-0.5 sm:flex">
+            {pages.map((page: Page, index: number) => (
+              <motion.div
                 key={page.name}
-                data-section={page.name.toLowerCase()}
-                className={`text-sm font-semibold transition-all duration-500 hover:text-primary ${
-                  currentSectionRef.current === page.name.toLowerCase()
-                    ? "text-primary"
-                    : "text-white"
-                }`}
+                initial={{ opacity: 0, scale: 0, y: -20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{
+                  type: "tween",
+                  duration: 0.2 * index,
+                }}
               >
-                {page.name}
-              </Link>
+                <Link
+                  href={page.link}
+                  data-section={page.name.toLowerCase()}
+                  className={`text-sm font-semibold transition-all duration-500 hover:text-primary ${
+                    currentSectionRef.current === page.name.toLowerCase()
+                      ? "text-primary"
+                      : "text-white"
+                  }`}
+                >
+                  {page.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
           <div className="block sm:hidden">
