@@ -1,9 +1,8 @@
-import { MeteorPreview } from "../../ui/cards/meteorCard";
-import ProjectCard from "../../ui/cards/projectCard";
 import Heading from "../../ui/heading/Heading";
-import AES from "./AES";
+import ESIEABOT from "./ESIEABOT";
 import ChatAdminPanel from "./chatAdminPanel";
 import GrammarChecker from "./grammarChecker";
+import MyPasswordManager from "./myPasswordManager";
 import PlantWatering from "./plantWatering";
 import Portfolio from "./portfolio";
 import Sokoban from "./sokoban";
@@ -19,9 +18,10 @@ export default function Projects() {
         <PlantWatering />
         <GrammarChecker />
         <ChatAdminPanel />
-        <AES />
+        <MyPasswordManager />
         <Sokoban />
         <Portfolio />
+        <ESIEABOT />
       </div>
     </section>
   );

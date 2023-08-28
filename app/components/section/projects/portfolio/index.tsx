@@ -6,9 +6,10 @@ export default function Portfolio() {
     <ProjectCard
       projectName="Portfolio"
       projectType="Personnal project"
-      description="I developed a grammar correction tool using the GPT-3 API, inspired by Quillbot's UI. Built with Next.js and TailwindCSS, my application is fully responsive, features light/dark modes, and puts a personal twist on the traditional design, demonstrating my front-end engineering and AI integration skills."
+      description="My portfolio is a carefully curated showcase of my professional journey and past projects. 
+      Developed using Next.js (React.js) with TypeScript, Tailwind CSS, and Framer Motion, it highlights my technical skills and dedication to creating interactive and visually engaging user experiences."
       year="2023"
-      stack={["Next.js", "Tailwindcss", "Framer motion"]}
+      stack={["Next.js", "Tailwindcss", "TypeScript", "Framer motion"]}
     >
       <WebPage>
         <div className="lg:w-[800px] h-full ">

@@ -70,7 +70,7 @@ export default function ProjectCard({
           : ""
       }
     >
-      <div className="w-full max-w-xl h-full rounded-xl border border-white/10 bg-white/60 px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5">
+      <div className="w-full max-w-xl h-full rounded-xl border border-white/10 bg-white/80 px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5">
         <h3 className="text-base font-semibold leading-7 text-primary">
           {year} | {projectType}
         </h3>
