@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ArrowRight } from "lucide-react";
 import { PlantItemProps } from ".";
 import { MouseEventHandler } from "react";

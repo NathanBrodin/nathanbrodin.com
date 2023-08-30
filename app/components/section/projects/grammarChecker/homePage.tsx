@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Logo from "../../../../../public/grammarChecker/logo.svg";
 import Main from "./main";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useTheme } from ".";
 import { useEffect } from "react";
 import { Moon, SunMoon } from "lucide-react";
