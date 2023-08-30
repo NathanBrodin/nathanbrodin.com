@@ -1,51 +1,26 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
 import Heading from "../../ui/heading/Heading";
-import { motion } from "framer-motion";
 
 export default function About() {
-  const [scrollY, setScrollY] = useState(0);
-  const stickyRef = useRef<HTMLDivElement>(null);
-  const parentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const stickyTop = stickyRef.current?.getBoundingClientRect().top;
-      const parentTop = parentRef.current?.getBoundingClientRect().top;
-      const parentHeight = parentRef.current?.getBoundingClientRect().height;
-      const stickyHeight = stickyRef.current?.getBoundingClientRect().height;
-
-      const progress =
-        ((stickyTop! - parentTop!) / (parentHeight! - stickyHeight!)) * 100;
-
-      setScrollY(progress);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const { scrollY } = useScroll();
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="about" className="flex flex-col justify-center w-full">
+    <section id="about" className="flex w-full flex-col justify-center">
       <Heading title="About" subtitle="Here's some infos about me." />
       <div
-        ref={parentRef}
-        className="bg-white/50 mx-auto w-full max-w-7xl px-4 md:px-6 h-[800px] relative"
+        ref={ref}
+        className="mx-auto h-[800px] w-full max-w-7xl bg-white/50 px-4 md:px-6"
       >
+        <div className="absolute left-1/2 h-full w-[2px] -translate-x-1/2 bg-gray-400"></div>
+        <div className="fixed bottom-2/3 left-1/2 z-10 h-6 w-6 -translate-x-1/2 transform rounded-full border-[2px] border-white ring-[2px] ring-primary transition-transform duration-500"></div>
         <motion.div
-          style={{
-            background: `linear-gradient(to bottom, #FFCC4D 0%, #FFCC4D ${scrollY}%, #EEECE5 ${scrollY}%, #EEECE5 100%)`,
-          }}
-          className="w-1 h-full bg-black left-1/2 -translate-x-1/2 absolute"
+          style={{ scaleY: 0 }}
+          className="fixed bottom-2/3 left-1/2 z-10 h-[300px] w-[2px] origin-bottom  -translate-x-1/2 bg-primary"
         ></motion.div>
-        <div
-          ref={stickyRef}
-          className="w-8 h-8 rounded-full bg-blue-950 left-1/2 top-1/3 -translate-x-1/2 sticky"
-        ></div>
       </div>
     </section>
   );

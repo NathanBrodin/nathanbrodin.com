@@ -79,22 +79,22 @@ export default function Main() {
   }, [fixed, loading, text]);
 
   return (
-    <div className="w-full h-full flex justify-center items-center flex-col px-2 sm:px-8 py-16 sm:py-16">
-      <div className="w-full h-full bg-white dark:bg-neutral-800 rounded-lg shadow-lg p-2 sm:p-4">
-        <form className="flex flex-col  h-full gap-4">
+    <div className="flex h-full w-full flex-col items-center justify-center px-2 py-16 sm:px-8 sm:py-16">
+      <div className="h-full w-full rounded-lg bg-white p-2 shadow-lg dark:bg-neutral-800 sm:p-4">
+        <form className="flex h-full  flex-col gap-4">
           <textarea
-            className="resize-none w-full h-full bg-white dark:bg-neutral-800 focus:outline-none focus:border-0 focus:ring-0 placeholder-neutral-400"
+            className="h-full w-full resize-none bg-white placeholder-neutral-400 focus:border-0 focus:outline-none focus:ring-0 dark:bg-neutral-800"
             placeholder="Enter your text"
             onChange={handleTextChange}
             value={text}
           />
-          <div className="grid grid-cols-3 justify-between w-full ">
+          <div className="grid w-full grid-cols-3 justify-between ">
             <div className="flex gap-2  place-self-start self-center">
               <p className="self-center whitespace-nowrap">{words} Words</p>
               <span
                 className={`${
                   words !== 0 ? "bg-green-500" : "bg-neutral-500"
-                } w-1.5 h-1.5 rounded-full  self-center invisible sm:visible`}
+                } invisible h-1.5 w-1.5  self-center rounded-full sm:visible`}
               />
             </div>
             <div className="place-self-center self-center">
@@ -104,33 +104,33 @@ export default function Main() {
                 onClick={handleSubmit}
                 className={`${
                   words !== 0
-                    ? "bg-teal-600 dark:bg-teal-800 hover:bg-teal-700 dark:hover:bg-teal-900"
-                    : "bg-neutral-200 dark:bg-neutral-700 text-neutral-400 cursor-not-allowed"
-                } rounded-full px-3 py-1.5 font-bold w-32 flex justify-center`}
+                    ? "bg-teal-600 hover:bg-teal-700 dark:bg-teal-800 dark:hover:bg-teal-900"
+                    : "cursor-not-allowed bg-neutral-200 text-neutral-400 dark:bg-neutral-700"
+                } flex w-32 justify-center rounded-full px-3 py-1.5 font-bold`}
               >
                 {!loading ? (
                   <span>Fix All Errors</span>
                 ) : (
-                  <Loader2 className="p-0.5 w-6 h-6 text-gray-400 animate-spin dark:text-gray-600" />
+                  <Loader2 className="h-6 w-6 animate-spin p-0.5 text-gray-400 dark:text-gray-600" />
                 )}
               </button>
             </div>
-            <div className="flex  place-self-end self-center gap-4">
+            <div className="flex  gap-4 place-self-end self-center">
               <button type="button" onClick={handleUndo}>
-                <Undo className="w-6 h-6 text-neutral-400 self-center hover:text-teal-800" />
+                <Undo className="h-6 w-6 self-center text-neutral-400 hover:text-teal-800" />
               </button>
               <CopyToClipboard text={text} onCopy={handleCopy}>
                 <button type="button">
-                  <Copy className="w-6 h-6 text-neutral-400 self-center hover:text-teal-800" />
+                  <Copy className="h-6 w-6 self-center text-neutral-400 hover:text-teal-800" />
                 </button>
               </CopyToClipboard>
             </div>
           </div>
         </form>
       </div>
-      <div className="w-full my-4">
+      <div className="my-4 w-full">
         {message ? (
-          <span className="bg-teal-700 text-white rounded-lg px-2 py-2 pr-6">
+          <span className="rounded-lg bg-teal-700 px-2 py-2 pr-6 text-white">
             {message}
           </span>
         ) : (

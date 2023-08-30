@@ -19,15 +19,15 @@ export default function Sun() {
 
   const counter = Counter({ from, to, duration: 15 });
   return (
-    <div className="bg-white w-5/12 rounded-xl mt-2 flex flex-col justify-around items-center">
+    <div className="mt-2 flex w-5/12 flex-col items-center justify-around rounded-xl bg-white">
       <motion.div
-        className="bg-[#EEECE5] h-7 w-7 mt-2 rounded-full"
+        className="mt-2 h-7 w-7 rounded-full bg-[#EEECE5]"
         style={{
           background: `radial-gradient(circle at center, #FFCC4D 0%, #FFCC4D ${counter.value}%, #EEECE5 ${counter.value}%, #EEECE5 100%)`,
         }}
       ></motion.div>
-      <div className="text-[#1B4139] flex flex-col justify-center items-center">
-        <div className="font-bold text-xs lg:text-sm">
+      <div className="flex flex-col items-center justify-center text-[#1B4139]">
+        <div className="text-xs font-bold lg:text-sm">
           <motion.span ref={counter.ref} />%
         </div>
         <div className="text-[8px] lg:text-xs">of sun</div>

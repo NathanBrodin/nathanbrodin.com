@@ -1,5 +1,5 @@
-import React, { useEffect, useState, ReactElement } from 'react';
-import HackedText from './hackedText';
+import React, { useEffect, useState, ReactElement } from "react";
+import HackedText from "./hackedText";
 
 interface HackedTextsProps {
   children: ReactElement[];
@@ -9,7 +9,7 @@ export default function HackedTexts({ children }: HackedTextsProps) {
   const [isAnimating, setIsAnimating] = useState(false);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  const texts = children.map(child => child.props.children);
+  const texts = children.map((child) => child.props.children);
 
   useEffect(() => {
     let timeoutId: NodeJS.Timeout;

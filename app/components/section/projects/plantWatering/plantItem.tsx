@@ -4,14 +4,14 @@ import { PlantItemProps } from ".";
 import { MouseEventHandler } from "react";
 
 export interface Props {
-  plant: PlantItemProps,
-  handlePlantSelect: MouseEventHandler<HTMLButtonElement>
+  plant: PlantItemProps;
+  handlePlantSelect: MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function PlantItem({ plant, handlePlantSelect }: Props) {
   return (
-    <div className="rounded-xl bg-[#1B4139] flex justify-between items-center p-2 mb-2 first:bg-[#FBB242] ">
-      <div className="rounded-xl w-10 h-10 lg:w-14 lg:h-14  border-2 lg:border-[3px] overflow-hidden flex justify-center items-center">
+    <div className="mb-2 flex items-center justify-between rounded-xl bg-[#1B4139] p-2 first:bg-[#FBB242] ">
+      <div className="flex h-10 w-10 items-center justify-center  overflow-hidden rounded-xl border-2 lg:h-14 lg:w-14 lg:border-[3px]">
         <Image
           src={plant.iconPath}
           width={60}
@@ -20,14 +20,17 @@ export default function PlantItem({ plant, handlePlantSelect }: Props) {
           layout="responsive"
         />
       </div>
-      <div className="text-[8px] lg:text-xs flex flex-col text-white">
+      <div className="flex flex-col text-[8px] text-white lg:text-xs">
         <div className="font-bold">{plant.name}</div>
         <div>{plant.values}</div>
       </div>
-      <button onClick={handlePlantSelect} className="bg-white rounded-full w-8 h-8 flex justify-center items-center">
+      <button
+        onClick={handlePlantSelect}
+        className="flex h-8 w-8 items-center justify-center rounded-full bg-white"
+      >
         <ArrowRight
           strokeWidth={2}
-          className="w-4 sm:w-4 lg:w-6 text-[#1B4139]"
+          className="w-4 text-[#1B4139] sm:w-4 lg:w-6"
         />
       </button>
     </div>

@@ -13,33 +13,33 @@ interface HomePageProps {
 
 export default function HomePage({ currentPlant }: HomePageProps) {
   return (
-    <div className="flex flex-col gap-2 w-full h-full p-2 lg:p-4 bg-[#EEEBE5]">
+    <div className="flex h-full w-full flex-col gap-2 bg-[#EEEBE5] p-2 lg:p-4">
       <div className=" text-[#1B4139]">
-        <div className="font-bold text-xs lg:text-sm">Welcome !</div>
+        <div className="text-xs font-bold lg:text-sm">Welcome !</div>
         <div className="text-[8px] lg:text-xs">
           Your watering system is on point
         </div>
       </div>
-      <div className="flex-1 w-full flex gap-2">
+      <div className="flex w-full flex-1 gap-2">
         <Battery />
         <Sun />
       </div>
-      <div className="flex-[1.5] w-full flex gap-2">
+      <div className="flex w-full flex-[1.5] gap-2">
         <Water />
-        <div className="flex-1 h-full flex flex-col gap-2">
+        <div className="flex h-full flex-1 flex-col gap-2">
           <Moisture />
           <Temperature />
         </div>
       </div>
-      <div className="bg-[#1B4139] flex-1 w-full rounded-xl p-3 flex flex-col justify-between">
+      <div className="flex w-full flex-1 flex-col justify-between rounded-xl bg-[#1B4139] p-3">
         <div className="text-white">
           <div className="text-[8px] lg:text-xs">Your actually watering:</div>
-          <div className="text-xs lg:text-sm font-bold">
+          <div className="text-xs font-bold lg:text-sm">
             {currentPlant.name}
           </div>
         </div>
-        <div className="flex justify-between items-center">
-          <div className="rounded-xl p-1 w-10 h-10 lg:w-14 lg:h-14  border-2 lg:border-[3px] overflow-hidden">
+        <div className="flex items-center justify-between">
+          <div className="h-10 w-10 overflow-hidden rounded-xl border-2 p-1  lg:h-14 lg:w-14 lg:border-[3px]">
             <Image
               src={currentPlant.iconPath}
               width={60}
@@ -48,10 +48,10 @@ export default function HomePage({ currentPlant }: HomePageProps) {
               layout="responsive"
             />
           </div>
-          <button className="bg-white rounded-full w-8 h-8 flex justify-center items-center">
+          <button className="flex h-8 w-8 items-center justify-center rounded-full bg-white">
             <ArrowRight
               strokeWidth={2}
-              className="w-4 sm:w-4 lg:w-6 text-[#1B4139]"
+              className="w-4 text-[#1B4139] sm:w-4 lg:w-6"
             />
           </button>
         </div>

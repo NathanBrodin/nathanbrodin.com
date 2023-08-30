@@ -12,8 +12,8 @@ export default function Portfolio() {
       stack={["Next.js", "Tailwindcss", "TypeScript", "Framer motion"]}
     >
       <WebPage>
-        <div className="lg:w-[800px] h-full ">
-        <iframe src="/" className="h-full w-full"></iframe>
+        <div className="h-full lg:w-[800px] ">
+          <iframe src="/" className="h-full w-full"></iframe>
         </div>
       </WebPage>
     </ProjectCard>

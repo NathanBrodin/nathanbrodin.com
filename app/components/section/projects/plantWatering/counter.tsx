@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 interface CounterProps {
   from: number;
   to: number;
-  duration: number
+  duration: number;
 }
 
 export default function Counter({ from, to, duration }: CounterProps) {

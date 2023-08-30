@@ -41,8 +41,8 @@ export default function GamePlay() {
     return state.tiles.every((row, y) =>
       row.every(
         (tile, x) =>
-          tile !== "box" || (tile === "box" && state.tiles[y][x] === "target")
-      )
+          tile !== "box" || (tile === "box" && state.tiles[y][x] === "target"),
+      ),
     );
   }
 
@@ -62,26 +62,26 @@ export default function GamePlay() {
   return (
     <IphoneFrame>
       <div
-        className=" w-full h-full bg-repeat flex justify-center content-center items-center relative bg-black/50"
+        className=" relative flex h-full w-full content-center items-center justify-center bg-black/50 bg-repeat"
         style={{
           backgroundImage: "url(/sokoban/ground.png)",
           backgroundSize: "30%",
         }}
       >
-        <div className="absolute top-0 w-full bg-[#627678] shadow-lg flex justify-between text-white">
-          <div className="py-1 font-extrabold px-4">LEVEL 1</div>
+        <div className="absolute top-0 flex w-full justify-between bg-[#627678] text-white shadow-lg">
+          <div className="px-4 py-1 font-extrabold">LEVEL 1</div>
           <div className="flex ">
             <button
               onClick={undo}
-              className="bg-[#E84B39] p-2 flex justify-center items-center"
+              className="flex items-center justify-center bg-[#E84B39] p-2"
             >
-              <Undo className="w-4 h-4" />
+              <Undo className="h-4 w-4" />
             </button>
             <button
               onClick={restart}
-              className="bg-[#CE8D49] p-2 flex justify-center items-center"
+              className="flex items-center justify-center bg-[#CE8D49] p-2"
             >
-              <RefreshCcwDot className="w-4 h-4" />
+              <RefreshCcwDot className="h-4 w-4" />
             </button>
           </div>
         </div>
@@ -89,9 +89,9 @@ export default function GamePlay() {
           {gameState.tiles.map((row, y) => (
             <div key={y} className="flex">
               {row.map((tile, x) => (
-                <div key={x} className="w-8 h-8 relative">
+                <div key={x} className="relative h-8 w-8">
                   <div
-                    className="absolute w-full h-full"
+                    className="absolute h-full w-full"
                     style={{
                       backgroundImage: `url('/sokoban/${
                         tile === "box-on-target" ? "box" : tile
@@ -103,7 +103,7 @@ export default function GamePlay() {
                   />
                   {gameState.playerX === x && gameState.playerY === y && (
                     <div
-                      className="absolute w-full h-full"
+                      className="absolute h-full w-full"
                       style={{
                         backgroundImage: `url('/sokoban/player.png')`,
                         backgroundSize: "100%",
@@ -117,8 +117,8 @@ export default function GamePlay() {
         </div>
         <DirectionPad onMove={handleMove} />
         {isFinished && (
-          <div className="w-full h-full px-4 py-16 flex justify-center items-center absolute z-10 bg-black/50">
-            <div className="flex flex-col bg-[#627678] p-4 shadow-lg gap-4  text-white justify-center items-center rounded-md">
+          <div className="absolute z-10 flex h-full w-full items-center justify-center bg-black/50 px-4 py-16">
+            <div className="flex flex-col items-center justify-center gap-4 rounded-md  bg-[#627678] p-4 text-white shadow-lg">
               <div className="flex flex-col justify-start">
                 <h1 className="font-bold">CONGRATULATION !</h1>
                 <p>Level 1 finished</p>
@@ -129,18 +129,18 @@ export default function GamePlay() {
                     restart();
                     setIsFinished(false);
                   }}
-                  className="bg-[#E84B39] p-2 flex justify-center items-center rounded-md"
+                  className="flex items-center justify-center rounded-md bg-[#E84B39] p-2"
                 >
-                  <RefreshCcwDot className="w-4 h-4" />
+                  <RefreshCcwDot className="h-4 w-4" />
                 </button>
                 <button
                   onClick={() => {
                     restart();
                     setIsFinished(false);
                   }}
-                  className="bg-[#CE8D49] p-2 flex justify-center items-center rounded-md"
+                  className="flex items-center justify-center rounded-md bg-[#CE8D49] p-2"
                 >
-                  <SkipForward className="w-4 h-4" />
+                  <SkipForward className="h-4 w-4" />
                 </button>
               </div>
             </div>

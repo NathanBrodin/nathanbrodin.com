@@ -20,15 +20,15 @@ export default function Battery() {
   const counter = Counter({ from, to, duration: 20 });
 
   return (
-    <div className="bg-[#1B4139] w-full rounded-xl flex flex-col justify-between mt-2">
+    <div className="mt-2 flex w-full flex-col justify-between rounded-xl bg-[#1B4139]">
       <motion.div
-        className="bg-[#EEECE5] rounded-md h-5 sm:h-6 lg:h-7 m-2 transition-all"
+        className="m-2 h-5 rounded-md bg-[#EEECE5] transition-all sm:h-6 lg:h-7"
         style={{
           background: `linear-gradient(to right, #FFCC4D 0%, #FFCC4D ${counter.value}%, #EEECE5 ${counter.value}%, #EEECE5 100%)`,
         }}
       ></motion.div>
-      <div className="text-white flex flex-col justify-center items-center m-2">
-        <div className="font-bold text-xs lg:text-sm">
+      <div className="m-2 flex flex-col items-center justify-center text-white">
+        <div className="text-xs font-bold lg:text-sm">
           <motion.span ref={counter.ref} />%
         </div>
         <div className="text-[8px] lg:text-xs">of battery</div>

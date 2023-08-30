@@ -30,17 +30,17 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <link rel="icon" href="/icon.svg" sizes="any" />
       <body
-        className={`${satoshi.variable} ${satoshiItalic.variable} font-sans bg-background flex min-h-full flex-col`}
+        className={`${satoshi.variable} ${satoshiItalic.variable} flex min-h-full flex-col bg-background font-sans`}
       >
         <Header />
         {children}
         <Footer />
-        <div className="fixed left-0 top-0 right-0 bottom-0 background -z-10">
-          <div className="grid gap-8 grid-cols-12 m-auto max-w-7xl">
+        <div className="background fixed bottom-0 left-0 right-0 top-0 -z-10">
+          <div className="m-auto grid max-w-7xl grid-cols-12 gap-8">
             {Array.from({ length: 12 }, (_, index) => (
               <div
                 key={index}
-                className="border-l border-r border-gray-700/5 min-h-screen"
+                className="min-h-screen border-l border-r border-gray-700/5"
               ></div>
             ))}
           </div>

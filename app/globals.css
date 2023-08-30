@@ -54,10 +54,12 @@
   );
 }
 
-
 .background {
-  background-image: 
-    radial-gradient(at 44% 0%,rgba(255, 184, 122, 0.4) 0px, transparent 50%),
+  background-image: radial-gradient(
+      at 44% 0%,
+      rgba(255, 184, 122, 0.4) 0px,
+      transparent 50%
+    ),
     radial-gradient(at 80% 0%, rgba(31, 221, 255, 0.1) 0px, transparent 50%),
     radial-gradient(at 80% 50%, rgba(255, 133, 173, 0.1) 0px, transparent 50%),
     radial-gradient(at 0% 100%, rgba(255, 181, 138, 0) 0px, transparent 50%),

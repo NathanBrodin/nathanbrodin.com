@@ -20,8 +20,8 @@ export default function Moisture() {
   const counter = Counter({ from, to, duration: 17 });
 
   return (
-    <div className="bg-[#FBB242] flex-1 rounded-xl text-white flex flex-col justify-center items-center">
-      <div className="font-bold text-xs lg:text-sm">
+    <div className="flex flex-1 flex-col items-center justify-center rounded-xl bg-[#FBB242] text-white">
+      <div className="text-xs font-bold lg:text-sm">
         <motion.span ref={counter.ref} />%
       </div>
       <div className="text-[8px] lg:text-xs">of moisture</div>

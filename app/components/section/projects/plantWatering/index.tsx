@@ -67,7 +67,7 @@ export default function PlantWatering() {
       repoLink="https://gitlab.esiea.fr/brodin/arrosage-eco"
       stack={["Flutter", "STM32", "Arduino"]}
     >
-      <div className="relative w-72 lg:w-96 h-[452px] lg:h-[598px] grid">
+      <div className="relative grid h-[452px] w-72 lg:h-[598px] lg:w-96">
         <div>
           <IphoneFrame className=" hover:z-10">
             <SelectPage
@@ -76,7 +76,7 @@ export default function PlantWatering() {
             />
           </IphoneFrame>
         </div>
-        <div className="absolute transform translate-x-24 translate-y-16 xl:translate-x-32 xl:translate-y-20 ">
+        <div className="absolute translate-x-24 translate-y-16 transform xl:translate-x-32 xl:translate-y-20 ">
           <IphoneFrame>
             <HomePage currentPlant={availablePlants[0]} />
           </IphoneFrame>

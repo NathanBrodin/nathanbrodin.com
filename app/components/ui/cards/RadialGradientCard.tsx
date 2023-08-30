@@ -20,7 +20,7 @@ export default function RadialGradientCard({ children }: Props) {
 
   return (
     <div
-      className="group relative min-w-md max-w-xl h-fit rounded-xl border border-white/10 bg-white/60 px-6 md:px-8 py-16 shadow-lg ring-1 ring-gray-900/5"
+      className="min-w-md group relative h-fit max-w-xl rounded-xl border border-white/10 bg-white/60 px-6 py-16 shadow-lg ring-1 ring-gray-900/5 md:px-8"
       onMouseMove={handleMouseMove}
     >
       <motion.div

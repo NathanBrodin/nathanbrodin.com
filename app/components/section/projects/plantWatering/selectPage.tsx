@@ -11,14 +11,14 @@ export default function SelectPage({
   setCurrentPlant,
 }: SelectPageProps) {
   return (
-    <div className="flex flex-col gap-2 w-full h-full p-2 lg:p-4 bg-[#EEEBE5]">
+    <div className="flex h-full w-full flex-col gap-2 bg-[#EEEBE5] p-2 lg:p-4">
       <div className=" text-[#1B4139]">
-        <div className="font-bold text-xs lg:text-sm">Need some changes ?</div>
+        <div className="text-xs font-bold lg:text-sm">Need some changes ?</div>
         <div className="text-[8px] lg:text-xs">
           Select a plant, or create one !
         </div>
       </div>
-      <div className="overflow-y-scroll no-scrollbar transition">
+      <div className="no-scrollbar overflow-y-scroll transition">
         {plantList.map((plant, index) => {
           return (
             <PlantItem

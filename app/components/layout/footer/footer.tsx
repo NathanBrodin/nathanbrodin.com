@@ -4,11 +4,11 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="p-4 md:p-8 flex flex-col text-gray-600 mx-auto w-full max-w-7xl">
+    <footer className="mx-auto flex w-full max-w-7xl flex-col p-4 text-gray-600 md:p-8">
       <p className="font-italic">
         Made using React & Next.js, TypeScript; Tailwind CSS and Framer Motion
       </p>
-      <div className="w-full flex justify-between">
+      <div className="flex w-full justify-between">
         <p>
           <span>© {year} </span>
           Nathan Brodin™. All rights reserved.
@@ -16,7 +16,7 @@ export default function Footer() {
         <Link
           href={"https://github.com/NathanBrodin/nathanbrodin.com"}
           target="_blank"
-          className="hover:underline transition-all"
+          className="transition-all hover:underline"
         >
           See this repository on Github
         </Link>

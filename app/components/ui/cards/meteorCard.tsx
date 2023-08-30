@@ -3,10 +3,10 @@ import React from "react";
 export const MeteorPreview = () => {
   return (
     <div className=" h-[40rem]">
-      <div className=" h-3/4 md:h-1/2 w-3/4  relative max-w-sm">
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-          <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+      <div className=" relative h-3/4 w-3/4  max-w-sm md:h-1/2">
+        <div className="absolute inset-0 h-full w-full scale-[0.80] transform rounded-full bg-red-500 bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl" />
+        <div className="relative flex h-full flex-col items-start  justify-end overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 px-4 py-8 shadow-xl">
+          <div className="mb-4 flex h-5 w-5 items-center justify-center rounded-full border border-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -23,17 +23,17 @@ export const MeteorPreview = () => {
             </svg>
           </div>
 
-          <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          <h1 className="relative z-50 mb-4 text-xl font-bold text-white">
             Meteors because they re cool
           </h1>
 
-          <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+          <p className="relative z-50 mb-4 text-base font-normal text-slate-500">
             I don t know what to write so I ll just paste something cool here.
             One more sentence because lorem ipsum is just unacceptable. Won t
             ChatGPT the shit out of this.
           </p>
 
-          <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+          <button className="rounded-lg border border-gray-500 px-4  py-1 text-gray-300">
             Explore
           </button>
         </div>

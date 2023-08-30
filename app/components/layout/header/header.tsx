@@ -81,12 +81,12 @@ export default function Header() {
               initial="hidden"
               animate={showRef.current ? "visible" : "hidden"}
               variants={nameVariants}
-              className="text-white font-extrabold text-xl"
+              className="text-xl font-extrabold text-white"
             >
               Nathan Brodin
             </motion.div>
           </Link>
-          <div className="items-center hidden space-x-10 py-0.5 sm:flex">
+          <div className="hidden items-center space-x-10 py-0.5 sm:flex">
             {pages.map((page: Page, index: number) => (
               <motion.div
                 key={page.name}
@@ -113,7 +113,7 @@ export default function Header() {
           </div>
           <div className="block sm:hidden">
             <Menu>
-              <Menu.Button className="hover:bg-gray-500 hover:bg-opacity-50 hover:rounded">
+              <Menu.Button className="hover:rounded hover:bg-gray-500 hover:bg-opacity-50">
                 <MenuIcon className="w-8 text-white" />
               </Menu.Button>
               <Transition
@@ -125,20 +125,20 @@ export default function Header() {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute right-0 mt-4 w-full pr-4 origin-top-left focus:outline-none flex justify-end py-2 bg-gradient-to-r from-[#1D1E23]/90 to-[#2D3D4B]">
+                <Menu.Items className="absolute right-0 mt-4 flex w-full origin-top-left justify-end bg-gradient-to-r from-[#1D1E23]/90 to-[#2D3D4B] py-2 pr-4 focus:outline-none">
                   {pages.map((page: Page) => {
                     return (
                       <Menu.Item key={page.name}>
                         {({ active }) => (
                           <Link
                             href={page.link}
-                            className={`font-bold transition-all first:border-none border-l border-white/10 px-4 py-0.5 duration-500  ${
+                            className={`border-l border-white/10 px-4 py-0.5 font-bold transition-all duration-500 first:border-none  ${
                               currentSectionRef.current ===
                               page.name.toLowerCase()
                                 ? "text-primary"
                                 : "text-white"
                             }
-                        ${active && "bg-primary/50 rounded-md text-white "}
+                        ${active && "rounded-md bg-primary/50 text-white "}
                         `}
                           >
                             {page.name}
