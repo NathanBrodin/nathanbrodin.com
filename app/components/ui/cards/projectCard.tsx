@@ -107,7 +107,7 @@ export default function ProjectCard({
             </div>
           </div>
           {repoLink && (
-            <Link href={repoLink} className="flex flex-col items-end sm:mr-8">
+            <Link href={repoLink} target="_blank" className="flex flex-col items-end sm:mr-8">
               <div className="mb-2 flex items-center gap-2">
                 {repoType === "GitHub" ? (
                   <Github className="text-secondary" />
