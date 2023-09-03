@@ -5,9 +5,6 @@ export default function Footer() {
 
   return (
     <footer className="mx-auto flex w-full max-w-7xl flex-col p-4 text-gray-600 md:p-8">
-      <p className="font-italic">
-        Made using React & Next.js, TypeScript; Tailwind CSS and Framer Motion
-      </p>
       <div className="flex w-full justify-between">
         <p>
           <span>© {year} </span>

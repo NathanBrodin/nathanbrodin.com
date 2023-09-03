@@ -15,6 +15,7 @@ export default function IphoneFrame({ children, className }: IphoneFrameProps) {
         width={447}
         height={906}
         layout="responsive"
+        priority={true}
         alt="Iphone"
         className="pointer-events-none h-auto max-w-full"
       />

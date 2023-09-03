@@ -69,17 +69,17 @@ export default function GamePlay() {
         }}
       >
         <div className="absolute top-0 flex w-full justify-between bg-[#627678] text-white shadow-lg">
-          <div className="px-4 py-1 font-extrabold">LEVEL 1</div>
+          <div className="px-2 sm:px-4 py-1 text-sm lg:text-base font-extrabold">LEVEL 1</div>
           <div className="flex ">
             <button
               onClick={undo}
-              className="flex items-center justify-center bg-[#E84B39] p-2"
+              className="flex items-center justify-center bg-[#E84B39] p-1 sm:p-2"
             >
               <Undo className="h-4 w-4" />
             </button>
             <button
               onClick={restart}
-              className="flex items-center justify-center bg-[#CE8D49] p-2"
+              className="flex items-center justify-center bg-[#CE8D49] p-1 sm:p-2"
             >
               <RefreshCcwDot className="h-4 w-4" />
             </button>
@@ -89,7 +89,7 @@ export default function GamePlay() {
           {gameState.tiles.map((row, y) => (
             <div key={y} className="flex">
               {row.map((tile, x) => (
-                <div key={x} className="relative h-8 w-8">
+                <div key={x} className="relative h-6 w-6 sm:h-8 sm:w-8">
                   <div
                     className="absolute h-full w-full"
                     style={{

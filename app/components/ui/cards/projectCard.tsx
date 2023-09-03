@@ -47,7 +47,9 @@ export default function ProjectCard({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+
+  const scaleProgess = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 1]);
+
 
   const repoType = repoLink?.includes("github") ? "GitHub" : "GitLab";
   const [repoInfos, setRepoInfos] = useState<RepoInfos>();

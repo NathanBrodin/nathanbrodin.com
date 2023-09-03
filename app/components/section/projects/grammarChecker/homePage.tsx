@@ -30,7 +30,9 @@ export default function HomePage() {
               target="_blank"
               className="flex items-center"
             >
-              <Image src={Logo} alt="logo" className="h-6 w-6 sm:mr-3" />
+              <div className="h-6 w-6 sm:mr-3">
+                <Image src={Logo} alt="logo" className="h-6 w-6 sm:mr-3" />
+              </div>
               <h1 className="hidden self-center whitespace-nowrap font-black text-teal-800 sm:block sm:text-lg">
                 Nathan Brodin
               </h1>
