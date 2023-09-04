@@ -50,7 +50,6 @@ export default function ProjectCard({
 
   const scaleProgess = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 1]);
 
-
   const repoType = repoLink?.includes("github") ? "GitHub" : "GitLab";
   const [repoInfos, setRepoInfos] = useState<RepoInfos>();
 
@@ -72,7 +71,7 @@ export default function ProjectCard({
           : ""
       }
     >
-      <div className="h-full w-full max-w-xl rounded-xl border border-white/10 bg-white/80 px-6 py-16 shadow-lg ring-1 ring-gray-900/5 md:px-8">
+      <div className=" w-full max-w-xl rounded-xl border border-white/10 bg-white/80 px-6 py-16 shadow-lg ring-1 ring-gray-900/5 md:px-8">
         <h3 className="text-base font-semibold leading-7 text-primary">
           {year} | {projectType}
         </h3>
@@ -92,14 +91,14 @@ export default function ProjectCard({
                 Teck stack
               </h3>
             </div>
-            <div className="gap-x-8 gap-y-1">
+            <div className="grid grid-flow-col grid-rows-3 gap-x-8 gap-y-1">
               {stack?.map((item, index) => {
                 return (
                   <div
-                    className="flex items-center gap-2 transition-all hover:translate-x-2 "
+                    className="flex items-center gap-2 transition-all hover:translate-x-2"
                     key={index}
                   >
-                    <div className="h-4 w-0.5 rounded-sm bg-gradient-to-b from-primary to-secondary"></div>
+                    <div className="h-4 w-[2.5px] rounded-sm bg-gradient-to-b from-primary to-secondary"></div>
                     <div className="font-medium">{item}</div>
                   </div>
                 );
@@ -107,7 +106,11 @@ export default function ProjectCard({
             </div>
           </div>
           {repoLink && (
-            <Link href={repoLink} target="_blank" className="flex flex-col items-end sm:mr-8">
+            <Link
+              href={repoLink}
+              target="_blank"
+              className="flex flex-col items-end sm:mr-8"
+            >
               <div className="mb-2 flex items-center gap-2">
                 {repoType === "GitHub" ? (
                   <Github className="text-secondary" />
@@ -121,7 +124,12 @@ export default function ProjectCard({
               {repoInfos && repoInfos.stars > 2 && (
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-1">
-                    <svg height="16" viewBox="0 0 16 16" width="16">
+                    <svg
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      className="hover:fill-yellow-300"
+                    >
                       <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
                     </svg>
                     <div className="font-medium">{repoInfos?.stars}</div>

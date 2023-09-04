@@ -16,25 +16,25 @@ const ContactLinks: ContactLinkProps[] = [
   {
     link: "https://www.linkedin.com/in/nathan-brodin/",
     content: "in/nathan-brodin",
-    Icon: <Linkedin className="h-10 w-10" />,
+    Icon: <Linkedin className="h-8 w-8 lg:h-10 lg:w-10" />,
     delay: 0,
   },
   {
     link: "https://github.com/nathanbrodin",
     content: "NathanBrodin",
-    Icon: <Github className="h-10 w-10" />,
+    Icon: <Github className="h-8 w-8 lg:h-10 lg:w-10" />,
     delay: 0.2,
   },
   {
     link: "https://gitlab.com/nathanbrodin",
     content: "NathanBrodin",
-    Icon: <Gitlab className="h-10 w-10" />,
+    Icon: <Gitlab className="h-8 w-8 lg:h-10 lg:w-10" />,
     delay: 0.4,
   },
   {
     link: "https://www.figma.com/@nathanbrodin",
     content: "@nathanbrodin",
-    Icon: <Figma className="h-10 w-10" />,
+    Icon: <Figma className="h-8 w-8 lg:h-10 lg:w-10" />,
     delay: 0.6,
   },
 ];
