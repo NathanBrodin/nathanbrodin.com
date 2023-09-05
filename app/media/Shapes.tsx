@@ -22,7 +22,7 @@ export const Shapes: React.FC<ShapesProps> = ({ className }) => (
         width="653"
         height="653"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
         <feBlend

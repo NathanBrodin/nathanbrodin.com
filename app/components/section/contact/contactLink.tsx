@@ -8,6 +8,7 @@ export type ContactLinkProps = {
   content: string;
   Icon: ReactNode;
   delay: number;
+  inView?: boolean;
 };
 
 export default function ContactLink({
@@ -15,15 +16,10 @@ export default function ContactLink({
   content,
   Icon,
   delay,
+  inView,
 }: ContactLinkProps) {
-  const [inViewRef, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.1, // at least 10% of the element is visible
-  });
-
   return (
     <motion.div
-      ref={inViewRef}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{

@@ -44,7 +44,7 @@ export default function ProjectCard({
   stack,
 }: ProjectCardProps) {
   const [inViewRef, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1 // at least 10% of the element is visible
   });
 

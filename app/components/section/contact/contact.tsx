@@ -1,5 +1,6 @@
 "use client";
 
+import { useInView } from "react-intersection-observer";
 import Heading from "../../ui/heading/Heading";
 import ContactLink, { ContactLinkProps } from "./contactLink";
 import Figma from "./icons/figma";
@@ -9,8 +10,8 @@ import Linkedin from "./icons/linkedin";
 
 // https://worldvectorlogo.com/
 export type IconProps = {
-  className: string
-}
+  className: string;
+};
 
 const ContactLinks: ContactLinkProps[] = [
   {
@@ -40,15 +41,23 @@ const ContactLinks: ContactLinkProps[] = [
 ];
 
 export default function Contact() {
+  const [inViewRef, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // at least 10% of the element is visible
+  });
+
   return (
-    <section id="contact" className="flex w-full flex-col justify-center mb-44">
+    <section id="contact" className="mb-44 flex w-full flex-col justify-center">
       <Heading
         title="Contact"
         subtitle="Interested ? Here's some links to get it touch with me."
       />
-      <div className="mx-auto flex w-full max-w-7xl justify-center gap-5 px-4 md:px-6">
+      <div
+        ref={inViewRef}
+        className="mx-auto flex w-full max-w-7xl justify-center gap-5 px-4 md:px-6"
+      >
         {ContactLinks.map((contactLink, index) => {
-          return <ContactLink {...contactLink} key={index}/>
+          return <ContactLink {...contactLink} key={index} inView={inView} />;
         })}
       </div>
     </section>

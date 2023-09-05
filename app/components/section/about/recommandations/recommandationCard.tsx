@@ -17,7 +17,7 @@ export default function RecommandationCard({
   delay = 0,
 }: RecommandationCardProps) {
   const [inViewRef, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1 // at least 10% of the element is visible
   });
 
