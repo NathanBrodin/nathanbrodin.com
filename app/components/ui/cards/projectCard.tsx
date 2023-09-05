@@ -5,6 +5,7 @@ import { Layers, Github, Gitlab } from "lucide-react";
 import Link from "next/link";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 interface ProjectCardProps {
   children?: ReactNode;
@@ -42,13 +43,10 @@ export default function ProjectCard({
   repoLink,
   stack,
 }: ProjectCardProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
+  const [inViewRef, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.1 // at least 10% of the element is visible
   });
-
-  const scaleProgess = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 1]);
 
   const repoType = repoLink?.includes("github") ? "GitHub" : "GitLab";
   const [repoInfos, setRepoInfos] = useState<RepoInfos>();
@@ -61,9 +59,12 @@ export default function ProjectCard({
 
   return (
     <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgess,
+    ref={inViewRef}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{
+        delay: 0,
+        duration: 0.5
       }}
       className={
         children

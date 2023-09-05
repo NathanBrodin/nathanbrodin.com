@@ -25,7 +25,7 @@ export default function RecommandationCard({
     <motion.div
       ref={inViewRef}
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{
         delay: delay,
       }}
