@@ -147,7 +147,7 @@ export default function ProjectCard({
           )}
         </div>
       </div>
-      <div className="h-full">{children}</div>
+      <div className="h-full flex justify-center items-center">{children}</div>
     </motion.div>
   );
 }
