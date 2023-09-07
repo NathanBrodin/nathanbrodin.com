@@ -92,7 +92,7 @@ export default function ProjectCard({
                 Teck stack
               </h3>
             </div>
-            <div className="grid grid-flow-col grid-rows-3 gap-x-8 gap-y-1">
+            <div className="grid md:grid-flow-col md:grid-rows-3 gap-x-8 gap-y-1">
               {stack?.map((item, index) => {
                 return (
                   <div

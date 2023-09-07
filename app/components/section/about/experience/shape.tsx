@@ -12,7 +12,7 @@ export default function Shape() {
     >
       <path
         d="M0.5 0C0.5 63 41 57.24 41 128M41 130V214C41 284 0.5 279 0.5 341"
-        className="stroke-neutral-400"
+        className="stroke-neutral-400 hidden md:block"
         strokeWidth="2"
         strokeLinejoin="round"
         strokeDasharray="4 4"

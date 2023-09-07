@@ -12,7 +12,7 @@ export default function BottomShape() {
     >
       <path
         d="M 42 130 L 42 293 C 42 363 1.5 358 1.5 420"
-        className="stroke-neutral-400"
+        className="stroke-neutral-400 hidden md:block"
         strokeWidth="2"
         strokeLinejoin="round"
         strokeDasharray="4 4"

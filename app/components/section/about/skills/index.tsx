@@ -91,7 +91,7 @@ export default function Skills() {
       <h2 className="text-lg font-semibold">My different skills</h2>
       <div
         ref={inViewRef}
-        className="mt-8 flex w-full flex-wrap justify-center gap-2 px-32"
+        className="mt-8 flex w-full flex-wrap justify-center gap-2 md:px-32"
       >
         {SkillsData.map((skill, index) => {
           return (

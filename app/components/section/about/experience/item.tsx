@@ -20,7 +20,7 @@ export default function Item({
   event,
 }: ItemProps) {
   return (
-    <div className={`flex gap-6 ${className}`}>
+    <div className={`flex md:gap-6 ${className}`}>
       {event ? (
         <div className="box-content h-4 w-4 rounded-full border-2 border-secondary bg-white translate-x-1"></div>
       ) : (
@@ -28,7 +28,7 @@ export default function Item({
       )}
       <div className="flex flex-col">
         <h1 className="text-lg font-bold">{title}</h1>
-        <div className="flex w-full justify-between">
+        <div className="flex flex-col md:flex-row w-full justify-between">
           <p>{description}</p>
           <p>{date}</p>
         </div>

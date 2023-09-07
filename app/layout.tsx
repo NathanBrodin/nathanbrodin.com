@@ -36,7 +36,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <div className="background fixed bottom-0 left-0 right-0 top-0 -z-10">
-          <div className="m-auto grid max-w-7xl grid-cols-12 gap-8">
+          <div className="m-auto grid max-w-7xl grid-cols-4 md:grid-cols-12 gap-8">
             {Array.from({ length: 12 }, (_, index) => (
               <div
                 key={index}

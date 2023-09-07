@@ -25,7 +25,7 @@ export default function ContactLink({
       transition={{
         delay: delay,
       }}
-      className="group flex w-14 overflow-hidden rounded-xl border border-white/10 bg-white/80 shadow-lg ring-1 ring-gray-900/5 transition-all duration-500 hover:w-64 lg:w-20 lg:hover:w-72"
+      className="group flex w-14 overflow-hidden rounded-xl border border-white/10 bg-white/80 shadow-lg ring-1 ring-gray-900/5 transition-all duration-500 md:hover:w-64 lg:w-20 lg:hover:w-72"
     >
       <Link
         href={link}
