@@ -1,3 +1,4 @@
+import ProjectCard from "../../ui/cards/projectCard";
 import Heading from "../../ui/heading/Heading";
 import ESIEABOT from "./ESIEABOT";
 import ChatAdminPanel from "./chatAdminPanel";
@@ -25,6 +26,7 @@ export default function Projects() {
         <Sokoban />
         <Portfolio />
         <ESIEABOT />
+        <ProjectCard year="2023" projectType="School project" projectName="PST 4A" description="Not started yet" stack={[""]} repoLink=""/>
       </div>
     </section>
   );

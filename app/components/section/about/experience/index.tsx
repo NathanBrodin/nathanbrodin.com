@@ -9,14 +9,14 @@ export default function Experience() {
   return (
     <div className="flex w-full flex-col items-center ">
       <h2 className="text-lg font-semibold">My career path</h2>
-      <div className="relative mt-8 flex w-full justify-center">
+      <div className="relative mt-8 flex w-full justify-start md:justify-center">
         <Line className="left-2 md:left-1/4 md:ml-[19px]" />
         <TopShape />
-        <div className="relative z-10 flex flex-col gap-32 py-32">
+        <div className="relative z-10 flex translate-x-[-5px] flex-col gap-32 py-32 md:translate-x-0">
           <div className=" relative flex flex-col gap-32">
-            <Line className="left-[54px]" />
+            <Line className="left-[54px] hidden md:block" />
             <Item
-              className="translate-x-[104px] md:translate-x-[41px]"
+              className="md:translate-x-[41px]"
               title="ESIEA - IT ENGINEERING"
               description="Master's degree in software engineering"
               date="2020-2025"
@@ -26,7 +26,7 @@ export default function Experience() {
             <div className="relative">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="Programming workshop CLEP Laval"
                 description="CLEP - Centre Lavallois d'Education Populaire"
                 date="Oct 2020-Jun 2021"
@@ -36,17 +36,17 @@ export default function Experience() {
             </div>
             <Item
               event
-              className="translate-x-[104px] md:translate-x-[41px]"
+              className="md:translate-x-[41px]"
               title="TOEIC® Listening and Reading"
               description="ETS Global B.V."
               date="May 2021"
-              location=""
+              location=" "
               content="Score: 840/980"
             />
             <div className="relative">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="Educational Assistant"
                 description="Collège Fernand Puech"
                 date="Sep 2021-Jun 2022"
@@ -56,7 +56,7 @@ export default function Experience() {
             </div>
             <Item
               event
-              className="translate-x-[104px] md:translate-x-[41px]"
+              className="md:translate-x-[41px]"
               title="Winner RoboRave Craon"
               description="RoboRAVE International, a program of Inquiry Facilitators, Inc."
               date="Jun 2022"
@@ -65,17 +65,17 @@ export default function Experience() {
             />
             <Item
               event
-              className="translate-x-[104px] md:translate-x-[41px]"
+              className="md:translate-x-[41px]"
               title="Second prize at the PST Laval 2022 show"
               description="ESIEA"
               date="Jun 2022"
               location="Laval, France"
               content="Second prize at the Scientific and Technical Project fair on the ESIEA Laval campus. Rewarded for my project 'Esieabot mobile application' among the 20 projects of 2nd year students."
             />
-            <div className="relative mb-20">
+            <div className="relative md:mb-20">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="CENTRIA UNIVERSITY OF APPLIED SCIENCES"
                 description="Information technology exchange semester"
                 date="Aug-Dec 2022"
@@ -83,10 +83,10 @@ export default function Experience() {
                 content="My courses: C#, Python and SQL, Object-Oriented Modeling, Operating systems, statistics, Electric Circuits."
               />
             </div>
-            <div className="relative mb-20">
+            <div className="relative md:mb-20">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="FRONTEND ENGINEER INTERN"
                 description="DNB"
                 date="Jun-Aug 2023"
@@ -94,50 +94,35 @@ export default function Experience() {
                 content=" I had the exciting opportunity to contribute to the company's 'Emerging Technologies' department as a Frontend Engineer"
               />
             </div>
-            <div className="relative mb-20">
+            <div className="relative md:mb-20">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="SOFTWARE ENGINEER INTERN"
-                description="XXX"
                 date="April-Aug 2024"
-                location="XXX, XXX"
-                content=" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
               />
             </div>
 
-            <div className="relative mb-20">
+            <div className="relative md:mb-20">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="EXCHANGE SEMESTER"
-                description="XXX"
                 date="Aug 2023-Jan 2024"
-                location="XXX, XXX"
-                content=" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
               />
             </div>
 
-            <div className="relative mb-32">
+            <div className="relative md:mb-32">
               <Shape />
               <Item
-                className="translate-x-[104px] md:translate-x-[82px]"
+                className="md:translate-x-[82px]"
                 title="SOFTWARE ENGINEER INTERN"
-                description="XXX"
                 date="Feb-Jul 2025"
-                location="XXX, XXX"
-                content=" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
               />
             </div>
             <BottomShape />
           </div>
-          <Item
-            title="JUNIOR SOFTWARE ENGINEER"
-            description="XXX"
-            date="Aug 2025 - Undefined"
-            location="XXX, XXX"
-            content=" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-          />
+          <Item title="JUNIOR SOFTWARE ENGINEER" date="Aug 2025 - Undefined" />
         </div>
       </div>
     </div>
