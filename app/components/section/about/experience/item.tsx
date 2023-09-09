@@ -1,4 +1,4 @@
-import React from "react";
+import React, { RefObject, useRef } from "react";
 
 type ItemProps = {
   title: string;
@@ -8,6 +8,7 @@ type ItemProps = {
   content?: string;
   className?: string;
   event?: boolean;
+  cursorRef?: RefObject<HTMLDivElement>;
 };
 
 export default function Item({
@@ -18,28 +19,53 @@ export default function Item({
   content,
   className,
   event,
+  cursorRef
 }: ItemProps) {
+  const selfRef = useRef<HTMLDivElement>(null);
+
+
+  if(cursorRef?.current && selfRef.current) {
+    const top = cursorRef.current.getBoundingClientRect().top;
+    const selfTop = selfRef.current.getBoundingClientRect().top;
+
+    console.log(`Top: ${top}, selfTop: ${selfTop}`)
+  }
+
   return (
-    <div className={`flex gap-2 md:gap-6 ${className}`}>
+    <div ref={selfRef}  className={`flex gap-2 lg:gap-6 ${className}`}>
       {event ? (
-        <div className="box-content h-4 w-4 flex-shrink-0 translate-x-[3px] md:translate-x-1 rounded-full border-2 border-secondary bg-white"></div>
+        <div className="mr-1 box-content h-4 w-4 flex-shrink-0 translate-x-[4px] rounded-full border-2 border-secondary bg-white lg:translate-x-1"></div>
       ) : (
         <div className="box-content h-6 w-6 flex-shrink-0 rounded-full border-2 border-primary bg-white"></div>
       )}
       <div className="flex flex-col">
         <h1 className="text-lg font-bold">{title}</h1>
-        <div className="flex w-fit flex-col justify-between md:w-full md:flex-row">
-          <p className={!description ? "h-6 w-16  rounded-md bg-gray-300 animate-pulse" : ""}>
+        <div className="flex w-fit flex-col justify-between lg:w-full lg:flex-row">
+          <p
+            className={
+              !description
+                ? "h-6 w-16  animate-pulse rounded-md bg-gray-300"
+                : ""
+            }
+          >
             {description}
           </p>
           <p>{date}</p>
         </div>
-        <p className={!location ? "h-6 w-36 rounded-md bg-gray-300 animate-pulse mt-1" : ""}>
+        <p
+          className={
+            !location
+              ? "mt-1 h-6 w-36 animate-pulse rounded-md bg-gray-300"
+              : ""
+          }
+        >
           {location}
         </p>
         <p
-          className={`mt-4 max-w-xl break-all ${
-            !content ? "h-6 md:w-[576px]  rounded-md bg-gray-300 animate-pulse" : ""
+          className={`mt-4 max-w-xl ${
+            !content
+              ? "h-6 animate-pulse  rounded-md bg-gray-300 lg:w-[576px]"
+              : ""
           }`}
         >
           {content}

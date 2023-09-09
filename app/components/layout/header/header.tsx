@@ -63,7 +63,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed z-30 w-full">
+    <header className="fixed z-50 w-full">
       <div className="mx-auto w-full max-w-7xl px-4 md:px-6 ">
         <div className="flex h-16  items-center justify-between lg:h-20">
           <Link href="/" className="inline-flex items-center gap-4">

@@ -1,22 +1,36 @@
-import React from "react";
+"use client";
+
 import Item from "./item";
 import Shape from "./shape";
 import BottomShape from "./bottomShape";
 import TopShape from "./topShape";
 import Line from "./line";
+import { useRef } from "react";
 
 export default function Experience() {
+  const cursorRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="flex w-full flex-col items-center ">
       <h2 className="text-lg font-semibold">My career path</h2>
-      <div className="relative mt-8 flex w-full justify-start md:justify-center">
-        <Line className="left-2 md:left-1/4 md:ml-[19px]" />
+      <div className="relative mt-8 flex w-full justify-start overflow-y-clip lg:justify-center">
+        <div className="sticky left-0 top-1/3 z-10 mb-8  ml-7 h-0  w-0 -translate-y-60 translate-x-[-19px] lg:translate-x-0">
+          <div className="flex flex-col items-center">
+            <div className="h-60 w-[2px] flex-shrink-0 bg-primary"></div>
+            <div
+              ref={cursorRef}
+              className="h-6 w-6 flex-shrink-0 rounded-full border-2 border-primary bg-white"
+            ></div>
+          </div>
+        </div>
+        <Line className="left-2 lg:left-1/4 lg:ml-[19px]" />
         <TopShape />
-        <div className="relative z-10 flex translate-x-[-5px] flex-col gap-32 py-32 md:translate-x-0">
+        <div className="relative z-0 flex translate-x-[-33px] flex-col gap-32 py-32 lg:translate-x-[-14px]">
           <div className=" relative flex flex-col gap-32">
-            <Line className="left-[54px] hidden md:block" />
+            <Line className="left-[54px] hidden lg:block" />
             <Item
-              className="md:translate-x-[41px]"
+              cursorRef={cursorRef}
+              className="lg:translate-x-[41px]"
               title="ESIEA - IT ENGINEERING"
               description="Master's degree in software engineering"
               date="2020-2025"
@@ -26,7 +40,7 @@ export default function Experience() {
             <div className="relative">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="Programming workshop CLEP Laval"
                 description="CLEP - Centre Lavallois d'Education Populaire"
                 date="Oct 2020-Jun 2021"
@@ -36,7 +50,7 @@ export default function Experience() {
             </div>
             <Item
               event
-              className="md:translate-x-[41px]"
+              className="lg:translate-x-[41px]"
               title="TOEIC® Listening and Reading"
               description="ETS Global B.V."
               date="May 2021"
@@ -46,7 +60,7 @@ export default function Experience() {
             <div className="relative">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="Educational Assistant"
                 description="Collège Fernand Puech"
                 date="Sep 2021-Jun 2022"
@@ -56,7 +70,7 @@ export default function Experience() {
             </div>
             <Item
               event
-              className="md:translate-x-[41px]"
+              className="lg:translate-x-[41px]"
               title="Winner RoboRave Craon"
               description="RoboRAVE International, a program of Inquiry Facilitators, Inc."
               date="Jun 2022"
@@ -65,17 +79,17 @@ export default function Experience() {
             />
             <Item
               event
-              className="md:translate-x-[41px]"
+              className="lg:translate-x-[41px]"
               title="Second prize at the PST Laval 2022 show"
               description="ESIEA"
               date="Jun 2022"
               location="Laval, France"
               content="Second prize at the Scientific and Technical Project fair on the ESIEA Laval campus. Rewarded for my project 'Esieabot mobile application' among the 20 projects of 2nd year students."
             />
-            <div className="relative md:mb-20">
+            <div className="relative lg:mb-20">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="CENTRIA UNIVERSITY OF APPLIED SCIENCES"
                 description="Information technology exchange semester"
                 date="Aug-Dec 2022"
@@ -83,10 +97,10 @@ export default function Experience() {
                 content="My courses: C#, Python and SQL, Object-Oriented Modeling, Operating systems, statistics, Electric Circuits."
               />
             </div>
-            <div className="relative md:mb-20">
+            <div className="relative lg:mb-20">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="FRONTEND ENGINEER INTERN"
                 description="DNB"
                 date="Jun-Aug 2023"
@@ -94,28 +108,28 @@ export default function Experience() {
                 content=" I had the exciting opportunity to contribute to the company's 'Emerging Technologies' department as a Frontend Engineer"
               />
             </div>
-            <div className="relative md:mb-20">
+            <div className="relative lg:mb-20">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="SOFTWARE ENGINEER INTERN"
                 date="April-Aug 2024"
               />
             </div>
 
-            <div className="relative md:mb-20">
+            <div className="relative lg:mb-20">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="EXCHANGE SEMESTER"
                 date="Aug 2023-Jan 2024"
               />
             </div>
 
-            <div className="relative md:mb-32">
+            <div className="relative lg:mb-32">
               <Shape />
               <Item
-                className="md:translate-x-[82px]"
+                className="lg:translate-x-[82px]"
                 title="SOFTWARE ENGINEER INTERN"
                 date="Feb-Jul 2025"
               />
