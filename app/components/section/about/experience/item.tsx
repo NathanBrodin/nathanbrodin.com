@@ -1,4 +1,6 @@
-import React, { RefObject, useRef } from "react";
+"use client";
+
+import React, { RefObject, useEffect, useRef, useState } from "react";
 
 type ItemProps = {
   title: string;
@@ -19,24 +21,58 @@ export default function Item({
   content,
   className,
   event,
-  cursorRef
+  cursorRef,
 }: ItemProps) {
   const selfRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState<boolean>(false);
 
+  useEffect(() => {
+    function handleScroll() {
+      if (cursorRef?.current && selfRef.current) {
+        const top = cursorRef.current.getBoundingClientRect().top;
+        const selfTop = selfRef.current.getBoundingClientRect().top;
 
-  if(cursorRef?.current && selfRef.current) {
-    const top = cursorRef.current.getBoundingClientRect().top;
-    const selfTop = selfRef.current.getBoundingClientRect().top;
+        if (top <= selfTop) {
+          setActive(true);
+        } else {
+          setActive(false);
+        }
+      }
+    }
 
-    console.log(`Top: ${top}, selfTop: ${selfTop}`)
-  }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [cursorRef]);
 
   return (
-    <div ref={selfRef}  className={`flex gap-2 lg:gap-6 ${className}`}>
+    <div
+      ref={selfRef}
+      className={`flex translate-x-1 gap-2 lg:gap-6 ${className} transition-all duration-200 ${
+        active ? "text-black" : "text-primary"
+      }`}
+    >
       {event ? (
-        <div className="mr-1 box-content h-4 w-4 flex-shrink-0 translate-x-[4px] rounded-full border-2 border-secondary bg-white lg:translate-x-1"></div>
+        <div
+          className={`mr-1 box-content h-1 w-4 flex-shrink-0 rounded-lg border-2 bg-white transition-all duration-200 ${
+            active ? "border-gray-500" : "border-secondary"
+          }`}
+        ></div>
       ) : (
-        <div className="box-content h-6 w-6 flex-shrink-0 rounded-full border-2 border-primary bg-white"></div>
+        <div
+          className={`box-content flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full border-2 transition-all duration-200 ${
+            active ? "border-gray-500" : "border-secondary"
+          }`}
+        >
+          <div
+            className={`transition-all duration-200 ${
+              active
+                ? "h-3 w-3 rounded-full border-2 border-gray-500"
+                : " h-3 w-3 rounded-full bg-secondary"
+            }`}
+          ></div>
+        </div>
       )}
       <div className="flex flex-col">
         <h1 className="text-lg font-bold">{title}</h1>
