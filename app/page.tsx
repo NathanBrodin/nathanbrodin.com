@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-// import Home from "./components/section/home/home";
+import Home from "./components/section/home/home";
 
 // const DynamicProjects = dynamic(
 //   () => import("./components/section/projects/projects"),
@@ -22,7 +22,7 @@ const DynamicContact = dynamic(
 export default function Page() {
   return (
     <main className="relative flex grow flex-col">
-      {/* <Home /> */}
+      <Home />
       <div className="flex flex-col content-center items-center justify-center px-4 md:px-6">
         {/* <DynamicProjects /> */}
         <DynamicAbout />
