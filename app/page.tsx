@@ -18,7 +18,7 @@ export default function Page() {
     <main className="relative flex grow flex-col">
       <Home />
       <div className="flex flex-col content-center items-center justify-center px-4 md:px-6">
-        <DynamicProjects />
+        {/* <DynamicProjects /> */}
         <DynamicAbout />
         <DynamicContact />
       </div>
