@@ -40,7 +40,7 @@ export default function RootLayout({
             ))}
           </div>
         </div>
-        {/* <Analytics /> */}
+        <Analytics />
       </body>
     </html>
   );

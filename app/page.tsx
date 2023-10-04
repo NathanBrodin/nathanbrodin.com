@@ -25,8 +25,8 @@ export default function Page() {
       <Home />
       <div className="flex flex-col content-center items-center justify-center px-4 md:px-6">
         <DynamicProjects />
-        {/* <DynamicAbout />
-        <DynamicContact /> */}
+        <DynamicAbout />
+        <DynamicContact />
       </div>
     </main>
   );

@@ -45,6 +45,7 @@ export default function HomePage({ currentPlant }: HomePageProps) {
               width={60}
               height={60}
               alt={currentPlant.name}
+              loading="lazy"
               layout="responsive"
             />
           </div>
