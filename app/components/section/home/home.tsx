@@ -1,6 +1,6 @@
 "use client";
 
-import HackedTexts from "../../ui/texts/hackedTexts";
+// import HackedTexts from "../../ui/texts/hackedTexts";
 import { Download, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -52,11 +52,12 @@ export default function Home() {
           className="text-lg font-medium leading-[1.4] text-gray-300 lg:text-xl"
         >
           A {age} years old{" "}
-          <HackedTexts>
+          software engineer{" "}
+          {/* <HackedTexts>
             <li>software engineer</li>
             <li>front-end engineer</li>
             <li>react developer</li>
-          </HackedTexts>{" "}
+          </HackedTexts>{" "} */}
           from France.
         </motion.div>
         <div className="mt-4 flex gap-2 text-white">
