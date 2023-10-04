@@ -20,7 +20,7 @@ export default function Projects() {
       />
       <div className="grid grid-flow-dense gap-8 lg:grid-cols-2 ">
         {/* <PlantWatering /> */}
-        {/* <GrammarChecker /> */}
+        <GrammarChecker />
         <ChatAdminPanel />
         <MyPasswordManager />
         {/* <Sokoban /> */}
