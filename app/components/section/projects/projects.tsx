@@ -20,7 +20,7 @@ export default function Projects() {
       />
       <div className="grid grid-flow-dense gap-8 lg:grid-cols-2 ">
         <PlantWatering />
-        <GrammarChecker />
+        {/* <GrammarChecker />
         <ChatAdminPanel />
         <MyPasswordManager />
         <Sokoban />
@@ -35,7 +35,7 @@ for delivery personnel, deployed on both Play Store and Apple Store.
 Led end-to-end development, from design and testing to deployment, of a Flutter mobile app."
           stack={["Flutter", "Dart"]}
           repoLink="https://gitlab.esiea.fr/creuze/Cargo-BikePST"
-        />
+        /> */}
       </div>
     </section>
   );
