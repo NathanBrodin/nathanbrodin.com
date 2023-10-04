@@ -14,7 +14,7 @@ export default function Experience() {
     <div className="flex w-full flex-col items-center ">
       <h2 className="text-lg font-semibold">My career path</h2>
       <div className="relative mt-8 flex w-full justify-start overflow-y-clip lg:justify-center">
-        <div className="sticky left-0 top-1/3 z-[16] mb-16  ml-7 h-0  w-0 -translate-y-60 translate-x-[-19px] lg:translate-x-[-2px]">
+        <div className="sticky left-0 top-1/3 z-[16] mb-16 ml-7 h-0  w-0 -translate-y-80 translate-x-[-19px] lg:translate-x-[-2px]">
           <div className="flex flex-col items-center">
             <div className="h-60 w-[2px] relative z-0 flex-shrink-0 bg-primary"></div>
             <div
