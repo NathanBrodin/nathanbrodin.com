@@ -31,7 +31,7 @@ export default function Header() {
         const element = document.getElementById(page.name.toLowerCase());
         const rect = element?.getBoundingClientRect();
 
-        if (rect!.top <= window.innerHeight * 0.5) {
+        if (rect && rect!.top <= window.innerHeight * 0.5) {
           currentSection = page.name.toLowerCase();
         }
       });

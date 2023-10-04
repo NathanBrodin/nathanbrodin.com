@@ -1,17 +1,17 @@
 import dynamic from 'next/dynamic'
 import Home from "./components/section/home/home";
 
-const DynamicProjects = dynamic(() => import("./components/section/projects/projects"), {
-  loading: () => <p>Loading...</p>,
-})
+// const DynamicProjects = dynamic(() => import("./components/section/projects/projects"), {
+//   loading: () => <p>Loading...</p>,
+// })
 
-const DynamicAbout = dynamic(() => import("./components/section/about/about"), {
-  loading: () => <p>Loading...</p>,
-})
+// const DynamicAbout = dynamic(() => import("./components/section/about/about"), {
+//   loading: () => <p>Loading...</p>,
+// })
 
-const DynamicContact = dynamic(() => import("./components/section/contact/contact"), {
-  loading: () => <p>Loading...</p>,
-})
+// const DynamicContact = dynamic(() => import("./components/section/contact/contact"), {
+//   loading: () => <p>Loading...</p>,
+// })
 
 export default function Page() {
   return (
