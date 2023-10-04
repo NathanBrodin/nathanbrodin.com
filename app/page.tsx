@@ -22,11 +22,11 @@ const DynamicContact = dynamic(
 export default function Page() {
   return (
     <main className="relative flex grow flex-col">
-      <Home />
+      {/* <Home /> */}
       <div className="flex flex-col content-center items-center justify-center px-4 md:px-6">
-        <DynamicProjects />
+        {/* <DynamicProjects />
         <DynamicAbout />
-        <DynamicContact />
+        <DynamicContact /> */}
       </div>
     </main>
   );
