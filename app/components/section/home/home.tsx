@@ -1,25 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
-import HackedTexts from "../../ui/texts/hackedTexts";
+
+// import HackedTexts from "../../ui/texts/hackedTexts";
 import { Download, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Home() {
   const age = getMyAge();
-
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
-  let initialClip = 95;
-  if (width > 640) {
-    initialClip = 95;
-  } else if (width > 768) {
-    initialClip = 95;
-  }
 
   function getMyAge() {
     const birthDate = new Date("2002-07-07");
@@ -65,11 +52,12 @@ export default function Home() {
           className="text-lg font-medium leading-[1.4] text-gray-300 lg:text-xl"
         >
           A {age} years old{" "}
-          <HackedTexts>
+          software engineer{" "}
+          {/* <HackedTexts>
             <li>software engineer</li>
             <li>front-end engineer</li>
             <li>react developer</li>
-          </HackedTexts>{" "}
+          </HackedTexts>{" "} */}
           from France.
         </motion.div>
         <div className="mt-4 flex gap-2 text-white">
@@ -84,6 +72,8 @@ export default function Home() {
             <Link
               href={"/CV.pdf"}
               target="_blank"
+              passHref
+              download
               className="group relative overflow-hidden rounded-full bg-primary px-4 py-2 font-medium"
             >
               <span className="absolute inset-0 h-full w-full transition duration-700 group-hover:rotate-90">

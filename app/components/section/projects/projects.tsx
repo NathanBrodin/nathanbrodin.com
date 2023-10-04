@@ -19,14 +19,23 @@ export default function Projects() {
         subtitle="Here's an overview of some of the projects I've worked on."
       />
       <div className="grid grid-flow-dense gap-8 lg:grid-cols-2 ">
-        <PlantWatering />
+        {/* <PlantWatering /> */}
         <GrammarChecker />
         <ChatAdminPanel />
         <MyPasswordManager />
-        <Sokoban />
+        {/* <Sokoban /> */}
         <Portfolio />
         <ESIEABOT />
-        <ProjectCard year="2023" projectType="School project" projectName="PST 4A" description="Not started yet" stack={[""]} repoLink=""/>
+        <ProjectCard
+          year="2023"
+          projectType="School project"
+          projectName="B-moveon"
+          description="Accomplished streamlined delivery logistics mobile app for a Spanish company, optimizing routes
+for delivery personnel, deployed on both Play Store and Apple Store.
+Led end-to-end development, from design and testing to deployment, of a Flutter mobile app."
+          stack={["Flutter", "Dart"]}
+          repoLink="https://gitlab.esiea.fr/creuze/Cargo-BikePST"
+        />
       </div>
     </section>
   );

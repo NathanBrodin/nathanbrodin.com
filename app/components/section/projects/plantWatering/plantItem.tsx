@@ -15,9 +15,11 @@ export default function PlantItem({ plant, handlePlantSelect }: Props) {
         <div className="w-[50px] h-[50px]">
           <Image
             src={plant.iconPath}
+            
             width={60}
             height={60}
             alt="lune"
+            loading="lazy"
             layout="responsive"
           />
         </div>
