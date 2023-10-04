@@ -12,11 +12,11 @@ export default function Portfolio() {
       repoLink="https://github.com/NathanBrodin/nathanbrodin.com"
       stack={["Next.js", "Tailwindcss", "TypeScript", "Framer motion"]}
     >
-      <WebPage>
+      {/* <WebPage>
         <div className="h-full lg:w-[800px] ">
           <iframe src="/" className="h-full w-full"></iframe>
         </div>
-      </WebPage>
+      </WebPage> */}
     </ProjectCard>
   );
 }
