@@ -11,12 +11,6 @@ const satoshi = localFont({
   variable: "--font-satoshi",
 });
 
-const satoshiItalic = localFont({
-  src: "./fonts/Satoshi-VariableItalic.woff2",
-  display: "swap",
-  variable: "--font-satoshi-italic",
-});
-
 export const metadata: Metadata = {
   title: "Portfolio | Nathan Brodin",
   description: "Here's my portfolio to showcase my projects",
@@ -31,7 +25,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <link rel="icon" href="/icon.svg" sizes="any" />
       <body
-        className={`${satoshi.variable} ${satoshiItalic.variable} flex min-h-full flex-col bg-background font-sans`}
+        className={`${satoshi.variable} flex min-h-full flex-col bg-background font-sans`}
       >
         <Header />
         {children}
@@ -46,7 +40,7 @@ export default function RootLayout({
             ))}
           </div>
         </div>
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
