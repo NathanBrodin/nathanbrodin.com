@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import HackedTexts from "../../ui/texts/hackedTexts";
 import { Download, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
@@ -7,19 +7,6 @@ import Link from "next/link";
 
 export default function Home() {
   const age = getMyAge();
-
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
-  let initialClip = 95;
-  if (width > 640) {
-    initialClip = 95;
-  } else if (width > 768) {
-    initialClip = 95;
-  }
 
   function getMyAge() {
     const birthDate = new Date("2002-07-07");
