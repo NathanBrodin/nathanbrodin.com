@@ -1,5 +1,4 @@
-import { animate } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface CounterProps {
   from: number;
@@ -8,24 +7,34 @@ interface CounterProps {
 }
 
 export default function Counter({ from, to, duration }: CounterProps) {
-  const nodeRef = useRef<HTMLSpanElement | null>(null);
-  const [currentValue, setCurrentValue] = useState(from);
+  const [value, setValue] = useState<number>(from);
+  const [increasing, setIncreasing] = useState<boolean>(true);
 
   useEffect(() => {
-    const node = nodeRef.current;
-    if (!node) return;
+    let intervalId: NodeJS.Timeout;
 
-    const controls = animate(from, to, {
-      duration: duration,
-      onUpdate(value) {
-        const roundedValue = Math.round(value);
-        node.textContent = roundedValue.toString();
-        setCurrentValue(roundedValue);
-      },
-    });
+    const updateCounter = () => {
+      if (increasing) {
+        if (value < to) {
+          setValue((prevValue) => prevValue + 1);
+        } else {
+          setIncreasing(false);
+        }
+      } else {
+        if (value > from) {
+          setValue((prevValue) => prevValue - 1);
+        } else {
+          setIncreasing(true);
+        }
+      }
+    };
 
-    return () => controls.stop();
-  }, [from, to, duration]);
+    intervalId = setInterval(updateCounter, duration);
 
-  return { ref: nodeRef, value: currentValue };
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [value, from, to, duration, increasing]);
+
+  return { value };
 }
