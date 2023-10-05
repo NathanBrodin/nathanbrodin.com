@@ -1,12 +1,16 @@
+import dynamic from "next/dynamic";
 import ProjectCard from "../../ui/cards/projectCard";
 import Heading from "../../ui/heading/Heading";
 import ESIEABOT from "./ESIEABOT";
 import ChatAdminPanel from "./chatAdminPanel";
 import GrammarChecker from "./grammarChecker";
 import MyPasswordManager from "./myPasswordManager";
-import PlantWatering from "./plantWatering";
 import Portfolio from "./portfolio";
 import Sokoban from "./sokoban";
+
+const DynamicPlantWatering = dynamic(() => import("./plantWatering"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Projects() {
   return (
@@ -19,7 +23,7 @@ export default function Projects() {
         subtitle="Here's an overview of some of the projects I've worked on."
       />
       <div className="grid grid-flow-dense gap-8 lg:grid-cols-2 ">
-        <PlantWatering />
+        <DynamicPlantWatering />
         <GrammarChecker />
         <ChatAdminPanel />
         <MyPasswordManager />
