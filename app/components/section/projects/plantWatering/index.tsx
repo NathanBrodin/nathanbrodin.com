@@ -5,6 +5,7 @@ import HomePage from "./homePage";
 import SelectPage from "./selectPage";
 import { useState } from "react";
 import IphoneFrame from "@/app/components/ui/frame/iphone";
+import { useInView } from 'react-intersection-observer';
 
 export interface PlantItemProps {
   iconPath: string;
@@ -13,6 +14,8 @@ export interface PlantItemProps {
 }
 
 export default function PlantWatering() {
+  const [inViewRef, inView] = useInView();
+
   const [availablePlants, setAvailablePlants] = useState<PlantItemProps[]>([
     {
       iconPath: "/plantWatering/lune.png",
@@ -67,20 +70,28 @@ export default function PlantWatering() {
       repoLink="https://gitlab.esiea.fr/brodin/arrosage-eco"
       stack={["Flutter", "STM32", "Arduino"]}
     >
-      <div className="relative grid h-[452px] w-72 lg:h-[598px] lg:w-96">
-        <div>
-          <IphoneFrame className=" hover:z-10">
-            <SelectPage
-              plantList={availablePlants}
-              setCurrentPlant={setAvailablePlants}
-            />
-          </IphoneFrame>
-        </div>
-        <div className="absolute translate-x-24 translate-y-16 transform xl:translate-x-32 xl:translate-y-20 ">
-          <IphoneFrame>
-            <HomePage currentPlant={availablePlants[0]} />
-          </IphoneFrame>
-        </div>
+      <div
+        ref={inViewRef}
+        className="relative grid h-[452px] w-72 lg:h-[598px] lg:w-96"
+      >
+        {/* to increase performance, we only render the 2 pages when the user is */}
+        {inView && (
+          <>
+            <div>
+              <IphoneFrame className=" hover:z-10">
+                <SelectPage
+                  plantList={availablePlants}
+                  setCurrentPlant={setAvailablePlants}
+                />
+              </IphoneFrame>
+            </div>
+            <div className="absolute translate-x-24 translate-y-16 transform xl:translate-x-32 xl:translate-y-20 ">
+              <IphoneFrame>
+                <HomePage currentPlant={availablePlants[0]} />
+              </IphoneFrame>
+            </div>
+          </>
+        )}
       </div>
     </ProjectCard>
   );

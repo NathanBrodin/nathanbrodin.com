@@ -19,7 +19,7 @@ export default function Projects() {
         subtitle="Here's an overview of some of the projects I've worked on."
       />
       <div className="grid grid-flow-dense gap-8 lg:grid-cols-2 ">
-        {/* <PlantWatering /> */}
+        <PlantWatering />
         <GrammarChecker />
         <ChatAdminPanel />
         <MyPasswordManager />

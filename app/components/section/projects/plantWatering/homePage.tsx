@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/legacy/image";
 import { ArrowRight } from "lucide-react";
 import { PlantItemProps } from ".";
@@ -6,12 +8,19 @@ import Sun from "./sun";
 import Water from "./water";
 import Moisture from "./moisture";
 import Temperature from "./temperature";
+import Counter from "./counter";
 
 interface HomePageProps {
   currentPlant: PlantItemProps;
 }
 
+export interface ElementProps {
+  value: number;
+}
+
 export default function HomePage({ currentPlant }: HomePageProps) {
+  const counter = Counter({ from:0, to:100, duration: 200 });
+
   return (
     <div className="flex h-full w-full flex-col gap-2 bg-[#EEEBE5] p-2 lg:p-4">
       <div className=" text-[#1B4139]">
@@ -21,14 +30,14 @@ export default function HomePage({ currentPlant }: HomePageProps) {
         </div>
       </div>
       <div className="flex w-full flex-1 gap-2">
-        <Battery />
-        <Sun />
+        <Battery value={counter.value}/>
+        <Sun value={Math.floor(counter.value * 0.6)} />
       </div>
       <div className="flex w-full flex-[1.5] gap-2">
-        <Water />
+        <Water value={Math.floor(counter.value * 0.8)}/>
         <div className="flex h-full flex-1 flex-col gap-2">
-          <Moisture />
-          <Temperature />
+          <Moisture value={Math.floor(counter.value * 0.5)}/>
+          <Temperature value={Math.floor(counter.value * 0.1 % 32)}/>
         </div>
       </div>
       <div className="flex w-full flex-1 flex-col justify-between rounded-xl bg-[#1B4139] p-3">
