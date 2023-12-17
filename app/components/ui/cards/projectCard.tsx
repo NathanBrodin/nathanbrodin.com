@@ -89,7 +89,7 @@ export default function ProjectCard({
             <div className="mb-2 flex items-center gap-2 ">
               <Layers className="text-secondary" />
               <h3 className="text-base font-semibold leading-7 text-primary">
-                Teck stack
+                Tech stack
               </h3>
             </div>
             <div className="grid md:grid-flow-col md:grid-rows-3 gap-x-8 gap-y-1">
@@ -119,7 +119,7 @@ export default function ProjectCard({
                   <Gitlab className="text-secondary" />
                 )}
                 <h3 className="text-base font-semibold leading-7 text-primary">
-                  View this repo
+                  Explore the Code
                 </h3>
               </div>
               {repoInfos && repoInfos.stars > 2 && (
