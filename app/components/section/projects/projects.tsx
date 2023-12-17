@@ -32,7 +32,7 @@ export default function Projects() {
           projectType="Personal project"
           projectName="Google Maps API"
           description={`While working on the B-moveon project, I had to use the Google Maps API to get places information. 
-          Due to the lack of integration of the Google Maps API in Flutter, I develop my own package to allow other developers to integrate the Google Maps API into their Flutter project.`}
+          Due to the lack of integration of the Google Maps API in Flutter, I developed my own package to allow other developers to integrate the Google Maps API into their Flutter projects.`}
           stack={["Flutter", "Dart", "Google Maps API"]}
           repoLink="https://github.com/NathanBrodin/google_maps_api_flutter"
         />

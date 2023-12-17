@@ -8,9 +8,9 @@ export default function BmoveOn() {
             year="2023"
             projectType="School project"
             projectName="B-moveon"
-            description={`In the request of a Spanish company, I lead a group of 3 students to develop a delivery tracking application for cargo bikes. 
+            description={`At the request of a Spanish company, I led a group of three students to develop a delivery tracking application for cargo bikes. 
           It let deliverymen track their deliveries and let the company manage their deliveries and deliverymen. 
-          We use the Google Maps API to get places information and to calculate the best route for the deliverymen.
+          We use the Google Maps API to get places information and calculate the best route for the deliverymen.
           I also set up a CI/CD pipeline to automate the deployment of the application.`}
             stack={["Flutter", "Dart", "Google Maps API", "Code Magic", "GitLab CI/CD"]}
             repoLink="https://gitlab.esiea.fr/creuze/Cargo-BikePST"

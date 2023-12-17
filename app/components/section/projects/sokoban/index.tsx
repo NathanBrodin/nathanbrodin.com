@@ -13,7 +13,7 @@ export default function Sokoban() {
       year="2023"
       projectType="School project"
       projectName="Sokoban"
-      description={`For my final project in the Flutter course, I took on the challenge of creating the Sokoban game. 
+      description={`For my final project in my Flutter course, I took on the challenge of creating the Sokoban game. 
       Developed in just 20 hours, this version boasts engaging player animations and a rich sound design. 
       I also incorporated an achievement-based system to reward players for their progress and skillful gameplay.`}
       stack={["Flutter", "Dart"]}
