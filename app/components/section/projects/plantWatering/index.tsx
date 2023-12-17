@@ -59,14 +59,10 @@ export default function PlantWatering() {
       year="2023"
       projectType="School project"
       projectName="Smart Plant Watering System"
-      description="I developed a smart plant watering system,
-      featuring a hardware setup with automatic watering, moisture, temperature, and light
-      sensors, paired with a mobile application for remote plant status
+      description={`I developed a smart plant watering system, featuring a hardware setup with automatic watering, moisture, temperature, and light sensors, paired with a mobile application for remote plant status
       monitoring.
-      This system presents a practical and efficient solution
-      for plant care management by offering real-time updates on plant
-      conditions.
-      The intuitive and aesthetically pleasing UI, crafted by me, elevates the user experience."
+      The app is built with Flutter and the hardware setup is based on an STM32 with an Arduino wifi module.
+      This system presents a practical and efficient solution for plant care management by offering real-time updates on plant conditions.`}
       repoLink="https://gitlab.esiea.fr/brodin/arrosage-eco"
       stack={["Flutter", "STM32", "Arduino"]}
     >

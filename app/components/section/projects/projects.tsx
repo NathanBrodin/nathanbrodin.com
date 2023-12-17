@@ -7,6 +7,7 @@ import GrammarChecker from "./grammarChecker";
 import MyPasswordManager from "./myPasswordManager";
 import Portfolio from "./portfolio";
 import Sokoban from "./sokoban";
+import BmoveOn from "./b-moveon";
 
 const DynamicPlantWatering = dynamic(() => import("./plantWatering"), {
   loading: () => <p>Loading...</p>,
@@ -26,20 +27,20 @@ export default function Projects() {
         <DynamicPlantWatering />
         <GrammarChecker />
         <ChatAdminPanel />
-        <MyPasswordManager />
-        {/* <Sokoban /> */}
-        <Portfolio />
-        <ESIEABOT />
         <ProjectCard
           year="2023"
-          projectType="School project"
-          projectName="B-moveon"
-          description="Accomplished streamlined delivery logistics mobile app for a Spanish company, optimizing routes
-for delivery personnel, deployed on both Play Store and Apple Store.
-Led end-to-end development, from design and testing to deployment, of a Flutter mobile app."
-          stack={["Flutter", "Dart"]}
-          repoLink="https://gitlab.esiea.fr/creuze/Cargo-BikePST"
+          projectType="Personal project"
+          projectName="Google Maps API"
+          description={`While working on the B-moveon project, I had to use the Google Maps API to get places information. 
+          Due to the lack of integration of the Google Maps API in Flutter, I develop my own package to allow other developers to integrate the Google Maps API into their Flutter project.`}
+          stack={["Flutter", "Dart", "Google Maps API"]}
+          repoLink="https://github.com/NathanBrodin/google_maps_api_flutter"
         />
+        <BmoveOn />
+        <Sokoban />
+        <Portfolio />
+        <ESIEABOT />
+        <MyPasswordManager />
       </div>
     </section>
   );
