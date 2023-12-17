@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Footer from "./components/layout/footer/footer";
 import Header from "./components/layout/header/header";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const satoshi = localFont({
   src: "./fonts/Satoshi-Variable.woff2",
@@ -41,6 +42,7 @@ export default function RootLayout({
           </div>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
