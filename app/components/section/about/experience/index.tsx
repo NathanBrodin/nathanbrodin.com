@@ -121,7 +121,7 @@ export default function Experience() {
                 cursorRef={cursorRef}
                 className="lg:translate-x-[84px]"
                 title="SOFTWARE ENGINEER INTERN"
-                date="April-Aug 2024"
+                date="Apr-Aug 2024"
               />
             </div>
 
@@ -131,7 +131,7 @@ export default function Experience() {
                 cursorRef={cursorRef}
                 className="lg:translate-x-[84px]"
                 title="EXCHANGE SEMESTER"
-                date="Aug 2023-Jan 2024"
+                date="Aug-Dec 2024"
               />
             </div>
 
@@ -141,7 +141,7 @@ export default function Experience() {
                 cursorRef={cursorRef}
                 className="lg:translate-x-[84px]"
                 title="SOFTWARE ENGINEER INTERN"
-                date="Feb-Jul 2025"
+                date="Jan-Jun 2025"
               />
             </div>
             <BottomShape />
@@ -149,7 +149,7 @@ export default function Experience() {
           <Item
             className="lg:translate-x-[2px]"
             title="JUNIOR SOFTWARE ENGINEER"
-            date="Aug 2025 - Undefined"
+            date="Jul 2025 - Undefined"
             cursorRef={cursorRef}
           />
         </div>
