@@ -130,8 +130,11 @@ export default function Experience() {
               <Item
                 cursorRef={cursorRef}
                 className="lg:translate-x-[84px]"
-                title="EXCHANGE SEMESTER"
-                date="Aug 2023-Jan 2024"
+                title="MID SWEDEN UNIVERSITY"
+                description="Software Engineering exchange semester"
+                date="Aug 2024 - Jan 2025"
+                location="Sundsvall, Sweden"
+                content="Planned exchange semester."
               />
             </div>
 
